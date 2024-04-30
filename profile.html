@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My Profile</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css" >
+   
+</head>
+<body>
+
+
+    <div class="navbar">
+        <a href="trix.html" class="logo">
+            <img src="images/logo.jpg" width="125px">
+        </a>
+        
+        <div class="icons">
+            <a href="profile.html?signedin=true" id="profileLink"><i class="far fa-user"></i></a>
+            <a href="#Cart"><i class="fas fa-shopping-cart"></i></a>
+            <a href="#favorites"><i class="fas fa-heart"></i></a>
+        </div>
+        
+        <div class="search-bar">
+            <form action="#">
+                <input type="search" placeholder="What are you looking for?" name="search">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+        </div>
+        
+            <button onclick="document.getElementById('signInForm').style.display='block'">Sign In</button>
+            <button onclick="document.getElementById('registerForm').style.display='block'">Register</button>
+        
+        
+      <div id="signInForm" class="form-popup" style="display: none;">
+            <form class="form-container"  >
+               
+                <label for="username">Username:</label><br>
+                <input type="text" placeholder="Enter Username" name="username" required><br>
+    
+                <label for="password">Password:</label><br>
+                <input type="password" placeholder="Enter Password" name="password" required><br>
+    
+                <input type="checkbox" id="rememberMe" name="rememberMe">
+                <label for="rememberMe">Remember Me</label><br>
+    
+                <a href="#" onclick="openForgotPassword()">Forgot Password?</a><br>
+    
+                <button type="submit" class="btn">Sign In</button>
+                <button type="button" class="btn cancel" onclick="document.getElementById('signInForm').style.display='none'">Close</button>
+            </form>
+        </div>
+    
+        <div id="registerForm" class="form-popup" style="display: none;">
+            <form class="form-container" >
+                <h2>Register</h2>
+                <label for="newUsername">Username:</label><br>
+                <input type="text" placeholder="Enter Username" name="newUsername" required><br>
+    
+                <label for="newPassword">Password:</label><br>
+                <input type="password" placeholder="Enter Password" name="newPassword" required><br>
+    
+                <label for="confirmPassword">Confirm Password:</label><br>
+                <input type="password" placeholder="Confirm Password" name="confirmPassword" required><br>
+    
+                <button type="submit" class="btn">Register</button>
+                <button type="button" class="btn cancel" onclick="document.getElementById('registerForm').style.display='none'">Close</button>
+            </form>
+        </div>
+    
+        <div id="forgotPasswordForm" class="form-popup" style="display: none;">
+            <form class="form-container">
+                <h2>Forgot Password</h2>
+                <p>Please enter your email address to receive a password reset link.</p>
+                <label for="email">Email:</label><br>
+                <input type="email" placeholder="Enter Email" name="email" required><br>
+    
+                <button type="submit" class="btn">Send Reset Link</button>
+                <button type="button" class="btn cancel" onclick="closeForm('forgotPasswordForm')">Close</button>
+            </form>
+        </div>
+
+
+        <section class="profile">
+           <h1 style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">Welcome Back!</h1>
+              
+            <div class="profile-options">
+                <div class="option">
+                    <h2><a href="#MyOrders">My Orders</a></h2>
+                </div>
+                <div class="option">
+                    <h2><a href="#PaymentMethods">Payment Methods</a></h2>
+                </div>
+                <div class="option">
+                    <h2><a href="#ContactUs">Contact Us</a></h2>
+                </div>
+                <div class="option">
+                    <h2><a href="#MyDetails">My Details</a></h2>
+                </div>
+    
+                <div class="option">
+                    <h2><button onclick="sellItems()">Sell Items</button></h2>
+                </div>
+            </div>
+    
+    </section>   
+
+
+        
+        <script src="script.js">          
+        </script>  
+      
+</body>
+</html>
