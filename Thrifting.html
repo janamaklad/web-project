@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="Thrifting.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="signin.css">
+    <link rel="icon" href="favicon.png" type="image/png">
+    <title>Second Chance</title>
 </head>
 <body> 
 
@@ -29,7 +31,7 @@
 
         <div class="buttons">
             <a href="register.html" class="register-btn">Register</a>
-            <a href="signin.html" class="signin-btn">Sign In</a>
+            <a href="#" id="signin-btn" class="signin-btn">Sign In</a>
         </div>
     </div>
 
@@ -47,6 +49,84 @@
     </div>
     
     
+
+
+    <div id="modal" class="modal">
+        <div class="container">
+            <h2>Welcome back!</h2>
+            <form id="signin">
+                <div class="form-group">
+                   
+                    <input type="text" id="username" name="username" required placeholder="Username">
+                </div>
+                <div class="form-group">
+                 
+                    <input type="password" id="password" name="password" required placeholder="Password">
+                </div>
+                <button type="submit">Log In</button>
+    
+                <p>Don't have an account? <a href="register.html" id="signup1">Sign Up</a> </p>
+                
+            </form>
+        </div>
+        </div>
+        <div id="overlay" class="overlay"></div>
+    
+    <script>
+    document.getElementById('signup1').addEventListener('click',function(event){
+    event.preventDefault();
+    window.location.href='register.html';
+    });
+    
+    document.addEventListener('DOMContentLoaded', function() {
+    const signinform = document.getElementById('signin');
+    
+    const signinbtn=document.getElementById('signin-btn');
+    const modal= document.getElementById('modal');
+    const overlay= document.getElementById('overlay');
+    
+    signinbtn.addEventListener('click', function(event) {
+        event.preventDefault();
+    
+    
+    
+        modal.classList.add('active');
+        overlay.classList.add('active');
+    
+    });
+    
+    signinform.addEventListener('submit',function(event){
+        event.preventDefault();
+    
+        const username = document.getElementById('username').value;
+        const password = document.getElementById('password').value;
+        console.log('Username:', username);
+        console.log('Password:', password);
+    
+           
+        alert('login successful!');
+        signinform.reset(); 
+        
+        modal.classList.remove('active');
+        overlay.classList.remove('active');
+    });
+    
+    overlay.addEventListener('click', function(){
+        modal.classList.remove('active');
+        overlay.classList.remove('active');
+    });
+    });
+    
+    
+    </script>
+    
+    
+    
+    
+    
+    
+
+
 
 </body>
 </html>

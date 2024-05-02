@@ -1,6 +1,43 @@
+document.querySelectorAll('.form-group input').forEach(function(input){
+    input.addEventListener('focus',function(){
+        this.parentNode.classList.add('active');
+    });
+
+    input.addEventListener('blur',function(){
+        if(this.value===''){
+            this.parentNode.classList.remove('active');
+        }
+    });
+});
+
+
+
 document.addEventListener('DOMContentLoaded', function() {
     const registrationForm = document.getElementById('registration-form');
     const inputFields = registrationForm.querySelectorAll('input[type="text"], input[type="email"], input[type="password"]');
+
+    inputFields.forEach(function(input) {
+        input.addEventListener('focus', function() {
+            this.parentNode.classList.add('active');
+        });
+
+        input.addEventListener('blur', function() {
+            if (this.value === '') {
+                this.parentNode.classList.remove('active');
+            }
+        });
+
+        input.addEventListener('input', function() {
+            const label = this.parentNode.querySelector('label');
+            if (this.value !== '') {
+                label.style.display = 'none';
+            } else {
+                label.style.display = 'block';
+            }
+        });
+    });
+
+
 
     inputFields.forEach(function(input) {
         input.addEventListener('input', function() {
@@ -10,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 label.removeChild(requiredSpan);
             }
         });
-    }); 
+    });
 
     registrationForm.addEventListener('submit', function(event) {
         event.preventDefault();
@@ -34,16 +71,30 @@ document.addEventListener('DOMContentLoaded', function() {
         if (fname.trim() === '') {
             showError('fname', 'First name is required');
             isValid = false;
-        } else {
+        }else{
+            var regex=/^[a-zA-Z\s]+$/;
+            if(regex.test(fname)===false){
+               showError('fname',"Please enter a valid name");
+               isValid=false;
+            }
+        
+        else {
             removeError('fname');
         }
+    }
 
         if (lname.trim() === '') {
             showError('lname', 'Last name is required');
             isValid = false;
+        }else{
+            var regex=/^[a-zA-Z\s]+$/;
+            if(regex.test(lname)===false){
+               showError('lname',"Please enter a valid name");
+               isValid=false;
         } else {
             removeError('lname');
         }
+    }
 
         if (username.trim() === '') {
             showError('username', 'Username is required');
@@ -55,8 +106,17 @@ document.addEventListener('DOMContentLoaded', function() {
         if (email.trim() === '') {
             showError('email', 'Email is required');
             isValid = false;
-        } else {
+
+        }else{
+            var regex=/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+            if(regex.test(email)===false){
+                showError('email',"Please enter a valid email address");
+                isValid=false;
+            }
+        
+         else {
             removeError('email');
+        }
         }
 
         if (password.trim() === '') {
@@ -65,6 +125,14 @@ document.addEventListener('DOMContentLoaded', function() {
         } else {
             removeError('password');
         }
+
+        if(password.length<5){
+            showError('password',"Password must be atleast 5 characters long");
+            isValid=false;
+        }else{
+            removeError('password');
+        }
+
 
         return isValid;
     }
@@ -78,4 +146,4 @@ document.addEventListener('DOMContentLoaded', function() {
         const errorSpan = document.getElementById(fieldId + '-error');
         errorSpan.textContent = '';
     }
-});
+});  
