@@ -123,3 +123,62 @@ body {
 .subcategories h2 a:hover {
     color: blue;
 }
+/* Existing CSS */
+
+.favorite {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: red;
+    cursor: pointer;
+}
+
+.favorite i {
+    font-size: 24px;
+}
+
+.favorite:hover {
+    color: #ff5555;
+}
+
+/* Updated CSS for modal arrows */
+
+.modal-content {
+    position: relative; /* Position the arrows relative to this container */
+}
+
+.prev, .next {
+    position: absolute; /* Position the arrows absolutely */
+    top: 50%; /* Vertically center */
+    transform: translateY(-50%); /* Correct position */
+    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent background */
+    border: none; /* Remove border */
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.prev {
+    left: 0; /* Left side */
+}
+
+.next {
+    right: 0; /* Right side */
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(255, 255, 255, 0.8); /* Darker background on hover */
+}
+
+/* Make modal smaller */
+
+.modal-content {
+    max-width: 80%; /* Reduce width */
+}
+
+#modal-img {
+    max-width: 100%; /* Ensure image doesn't overflow */
+}
+
+/* Existing CSS */

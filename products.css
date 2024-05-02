@@ -1,0 +1,201 @@
+
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #fff; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    width: 125px;
+}
+ 
+.icons {
+    margin-left: auto; 
+    margin-right: 20px; 
+}
+
+.icons a {
+    color: black;
+    font-size: 1.3em;
+    padding-right: 20px;
+    text-decoration: none;
+}
+
+.search-bar {
+    margin-right: 20px;
+}
+
+.search-bar form {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input[type=search] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+.search-bar button {
+    padding: 8px 12px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #0056b3;
+}
+
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.product {
+    display: inline-block;
+    width: 250px;
+    margin: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.product img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border: 1px solid #ccc;
+}
+
+.product-details {
+    padding: 10px;
+}
+
+.product h2 {
+    margin-top: 0;
+}
+
+.product p {
+    margin: 5px 0;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scrolling if needed */
+    background-color: rgba(0, 0, 0, 0.5); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto; /* Center modal horizontally */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    max-width: 600px; /* Max width of the modal */
+    text-align: center; /* Center content horizontally */
+    position: relative; /* Added */
+}
+
+/* Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Image inside modal */
+#modal-img {
+    display: block;
+    margin: 0 auto; /* Center image horizontally */
+    max-width: 100%; /* Ensure image does not overflow the modal */
+    height: auto;
+}
+
+/* Thumbnails */
+.thumbnails {
+    margin-top: 10px;
+}
+
+.thumbnails img {
+    width: 50px;
+    height: auto;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.thumbnails img:last-child {
+    margin-right: 0;
+}
+
+/* Arrow buttons */
+.arrow-container {
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    right: 50%;
+    margin-top: -20px; /* Half of the button height */
+}
+
+.prev,
+.next {
+    background-color: rgba(255, 255, 255, 0.7);
+    color: black;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+    transition: background-color 0.3s;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.next {
+    right: 0;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+}
