@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="profile.css" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+ 
    
 </head>
 <body>
@@ -84,18 +86,101 @@
 
         <section class="profile">
            <h1 style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">Welcome Back!</h1>
+           
+           
 
             <div class="profile-options">
-                <div class="option">
+
+                <section class="my-orders" id="my-orders">
+
                     <h2>
                         <span><i class="fas fa-shopping-bag"></i></span>
-                         <a href="#MyOrders">My Orders</a></h2>
+                       <a href="#" target="_top">My orders</a> 
+                        </h2>
+                           
+                            <div class="orders-container" id="history">
+
+                                <h1><b> Previously Purchased </b> <br></h1>
+                              <div class="order">
+                                <img src="StradivariosDenim.jpeg" alt="Product Image">
+                                <div class="order-info">
+                                <p class="price">EGP 500</p>
+                                <P class="brand">Stradivarius Denim</P>
+                                <p class="size">Size: S</p>
+                                <p class="condition">Condition: As New</p>
+                                <p class="date">Date: 2024-05-02</p>
+                            </div>
+                              </div>
+
+                              <div class="order">
+                                <img src="aldoBag.jpeg" alt="Product Image">
+                                <div class="order-info">
+                                <p class="price">EGP 289</p>
+                                <P class="brand">ALDO bag</P>
+                                <p class="condition">Condition: Good</p>
+                                <p class="date">Date: 2024-05-02</p>
+                                </div>
+                              </div>
+                            
+                              <div class="order">
+                                <img src="P&Btop.jpeg" alt="Product Image">
+                                <div class="order-info">
+                                <p class="price">EGP 255</p>
+                                <P class="brand">Pull & Bear Brown Crop Top</P>
+                                <p class="size">Size: L</p>
+                                <p class="condition">Condition: Good</p>
+                                <p class="date">Date: 2024-04-17</p>
+                            </div>
+                              </div>
+
+                            </div>
+                          </section>
+                          
                 </div>
-                <div class="option">
-                    <h2>
-                        <span><i class="fa fa-money-check"></i></span>
-                        <a href="#PaymentMethods">Payment Methods</a></h2>
-                </div>
+
+
+
+
+                <div class="option" id="payment-methods">
+                    <div class="profile-options">
+                        <div class="option" id="payment-methods">
+                          <h2>
+                            <span><i class="fa fa-money-check"></i></span>
+                            Payment Methods
+                          </h2>
+                        </div>
+                      </div>
+                      
+                      <div id="visa" style="display: none;">
+                        <input type="radio" name="payment" id="visa-radio" checked>
+                        <label for="visa-radio">Visa</label>
+                      </div>
+                      
+                      <div id="cash" style="display: none;">
+                        <input type="radio" name="payment" id="cash-radio">
+                        <label for="cash-radio">Cash</label>
+                      </div>
+                      
+                      <div id="visa-content" class="payment-content" style="display: none;">
+                        <div class="form-header">
+                            <img src="visaCard.jpeg" class="visaCard">
+                          </div>
+                        <form id="payment-form" onsubmit="return validateForm()">
+                            <input type="numeric" id="cardNumber" placeholder="Card Number" name="cardNumber" maxlength="16" size="16" required><br>
+                            <input type="text" id="fullName" placeholder="Full Name" name="fullName" required><br>
+                            <input type="text" id="expiration" name="expiration" placeholder="MM / YY" maxlength="5" size="5" required><br>
+                            <input type="numeric" id="cvc" pattern="\d*" placeholder="CVC" name="cvc" minlength="3" required><br>
+                            <button type="submit" class="sellButton">Submit</button>
+                          </form>    
+                      </div>
+                      
+                <!--      <div id="cash-content" class="payment-content" style="display: none;">
+                        <p>order payment with cash <span><i class="fas fa-money-bill"></i></span></p>
+                      </div>
+                    -->  
+                  
+                  
+                  
                 <div class="option">
                     <h2>
                         <span><i class="fas fa-address-book"></i></span>
@@ -111,12 +196,25 @@
                     <h2><button class="sellButton" onclick="sellItems()">Sell Items</button></h2>
                 </div>
             </div>
-    
+   <div class="recommend">
+    <h1 style="display: block;"><b> Just For You!</b></h1>
+    <div class="order">
+        <h2><b>Orange Crochet Top</b></h2>
+        <img src="crochetTop.jpeg" alt="Product Image">
+        <div class="order-info">
+        <p class="price">EGP 450</p>
+        <P class="brand">H&M</P>
+        <p class="size">Size: S</p>
+        <p class="condition">Condition: Brand New</p>
+        <p class="date">Date: 2024-05-02</p>
+    </div>
+   </div>    
     </section>   
 
 
         
-        <script src="script.js">          
+        <script src="profile.js">    
+         
         </script>  
       
 </body>
