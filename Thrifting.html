@@ -89,6 +89,9 @@
 
     const correctuser='user22';
     const correctpass='12345';
+
+    const adminuser='admin22';
+    const adminpass='54321';
     
     const errormsg=document.getElementById('error-message');
 
@@ -104,7 +107,7 @@
     signinform.addEventListener('submit',function(event){
         event.preventDefault();
     
-        const useSrname = document.getElementById('username').value;
+        const username = document.getElementById('username').value;
         const password = document.getElementById('password').value;
         console.log('Username:', username);
         console.log('Password:', password);
@@ -118,7 +121,16 @@
 
         window.location.href='profile.html';
 
-           }else{
+           }else if(username===adminuser && password===adminpass){
+             signinform.reset();
+
+             modal.classList.remove('active');
+             overlay.classList.remove('active');
+
+             window.location.href='admin.html';
+           }
+           
+           else{
             errormsg.textContent='Incorrect Username or Password*';
            }
     });
