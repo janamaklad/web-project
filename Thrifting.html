@@ -60,10 +60,15 @@
                  
                     <input type="password" id="password" name="password" required placeholder="Password">
                 </div>
+                <div id="error-message" class="error-message"></div>
+               
+
                 <button type="submit">Log In</button>
     
                 <p>Don't have an account? <a href="register.html" id="signup1">Sign Up</a> </p>
                 
+               
+
             </form>
         </div>
         </div>
@@ -81,10 +86,14 @@
     const signinbtn=document.getElementById('signin-btn');
     const modal= document.getElementById('modal');
     const overlay= document.getElementById('overlay');
+
+    const correctuser='user22';
+    const correctpass='12345';
     
+    const errormsg=document.getElementById('error-message');
+
     signinbtn.addEventListener('click', function(event) {
         event.preventDefault();
-    
     
     
         modal.classList.add('active');
@@ -100,12 +109,18 @@
         console.log('Username:', username);
         console.log('Password:', password);
     
-           
-        alert('login successful!');
+           if(username=== correctuser && password=== correctpass){
+
         signinform.reset(); 
         
         modal.classList.remove('active');
         overlay.classList.remove('active');
+
+        window.location.href='profile.html';
+
+           }else{
+            errormsg.textContent='Incorrect Username or Password*';
+           }
     });
     
     overlay.addEventListener('click', function(){
