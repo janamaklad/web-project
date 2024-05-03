@@ -97,3 +97,10 @@ button:hover {
 #signup1:hover{
 color: #39bce0;
 }
+
+.error-message{
+    color: rgb(215, 18, 18);
+    font-weight: 120;
+    font-size: 0.8em;
+    margin-bottom: 3%;
+}

@@ -7,10 +7,8 @@ function showModal(primaryImage, images, title, price, brand, size) {
     document.getElementById('modal-brand').innerText = 'Brand: ' + brand;
     document.getElementById('modal-size').innerText = 'Size: ' + size;
 
-    // Set primary image
     document.getElementById('modal-img').src = primaryImage;
 
-    // Generate thumbnails
     const thumbnailsContainer = document.getElementById('thumbnails');
     thumbnailsContainer.innerHTML = '';
     images.forEach((image, index) => {
@@ -44,5 +42,5 @@ function closeModal() {
 
 function buyNow(productName) {
     alert("You are about to buy: " + productName);
-    // Add logic to handle the purchase
+
 }
