@@ -49,3 +49,23 @@ document.getElementById("payment-methods").addEventListener("click", function() 
     var field = document.getElementById(fieldId);
     field.parentNode.insertBefore(error, field.nextSibling);
   }
+
+
+  // history section (action when My orders is clicked)
+
+
+  document.getElementById("my-orders").addEventListener("click", function(event) {
+    event.preventDefault(); // Prevent the default link behavior
+    var ordersContainer = document.getElementById("history");
+    if (ordersContainer.style.display === "none") {
+        ordersContainer.style.display = "flex";
+    } else {
+        ordersContainer.style.display = "none";
+    }
+});
+
+
+
+
+
+

@@ -155,7 +155,9 @@ body {
 }
 
 .profile{
-   
+    height: 100vh; /* Set the height of the profile section to 100% of the viewport height */
+  overflow-y: scroll; /* Enable vertical scrolling */
+ 
     padding: 20px;
     background-color: transparent;
     border-radius: 5px;
@@ -165,7 +167,13 @@ body {
     box-sizing: border-box;
     
 }
-
+a{
+    text-decoration: none;
+    color: #070304;
+}
+.profile-options{
+   cursor: pointer;
+}
 .sellButton{
     display: inline-block;
   padding: 2px 4px;
@@ -257,3 +265,46 @@ input {
   margin-top: -10px;
   margin-bottom: 10px;
 }
+
+.my-orders {
+    
+    display: block; /* Display the My Orders section by default */
+  }
+  
+  .orders-container {
+    display: none;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .order {
+    flex: 0 0 calc(25% - 20px); /* Adjust as needed */
+    margin-bottom: 20px;
+    padding: 10px;
+    box-sizing: border-box; /* Include padding in the width calculation */
+  }
+  
+  .order img {
+    width: 130px;
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+  .order img:hover{
+    transform: scale(1.1);
+  }
+  .order-info {
+    margin-top: 5px;
+  }
+  
+  @media (max-width: 768px) {
+    .orders-container {
+        display: block; /* Display vertically on mobile */
+    }
+
+    .order {
+        flex: 0 0 100%; /* Take full width on mobile */
+        margin-bottom: 20px; 
+        
+    }
+}
+  
