@@ -1,0 +1,118 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.navbar {
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000; 
+} 
+
+.logo {
+    max-width: 200px;
+    display: block;
+    margin-right: auto; 
+    margin-left: 20px; 
+    z-index: 1001; /* Ensure it's above the fixed cart */
+}
+
+.icons {
+    margin-left: auto; 
+    margin-right: 20px; 
+}
+
+.icons a {
+    color: black;
+    font-size: 1.3em;
+    padding-right: 20px;
+}
+
+.search-bar {
+    margin-right: 20px; 
+}
+
+.search-bar form {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input[type=search] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    margin-right: 5px;
+}
+
+.search-bar button {
+    padding: 8px 12px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 11px;
+    color: white;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #0056b3;
+}
+section{
+    padding: 100px 50px;
+}
+.fixed-cart {
+
+    display: inline-block;
+    width:auto ;
+    padding: 50px;
+    margin-top: 100px; /* Adjusted */
+}
+
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 2.2em;
+    text-align: center;
+    font-weight: 700;
+}
+
+.item {
+    display:flex;
+    background-color: white;
+    display: inline-block;
+    justify-content:center ;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 50px;
+}
+
+.product {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.product img {
+    max-width: 150px; /* Adjusted */
+    max-height: 150px; /* Adjusted */
+}
+
+.product-details {
+    color: black;
+    font-size: 14px; /* Adjusted */
+    font-weight: 700;
+    margin: 10px;
+}

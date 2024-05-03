@@ -9,7 +9,8 @@
     <title>Your Cart</title>
 </head>
 <body> 
-    <div class="navbar">
+
+    <section class="navbar">
         <a href="Thrifting.html" class="logo">
             <img src="logo.jpg" width="125px">
         </a>
@@ -25,21 +26,81 @@
                 <input type="search" placeholder="Search..." name="search">
                 <button type="submit"><i class="fas fa-search"></i></button>
             </form>
-        </div>
-    </div>
+        </section>
 
-    <div class="container">
-        <div id="root"></div>
-        <div class="sidebar">
-            <div class="head"><p>My Cart</p></div>
-            <div id="cartItem">Your cart is empty</div>
-            <div class="foot">
-                <h3>Total</h3>
-                <h2 id="total">EGP 0.00</h2>
+       <!--
+            <div class="container">
+            <div id="root"></div>
+            <div class="sidebar">
+                <div class="head"><p>My Cart</p></div>
+                <div id="cartItem">Your cart is empty</div>
+                <div class="foot">
+                    <h3>Total</h3>
+                    <h2 id="total">EGP 0.00</h2>
             </div>
         </div>
-    </div>
+       --> 
 
+       <!--- <div class="fixed-cart">
+            <h1>Shopping Cart</h1>
+            <ul id="cart-items">
+                <li class="product">
+                    <img src="pinktshirt1.png">
+                    <div class="product-details">
+                        <h2>Pink Levis T-Shirt</h2>
+                        <p>Price: 900 LE</p>
+                        <p>Brand: Levis</p>
+                        <p>Size: Medium</p>
+                        <a href="cart.html"><button>Add To Cart</button></a>
+                    </div>
+                </li>
+                
+                <li>Fixed item</li>
+            </ul>
+        </div>
+    -->
+
+        <!--   <section class="fixed-cart" id="fixed">
+            <h1>shopping cart</h1>
+            <h2 class="yourcart">your cart</h2>
+            <div class="content">
+                <div class="items">
+                    <img src="pinktshirt1.png">
+                    <div class="product-details">
+                        <h2>Pink Levis T-Shirt</h2>
+                        <p>Price: 900 LE</p>
+                        <p>Brand: Levis</p>
+                        <p>Size: Medium</p>
+                        <a href="cart.html"><button>Add To Cart</button></a>
+                    </div>
+            
+            </div>
+        -->
+    <section class="fixed-cart" >
+        <h1 class="title">your added items</h1>
+        <div class="items">
+            <div class="product">
+                <img src="beij pants1.PNG" >
+                <div class="product-details">
+                    <h2>beij Denim</h2>
+                    <p>Price: 450 LE</p>
+                    <p>Brand: Zara</p>
+                    <p>Size: 34 EUR </p>
+                </div>
+            </div>
+        </div>
+        <div class="product">
+        <img src="wjeans1.PNG" >
+        <div class="product-details">
+            <h2>Blue Denim</h2>
+            <p>Price: 500 LE</p>
+            <p>Brand: Zara</p>
+            <p>Size: 32 EUR </p>
+        </div>
+     </div>
+    </section>
+    
+   
     <script src="cart.js"></script>
 </body>
 </html>
