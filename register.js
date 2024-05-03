@@ -60,8 +60,9 @@ document.addEventListener('DOMContentLoaded', function() {
         const isValid = validateForm(fname, lname, username, email, password);
 
         if (isValid) {
-            alert('Registration successful!');
+          
             registrationForm.reset(); 
+            window.location.href="thrifting.html";
         }
     });
 
