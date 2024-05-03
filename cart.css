@@ -7,10 +7,6 @@ body {
 }
 
 .navbar {
-    position: fixed; 
-    top: 0; 
-    left: 0; 
-    right: 0; 
     display: flex;
     align-items: center;
     padding: 20px;
@@ -22,7 +18,6 @@ body {
 .logo {
     max-width: 200px;
     display: block;
-    margin-right: auto; 
     margin-left: 20px; 
 }
 
@@ -64,4 +59,27 @@ body {
 
 .search-bar button:hover {
     background-color: #0056b3;
+}
+
+.container{
+    display: flex;
+    width: 70%;
+    margin: 0 auto; /* Centers the container */
+    margin-top: 80px; /* Adjust as needed */
+}
+
+#root {
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+.sidebar {
+    width: 40%; 
+    border-radius: 5px;
+    background-color: #eee;
+    margin-left: 20px; 
+    padding: 15px;
+    text-align: center;
 }
