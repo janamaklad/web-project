@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="Admin.css">
     <link rel="icon" href="favicon.png" type="image/png">
     <title>Second Chance</title>
@@ -11,13 +11,9 @@
 <body> 
 
     <div class="navbar">
-        <a href="Admin.css" class="logo">
+        <a href="Admin.html" class="logo">
             <img src="logo.jpg" width="125px">
         </a>
-        
-        <div class="icons">
-            <a href="profile.html"><i class="far fa-user"></i></a>
-        </div>
         
         <div class="search-bar">
             <form action="#">
@@ -27,19 +23,23 @@
         </div>
     </div>
 
-
-    <div class="image-container">
-        <img src="homepage.jpg"  class="navbar-image">
+    <div class="buttons-container">
+        <button onclick="location.href='dashboard.html'">Dashboard</button>
+        <button onclick="location.href='view_products.html'">View/Remove Products</button>
+        <button onclick="location.href='Sell.html'">Add Product</button>
+        <button onclick="location.href='Thrifting.html'">See Website from User View</button>
     </div>
 
-    <h2 class="categories-header">Shop By Category</h2>
-    <div class="categories">
-        <a href="women.html"><img src="ShopWomen.jpg" ></a>
-        <a href="men.html"><img src="ShopMen.jpg" ></a>
-        <a href="girls.html"><img src="ShopGirls.jpg" ></a>
-        <a href="boys.html"><img src="ShopBoys.jpg" ></a>
-        <a href="baby.html"><img src="ShopBaby.jpg" ></a>
-        <a href="Home.html"><img src="ShopHome.jpg" ></a>
+    <div class="categories-container">
+        <h2 class="categories-header">View By Category</h2>
+        <div class="categories">
+            <a href="AdminWomen.html"><img src="ShopWomen.jpg" ></a>
+            <a href="AdminWomen.html"><img src="ShopMen.jpg" ></a>
+            <a href="AdminGirls.html"><img src="ShopGirls.jpg" ></a>
+            <a href="AdminBoys.html"><img src="ShopBoys.jpg" ></a>
+            <a href="AdminBaby.html"><img src="ShopBaby.jpg" ></a>
+            <a href="AdminHome.html"><img src="ShopHome.jpg" ></a>
+        </div>
     </div>
             
 </body>

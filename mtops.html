@@ -3,87 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="products.css">
     <title>Top Wear Products</title>
 </head>
 <body>
-    <div class="navbar">
-        <a href="Thrifting.html" class="logo">
-            <img src="logo.jpg" width="125px">
-        </a>
-        
-        <div class="icons">
-            <a href="#profile"><i class="far fa-user"></i></a>
-            <a href="#Cart"><i class="fas fa-shopping-cart"></i></a>
-            <a href="#favorites"><i class="fas fa-heart"></i></a>
+    <div class="product">
+        <div class="product-title">Product 1</div>
+        <div class="buttons">
+            <button class="add-to-cart button">Add to Cart</button>
+            <button class="add-to-favorites button">Add to Favorites</button>
         </div>
-        
-        <div class="search-bar">
-            <form action="#">
-                <input type="search" placeholder="Search..." name="search">
-                <button type="submit"><i class="fas fa-search"></i></button>
-            </form>
-        </div>
+        <div class="message"></div>
     </div>
 
-    <h1>Men Top Wear</h1>
-    <div class="product" onclick="showModal('mbalmain1.PNG', ['mbalmain1.PNG', 'mbalmain2.PNG'], 'White Balmain T-Shirt', '1000 LE', 'Balmain','Medium')">
-        <img src="mbalmain1.PNG" >
-        <div class="product-details">
-            <h2>White Balmain T-Shirt</h2>
-            <p>Price: 1000 LE</p>
-            <p>Brand: Balmain</p>
-            <p>Size: Medium </p>
-            <a href="cart.html"><button>Add To Cart</button></a>
+    <div class="product">
+        <div class="product-title">Product 2</div>
+        <div class="buttons">
+            <button class="add-to-cart button">Add to Cart</button>
+            <button class="add-to-favorites button">Add to Favorites</button>
         </div>
+        <div class="message"></div>
     </div>
 
-    <div class="product" onclick="showModal('pinkshirt1.PNG', ['pinkshirt1.PNG', 'pinkshirt2.PNG'], 'pink levis T-Shirt', '900 LE', 'levis','Medium')">
-        <img src="pinktshirt1.png" >
-        <div class="product-details">
-            <h2> pink levis T-Shirt</h2>
-            <p>Price: 900 LE</p>
-            <p>Brand: levis</p>
-            <p>Size: Medium </p>
-            <a href="cart.html"><button>Add To Cart</button></a>
-        </div>
-    </div>
+    <!-- Add more products here -->
 
-    <div class="product" onclick="showModal('polotshirt1.PNG', ['polotshirt1.PNG'], 'White polo T-Shirt', '1,200 LE', 'polo','small')">
-        <img src="polotshirt1.png" >
-        <div class="product-details">
-            <h2>White polo T-Shirt</h2>
-            <p>Price: 1,200 LE</p>
-            <p>Brand: polo</p>
-            <p>Size: small </p>
-            <a href="cart.html"><button>Add To Cart</button></a>
-        </div>
-    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const addToFavoritesButtons = document.querySelectorAll('.add-to-favorites');
+            const messages = document.querySelectorAll('.message');
 
-    / <!-- Add more product -->
+            const favorites = new Set();
 
+            addToFavoritesButtons.forEach((button, index) => {
+                button.addEventListener('click', function () {
+                    const productTitle = this.closest('.product').querySelector('.product-title').textContent;
 
-    <div id="modal" class="modal" onclick="closeModal()">
-        <div class="modal-content" onclick="event.stopPropagation()">
-            <span class="close" onclick="closeModal()">&times;</span>
-            <div class="modal-images">
-                <img id="modal-img" src="" alt="">
-                <div class="thumbnails" id="thumbnails"></div>
-            </div>
-            <div class="product-info">
-                <h2 id="modal-title"></h2>
-                <p id="modal-price"></p>
-                <p id="modal-brand"></p>
-                <p id="modal-size"></p>
-                <a href="cart.html"><button>Add To Cart</button></a>
-            </div>
-            <div class="arrow-container">
-                <button class="prev" onclick="changeImage(-1)">&#10094;</button>
-                <button class="next" onclick="changeImage(1)">&#10095;</button>
-            </div>
-        </div>
-    </div>
-    <script src="products.js"></script>
+                    if (favorites.has(productTitle)) {
+                        displayMessage(messages[index], 'Already added to favorites');
+                    } else {
+                        favorites.add(productTitle);
+                        displayMessage(messages[index], 'Added to favorites');
+                    }
+
+                    updateButtonState(button, productTitle);
+                });
+            });
+
+            function displayMessage(messageElement, message) {
+                messageElement.textContent = message;
+                setTimeout(() => {
+                    messageElement.textContent = '';
+                }, 2000); // Clear the message after 2 seconds
+            }
+
+            function updateButtonState(button, productTitle) {
+                if (favorites.has(productTitle)) {
+                    button.textContent = 'Remove from Favorites';
+                } else {
+                    button.textContent = 'Add to Favorites';
+                }
+            }
+        });
+    </script>
 </body>
 </html>

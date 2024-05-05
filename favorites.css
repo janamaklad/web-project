@@ -1,0 +1,84 @@
+
+
+/* Global styles */
+.logo {
+    max-width: 200px;
+    display: block;
+    margin-right: auto; 
+    margin-left: 20px; 
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    margin: 0;
+}
+
+/* Product item styles */
+.product-item {
+    display: flex;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.product-item img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.product-details {
+    flex: 1;
+}
+
+.product-details h2 {
+    color: #333;
+}
+
+.product-details p {
+    margin: 5px 0;
+}
+
+.product-details button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+/* Favorites section styles */
+#favorites-section {
+    margin-top: 50px;
+}
+
+#favorites-section h2 {
+    color: #000000;
+}
+
+#favorites-list {
+    margin-top: 20px;
+}
+
+#favorites-list div {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+#favorites-list p {
+    color:#000000;
+    font-style: italic;
+}
+
