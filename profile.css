@@ -1,6 +1,6 @@
 
 body {
-
+   
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
@@ -155,9 +155,9 @@ body {
 }
 
 .profile{
-    height: 100vh; /* Set the height of the profile section to 100% of the viewport height */
-  overflow-y: scroll; /* Enable vertical scrolling */
- 
+    
+    overflow-y: scroll;
+    scroll-behavior:auto;
     padding: 20px;
     background-color: transparent;
     border-radius: 5px;
@@ -280,12 +280,12 @@ input {
   .order {
     flex: 0 0 calc(25% - 20px); /* Adjust as needed */
     margin-bottom: 20px;
-    padding: 10px;
+    padding: 6px;
     box-sizing: border-box; /* Include padding in the width calculation */
   }
   
   .order img {
-    width: 130px;
+    width: 150px;
     height: auto;
     transition: transform 0.3s ease;
   }
@@ -293,7 +293,10 @@ input {
     transform: scale(1.1);
   }
   .order-info {
-    margin-top: 5px;
+    margin-top: 3px;
+    padding: 4px;
+    font-weight: bold;
+    font-size: small;
   }
   
   @media (max-width: 768px) {
