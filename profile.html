@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="profile.css" >
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
- 
+    <link rel="stylesheet" href="visa.css">
    
 </head>
 <body>
@@ -99,7 +100,7 @@
                            
                             <div class="orders-container" id="history">
 
-                                <h1><b> Previously Purchased </b> <br></h1>
+                                <h1 style="display: block;"><b> Previously Purchased </b> </h1>
                               <div class="order">
                                 <img src="StradivariosDenim.jpeg" alt="Product Image">
                                 <div class="order-info">
@@ -143,17 +144,21 @@
                 <div class="option" id="payment-methods">
                     <div class="profile-options">
                         <div class="option" id="payment-methods">
-                          <h2>
-                            <span><i class="fa fa-money-check"></i></span>
-                            Payment Methods
-                          </h2>
+                            <h2>
+                                <span><i class="fa fa-money-check"></i></span>
+                                <a href="#">Payment Methods</a> 
+                            </h2>
                         </div>
-                      </div>
-                      
-                      <div id="visa" style="display: none;">
-                        <input type="radio" name="payment" id="visa-radio" checked>
-                        <label for="visa-radio">Visa</label>
-                      </div>
+                    </div>
+                
+                    <div id="visa" style="display: none;">
+                        
+                            <input type="radio" name="payment" id="visa-radio" checked>
+                            <label for="visa-radio">Visa</label>
+                        
+                    </div>
+                </div>
+                
                       
                       <div id="cash" style="display: none;">
                         <input type="radio" name="payment" id="cash-radio">
@@ -172,7 +177,9 @@
                             <button type="submit" class="sellButton">Submit</button>
                           </form>    
                       </div>
-                      
+                
+                
+                
                 <!--      <div id="cash-content" class="payment-content" style="display: none;">
                         <p>order payment with cash <span><i class="fas fa-money-bill"></i></span></p>
                       </div>
@@ -183,16 +190,18 @@
                 <div class="option">
                     <h2>
                         <span><i class="fas fa-address-book"></i></span>
-                        <a href="#ContactUs">Contact Us</a></h2>
+                        <a href="contactus.html">Contact Us</a></h2>
+                 
+                       
                 </div>
                 <div class="option">
                     <h2>
                        <span> <i class="fas fa-info-circle"></i> </span>
-                        <a href="#MyDetails">My Details</a></h2>
+                        <a href="#" id="viewDetails">My Details</a></h2>
                 </div>
     
                 <div class="option">
-                    <h2><button onclick="window.location.href='Sell.html'">Sell Items</button>
+                    <h2><button onclick="window.location.href='Sell.html'" class="sellButton">Sell Items</button>
                     </h2>
                 </div>
             </div>
