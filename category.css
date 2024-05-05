@@ -74,23 +74,45 @@ body {
 }
 
 
-.underline {
-    position: absolute;
-    bottom: 20px; 
-    height: 2px; 
-    background-color: blue; 
-    transition: left 0.3s, width 0.3s; }
-
-
-.category:hover {
-    background-color:#ddd; 
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: white;
+    border-radius: 5px;
 }
 
+.navbar {
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000; 
+} 
 
-.selected-category {
-    text-align: center;
-    margin-top: 30px;
+.navbar a {
+    text-decoration: none;
+    color: black;
+    padding: 5px 10px;
 }
+
+.navbar a.category:hover {
+    background-color: #ddd; 
+}
+
+.navbar a.category:visited {
+    text-decoration: underline;
+}
+
+.content {
+    padding-top: 70px; /* Adjust for navbar height */
+}
+
 
 .selected-category img {
     max-width: 100%;
@@ -117,62 +139,5 @@ body {
 .subcategories h2 a:hover {
     color: blue;
 }
-/* Existing CSS */
 
-.favorite {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    color: red;
-    cursor: pointer;
-}
 
-.favorite i {
-    font-size: 24px;
-}
-
-.favorite:hover {
-    color: #ff5555;
-}
-
-/* Updated CSS for modal arrows */
-
-.modal-content {
-    position: relative; /* Position the arrows relative to this container */
-}
-
-.prev, .next {
-    position: absolute; /* Position the arrows absolutely */
-    top: 50%; /* Vertically center */
-    transform: translateY(-50%); /* Correct position */
-    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent background */
-    border: none; /* Remove border */
-    cursor: pointer;
-    transition: background-color 0.3s;
-    font-size: 20px;
-    padding: 10px;
-}
-
-.prev {
-    left: 0; /* Left side */
-}
-
-.next {
-    right: 0; /* Right side */
-}
-
-.prev:hover, .next:hover {
-    background-color: rgba(255, 255, 255, 0.8); /* Darker background on hover */
-}
-
-/* Make modal smaller */
-
-.modal-content {
-    max-width: 80%; /* Reduce width */
-}
-
-#modal-img {
-    max-width: 100%; /* Ensure image doesn't overflow */
-}
-
-/* Existing CSS */
