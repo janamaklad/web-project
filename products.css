@@ -117,6 +117,7 @@ button {
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s;
+    
 }
 
 button:hover {
@@ -138,33 +139,21 @@ button:hover {
 
 .modal-content {
     background-color: #fefefe;
-    margin: auto; 
-    padding: 20px;
+    margin: auto;
+    padding: 20px; /* Add padding */
     border: 1px solid #888;
-    width: 80%; 
-    max-width: 600px; 
-    text-align: center; 
-    position: relative; 
-}
-
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
+    width: 300px; /* Set width */
+    max-width: 90%; /* Set maximum width */
+    text-align: center;
+    position: relative;
+    max-height: 90vh; /* Set maximum height */
+    overflow-y: auto; /* Enable vertical scrolling */
 }
 
 #modal-img {
     display: block;
-    margin: 0 auto; 
-    max-width: 100%; 
+    margin: 0 auto;
+    max-width: 100%;
     height: auto;
 }
 
@@ -188,7 +177,7 @@ button:hover {
     top: 50%;
     left: 100%;
     right: 50%;
-    margin-top: -20px; 
+    margin-top: -20px;
 }
 
 .prev, .next {
@@ -205,7 +194,7 @@ button:hover {
 }
 
 .prev {
-    left: -640px;
+    left: -322px;
 }
 
 .next {
@@ -217,3 +206,23 @@ button:hover {
     background-color: rgba(0, 0, 0, 0.7);
     color: white;
 }
+
+.product:hover .product-image {
+    transform: scale(0.8);
+    transition: transform 0.3s ease;
+}
+.close {
+    color: #aaa;
+    float: left; /* Float left to position on the left side */
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 10px; /* Add some margin to the right for spacing */
+    top: 32px;
+}
+
+/* Add special cursor when hovering over the close button */
+.close:hover {
+    cursor: pointer;
+}
+
