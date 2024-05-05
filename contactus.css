@@ -12,19 +12,6 @@ input[type=text], select, textarea {
   }
   
   /* Style the submit button with a specific background color etc */
-  input[type=submit] {
-    background-color: #1f5997;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  /* When moving the mouse over the submit button, add a darker green color */
-  input[type=submit]:hover {
-    background-color: #007bff;
-  }
   
   /* Add a background color and some padding around the form */
  
@@ -52,6 +39,19 @@ input[type=text], select, textarea {
 #back_btn:hover {
     background-color: #0056b3;
 }
+
+#submit_btn:hover {
+    background-color: #0056b3;
+}
+#message {
+    display: none;
+    padding: 10px;
+    margin-top: 10px;
+    background-color:black; /* black */
+    color: white;
+    border-radius: 5px;
+}
+
 #submit-btn {
     display: inline-block;
     padding: 10px 20px;
@@ -65,3 +65,4 @@ input[type=text], select, textarea {
 #submit-btn:hover {
     background-color: #0056b3;
 }
+
