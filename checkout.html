@@ -3,32 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="category.css">
-    <title>checkout</title>
+    <title>checkout Page</title>
+    <link rel="stylesheet" href="checkout.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+        </style>
 </head>
 <body>
 
-  <!--
-<img src="homepage.jpg" class="img-backgrnd">
-  -->  
+    <div class="image-backgrnd"></div>
+    <div class="blur-overlay"></div>
 
-  
+
     <div class="container">
-        <h2>checkout form</h2>
-        <form id="signin">
-            <div class="form-group">
-               
-                <input type="email" id="mail" name="email" required placeholder="email">
+        <h2>checkout Form</h2>
+        <form id="checkout-form">
+            <form>
+                <div class="contact">
+                    <h3>contact</h3>
+                    <div class="form-group">
+                        <input type="email,number" id="email" name="email" required>
+                        <label for="email">E-mail or phone number*</label>
+                        <span id="email-error" class="error"></span>
+                    </div>
+                </div>
+            </form>
+           <form>
+            <div class="delivery">
+                <h3>delivery</h3>
+                <div class="form-group">
+                    <div class="combobox"> 
+                        <input type="text" id="country" name="country" required>
+                        <label for="country">country/governement
+                            <select name="country" id="country">
+                                <option value=" "> </option>
+                                <option value=" egypt">egypt</option>
+                              </select>
+                        </label>
+                        <span id="country-error" class="error"></span>
+                    </div>
+                    </div>
+                   
+                <div class="form-group">
+                    <input type="text" id="fname" name="fname" required>
+                    <label for="fname">First Name</label>
+                    <span id="fname-error" class="error"></span>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="lname" name="lname" required>
+                    <label for="lname">Last Name</label>
+                    <span id="lname-error" class="error"></span>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="address" name="address" required>
+                    <label for="address">address</label>
+                    <span id="address-error" class="error"></span>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="apartment" name="apartment" required>
+                    <label for="apartment">apartment,suite,etc.(optional)</label>
+                    <span id="apartment-error" class="error"></span>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="city" name="city" required>
+                    <label for="city">city</label>
+                    <span id="city-error" class="error"></span>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="governement" name="governement" required>
+                    <label for="governement">governement</label>
+                    <span id="governement-error" class="error"></span>
+                </div>
+                
+                <div class="form-group">
+                    <input type="number" id="phone" name="phone" required>
+                    <label for="phone">phone</label>
+                    <span id="phone-error" class="error"></span>
+                </div>
+                <form>
+                    <label for="info" class="checkbox-label">
+                        <input type="checkbox" id="info" name="info" value="info">
+                        save this information for next time
+                    </label>
+                  </form>
             </div>
-            <div class="form-group">
-             
-                <input type="text" id="fullname" name="fullname" required placeholder="fullname">
-            </div>
-           
-           
-
+            
+            <button type="submit">CREATE ACCOUNT</button>
+           </form>
+            
         </form>
     </div>
+    <script src="checkout.js"></script>
 </body>
 </html>

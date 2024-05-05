@@ -32,7 +32,7 @@ function displayCart() {
                 <p>${item.size}</p>
             </div>
         `;
-        totalPrice += parseFloat(item.price); // Assuming price is a string, convert it to a number
+        totalPrice += parseFloat(item.price); // Assuming price is a string, convert it to a numberr
     });
 
     document.getElementById('cartItem').innerHTML = cartItemHTML;
