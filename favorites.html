@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Wear Products</title>
+    <link rel="stylesheet" href="products.css"> <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="favorites.css"> <!-- Link to your CSS file -->
+   
+</head>
+
+
+<body>
+    <div class="navbar">
+        <a href="Thrifting.html" class="logo">
+            <img src="logo.jpg" width="125px">
+        </a>
+        </div>
+   <!-- Example product item -->
+ 
+    <!-- Favorites section -->
+<div id="favorites-section">
+    <h2> Favorites</h2>
+    <div id="favorites-list">
+        <!-- Favorites will be dynamically added here -->
+    </div>
+</div>
+ 
+<div class="product-item">
+    
+    <img src="floralbag1.PNG" >
+        <div class="product-details">
+            <h2>floral bag</h2>
+            <p>Price: 700 LE</p>
+            <p>Brand:parfios</p>
+    
+            <a href="cart.html"><button>Add To Cart</button></a>
+     
+        </div>
+    </div>
+    <div class="product-item">
+    <img src="nike leggings.PNG" >
+    <div class="product-details">
+        <h2>nike leggings</h2>
+        <p>Price: 1,100 LE</p>
+        <p>Brand:Nike</p>
+        <p>Size: xs/s </p>
+        <a href="cart.html"><button>Add To Cart</button></a>
+  
+    </div>
+</div>
+<div class="product-item">
+<img src="Leather Chunky Loafers1.PNG" >
+<div class="product-details">
+    <h2>Leather Chunky Loafers</h2>
+    <p>Price: 700 LE</p>
+    <p>Brand:dejavu </p>
+    <p>Size: 39 </p>
+    <a href="cart.html"><button>Add To Cart</button></a>
+
+</div>
+</div>
+
+</body> 
+<script>
+    // Function to toggle favorite status
+function toggleFavorite(button) {
+    const productItem = button.closest(".product-item");
+    const productName = productItem.querySelector("h2").innerText.trim();
+    const favorites = JSON.parse(localStorage.getItem("favorites")) || [];
+
+    const index = favorites.indexOf(productName);
+    if (index === -1) {
+        // Add to favorites
+        favorites.push(productName);
+        button.textContent = "Remove from Favorites";
+    } else {
+        // Remove from favorites
+        favorites.splice(index, 1);
+        button.textContent = "Add to Favorites";
+    }
+
+    // Update localStorage
+    localStorage.setItem("favorites", JSON.stringify(favorites));
+
+    // Update favorites display
+    displayFavorites();
+}
+
+// Function to display favorites
+function displayFavorites() {
+    const favoritesList = JSON.parse(localStorage.getItem("favorites")) || [];
+    const favoritesContainer = document.getElementById("favorites-list");
+    favoritesContainer.innerHTML = "";
+
+    if (favoritesList.length === 0) {
+        const emptyMsg = document.createElement("p");
+        emptyMsg.textContent = "No favorites added yet.";
+        favoritesContainer.appendChild(emptyMsg);
+    } else {
+        favoritesList.forEach(function(productName) {
+            const productItem = document.createElement("div");
+            productItem.textContent = productName;
+            favoritesContainer.appendChild(productItem);
+        });
+    }
+}
+
+// Function to initialize
+function initialize() {
+    // Attach click event to favorite buttons
+    const favoriteButtons = document.querySelectorAll(".favorite-btn");
+    favoriteButtons.forEach(function(button) {
+        button.addEventListener("click", function() {
+            toggleFavorite(button);
+        });
+    });
+
+    // Display favorites
+    displayFavorites();
+}
+
+// Call initialize function when the page loads
+window.onload = function() {
+    initialize();
+};
+
+</script>
+
+</html>
