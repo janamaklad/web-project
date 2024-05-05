@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="products.css">
+    <title>Bags Products</title>
+</head>
+<body>
+    <div class="navbar">
+        <a href="Thrifting.html" class="logo">
+            <img src="logo.jpg" width="125px">
+        </a>
+        
+        <div class="icons">
+            <a href="#profile"><i class="far fa-user"></i></a>
+            <a href="#Cart"><i class="fas fa-shopping-cart"></i></a>
+            <a href="#favorites"><i class="fas fa-heart"></i></a>
+        </div>
+        
+        <div class="search-bar">
+            <form action="#">
+                <input type="search" placeholder="Search..." name="search">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+        </div>
+    </div>
+
+    <h1>Women bags </h1>
+    <div class="product" onclick="showModal('blackbag1.PNG', ['blackbag1.PNG'], 'black guess bag', '2,000 LE', 'guess')">
+        <img src="blackbag1.PNG" >
+        <div class="product-details">
+            <h2>black guess bag</h2>
+            <p>Price: 2,000 LE</p>
+            <p>Brand:guess</p>
+    
+            <a href="cart.html"><button>Add To Cart</button></a>
+        </div>
+    </div>
+
+   
+    <div class="product" onclick="showModal('floralbag1.PNG', ['floralbag1.PNG','floralbag2.PNG'], 'floral bag', '700 LE', 'parfois')">
+        <img src="floralbag1.PNG" >
+        <div class="product-details">
+            <h2>floral bag</h2>
+            <p>Price: 700 LE</p>
+            <p>Brand:parfios</p>
+    
+            <a href="cart.html"><button>Add To Cart</button></a>
+        </div>
+    </div>
+
+
+
+    <div class="product" onclick="showModal('crochetbag1.PNG', ['crochetbag1.PNG','crochetbag2.PNG'], 'crochet bag', '550 LE', 'Mango')">
+        <img src="crochetbag1.PNG" >
+        <div class="product-details">
+            <h2>crochet bag</h2>
+            <p>Price: 550 LE</p>
+            <p>Brand:Mango</p>
+    
+            <a href="cart.html"><button>Add To Cart</button></a>
+        </div>
+    </div>
+    / <!-- Add more product -->
+
+
+    <div id="modal" class="modal" onclick="closeModal()">
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div class="modal-images">
+                <img id="modal-img" src="" alt="">
+                <div class="thumbnails" id="thumbnails"></div>
+            </div>
+            <div class="product-info">
+                <h2 id="modal-title"></h2>
+                <p id="modal-price"></p>
+                <p id="modal-brand"></p>
+                <p id="modal-size"></p>
+                <a href="cart.html"><button>Add To Cart</button></a>
+            </div>
+            <div class="arrow-container">
+                <button class="prev" onclick="changeImage(-1)">&#10094;</button>
+                <button class="next" onclick="changeImage(1)">&#10095;</button>
+            </div>
+        </div>
+    </div>
+    <script src="products.js"></script>
+</body>
+</html>

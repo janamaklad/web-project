@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="products.css">
+    <title>Outer wear Products</title>
+</head>
+<body>
+    <div class="navbar">
+        <a href="Thrifting.html" class="logo">
+            <img src="logo.jpg" width="125px">
+        </a>
+        
+        <div class="icons">
+            <a href="#profile"><i class="far fa-user"></i></a>
+            <a href="#Cart"><i class="fas fa-shopping-cart"></i></a>
+            <a href="#favorites"><i class="fas fa-heart"></i></a>
+        </div>
+        
+        <div class="search-bar">
+            <form action="#">
+                <input type="search" placeholder="Search..." name="search">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+        </div>
+    </div>
+
+    <h1>Women Outer Wear</h1>
+    <div class="product" onclick="showModal('denim jacket1.PNG', ['denim jacket1.PNG', 'denim jacket2.PNG', 'denim jacket3.PNG'], 'denim jacket', '800 LE', 'Bersheka','Medium')">
+        <img src="denim jacket1.PNG" >
+        <div class="product-details">
+            <h2>denim jacket</h2>
+            <p>Price: 800 LE</p>
+            <p>Brand:Bersheka</p>
+            <p>Size: Medium </p>
+            <a href="cart.html"><button>Add To Cart</button></a>
+        </div>
+    </div>
+
+    <div class="product" onclick="showModal('brown cardigan1.PNG', ['brown cardigan1.PNG', 'brown cardigan2.PNG'], 'brown cardigan', '500 LE', 'defacto','free-size')">
+        <img src="brown cardigan1.PNG" >
+        <div class="product-details">
+            <h2>brown cardigan1</h2>
+            <p>Price: 500 LE</p>
+            <p>Brand:defacto</p>
+            <p>Size: free-size </p>
+            <a href="cart.html"><button>Add To Cart</button></a>
+        </div>
+    </div>
+
+
+    <div class="product" onclick="showModal('grey coat1.PNG', ['grey coat1.PNG', 'grey coat2.PNG'], 'grey coat1', '1,400 LE', 'Stradivarius','Small')">
+        <img src="grey coat1.png" >
+        <div class="product-details">
+            <h2>grey coat1</h2>
+            <p>Price: 1,400 LE</p>
+            <p>Brand:Stradivarius</p>
+            <p>Size: Small </p>
+            <a href="cart.html"><button>Add To Cart</button></a>
+        </div>
+    </div>
+   
+
+
+    / <!-- Add more product -->
+
+
+    <div id="modal" class="modal" onclick="closeModal()">
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div class="modal-images">
+                <img id="modal-img" src="" alt="">
+                <div class="thumbnails" id="thumbnails"></div>
+            </div>
+            <div class="product-info">
+                <h2 id="modal-title"></h2>
+                <p id="modal-price"></p>
+                <p id="modal-brand"></p>
+                <p id="modal-size"></p>
+                <a href="cart.html"><button>Add To Cart</button></a>
+            </div>
+            <div class="arrow-container">
+                <button class="prev" onclick="changeImage(-1)">&#10094;</button>
+                <button class="next" onclick="changeImage(1)">&#10095;</button>
+            </div>
+        </div>
+    </div>
+    <script src="products.js"></script>
+</body>
+</html>

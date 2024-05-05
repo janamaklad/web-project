@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="products.css">
+    <title>shoes wear Products</title>
+</head>
+<body>
+    <div class="navbar">
+        <a href="Thrifting.html" class="logo">
+            <img src="logo.jpg" width="125px">
+        </a>
+        
+        <div class="icons">
+            <a href="#profile"><i class="far fa-user"></i></a>
+            <a href="#Cart"><i class="fas fa-shopping-cart"></i></a>
+            <a href="#favorites"><i class="fas fa-heart"></i></a>
+        </div>
+        
+        <div class="search-bar">
+            <form action="#">
+                <input type="search" placeholder="Search..." name="search">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+        </div>
+    </div>
+
+    <h1>Women shoes wear</h1>
+    <div class="product" onclick="showModal('tommy jeans sneakers1.PNG', ['tommy jeans sneakers1.PNG', 'tommy jeans sneakers2.PNG', 'tommy jeans sneakers3.PNG'], 'tommy jeans sneakers', '2,200 LE', 'tommy jeans','38')">
+        <img src="tommy jeans sneakers1.PNG" >
+        <div class="product-details">
+            <h2>tommy jeans sneakers</h2>
+            <p>Price: 2,200 LE</p>
+            <p>Brand:tommy jeans </p>
+            <p>Size: 38 </p>
+            <a href="cart.html"><button>Add To Cart</button></a>
+        </div>
+    </div>
+
+
+    <div class="product" onclick="showModal('Leather Chunky Loafers1.PNG', ['Leather Chunky Loafers1.PNG', 'Leather Chunky Loafers2.PNG'], 'Leather Chunky Loafers', '700 LE', 'dejavu','39')">
+        <img src="Leather Chunky Loafers1.PNG" >
+        <div class="product-details">
+            <h2>Leather Chunky Loafers</h2>
+            <p>Price: 700 LE</p>
+            <p>Brand:dejavu </p>
+            <p>Size: 39 </p>
+            <a href="cart.html"><button>Add To Cart</button></a>
+        </div>
+    </div>
+
+
+    <div class="product" onclick="showModal('Louis Vuitton Pool Pillow1.PNG', ['Louis Vuitton Pool Pillow1.PNG', 'Louis Vuitton Pool Pillow2.PNG'], 'Louis Vuitton Pool Pillow', '10,000 LE', 'Louis Vuitton','38')">
+        <img src="Louis Vuitton Pool Pillow1.PNG" >
+        <div class="product-details">
+            <h2>Louis Vuitton Pool Pillow</h2>
+            <p>Price: 10,000 LE</p>
+            <p>Brand:Louis Vuitton </p>
+            <p>Size: 38 </p>
+            <a href="cart.html"><button>Add To Cart</button></a>
+        </div>
+    </div>
+
+    
+   
+
+
+    / <!-- Add more product -->
+
+
+    <div id="modal" class="modal" onclick="closeModal()">
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div class="modal-images">
+                <img id="modal-img" src="" alt="">
+                <div class="thumbnails" id="thumbnails"></div>
+            </div>
+            <div class="product-info">
+                <h2 id="modal-title"></h2>
+                <p id="modal-price"></p>
+                <p id="modal-brand"></p>
+                <p id="modal-size"></p>
+                <a href="cart.html"><button>Add To Cart</button></a>
+            </div>
+            <div class="arrow-container">
+                <button class="prev" onclick="changeImage(-1)">&#10094;</button>
+                <button class="next" onclick="changeImage(1)">&#10095;</button>
+            </div>
+        </div>
+    </div>
+    <script src="products.js"></script>
+</body>
+</html>

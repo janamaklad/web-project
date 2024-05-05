@@ -9,7 +9,8 @@
     <title>Your Cart</title>
 </head>
 <body> 
-    <div class="navbar">
+
+    <section class="navbar">
         <a href="Thrifting.html" class="logo">
             <img src="logo.jpg" width="125px">
         </a>
@@ -25,21 +26,74 @@
                 <input type="search" placeholder="Search..." name="search">
                 <button type="submit"><i class="fas fa-search"></i></button>
             </form>
-        </div>
-    </div>
+        </section>
 
-    <div class="container">
-        <div id="root"></div>
-        <div class="sidebar">
-            <div class="head"><p>My Cart</p></div>
-            <div id="cartItem">Your cart is empty</div>
-            <div class="foot">
-                <h3>Total</h3>
-                <h2 id="total">EGP 0.00</h2>
+       <!--
+            <div class="container">
+            <div id="root"></div>
+            <div class="sidebar">
+                <div class="head"><p>My Cart</p></div>
+                <div id="cartItem">Your cart is empty</div>
+                <div class="foot">
+                    <h3>Total</h3>
+                    <h2 id="total">EGP 0.00</h2>
             </div>
         </div>
-    </div>
+       --> 
 
+    
+
+    <section class="fixed-cart" >
+        <h1 class="title">your added items</h1>
+        <div class="items">
+            <div class="product">
+                <img src="beij pants1.PNG" >
+                <div class="product-details">
+                    <h2>beij Denim</h2>
+                    <p>Price: 450 LE</p>
+                    <p>Brand: Zara</p>
+                    <p>Size: 34 EUR </p>
+                </div>
+            </div>
+            <div class="quantity">
+                <button class="minus-btn">-</button>
+                <input type="number" id="quantity" value="1" min="1">
+                <button class="plus-btn">+</button>
+            </div>
+        </div>
+        <div class="product">
+        <img src="wjeans1.PNG" >
+        <div class="product-details">
+            <h2>Blue Denim</h2>
+            <p>Price: 500 LE</p>
+            <p>Brand: Zara</p>
+            <p>Size: 32 EUR </p>
+        </div>
+     </div>
+     <div class="quantity">
+        <button class="minus-btn">-</button>
+        <input type="number" id="quantity" value="1" min="1">
+        <button class="plus-btn">+</button>
+    </div>
+    </section>
+    
+    
+    
+    
+   
+   
+    <div class="fixed-bottom-bar">
+        <div class="total">
+            Total Price: <span id="total-price">1000 LE</span>
+        </div>
+        <div>
+            <a href="updatecart.html"><button class="updatecart">update cart</button></a>
+            <a href="checkout.html"><button class="checkout">checkout</button></a>
+        </div>
+    </div>
+           
+            
+   
     <script src="cart.js"></script>
 </body>
 </html>

@@ -1,6 +1,7 @@
 let currentIndex = 0;
 
 function showModal(primaryImage, images, title, price, brand, size) {
+    document.querySelector('.navbar').style.display = 'none';
     currentIndex = 0;
     document.getElementById('modal-title').innerText = title;
     document.getElementById('modal-price').innerText = 'Price: ' + price;
@@ -38,9 +39,11 @@ function changeImage(direction) {
 
 function closeModal() {
     document.getElementById('modal').style.display = 'none';
+    document.querySelector('.navbar').style.display = 'flex';
 }
 
 function buyNow(productName) {
     alert("You are about to buy: " + productName);
 
 }
+
