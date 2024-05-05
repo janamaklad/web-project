@@ -21,18 +21,18 @@
         <div class="icons">
             <a href="profile.html?signedin=true" id="profileLink"><i class="far fa-user"></i></a>
             <a href="#Cart"><i class="fas fa-shopping-cart"></i></a>
-            <a href="#Favorites"> <i class="fas fa-heart"></i></a>
+            <a href="#favorites"><i class="fas fa-heart"></i></a>
         </div>
         
         <div class="search-bar">
             <form action="#">
-                <input type="search" placeholder="What are you looking for?" name="search">
+                <input type="search" placeholder="Search..." name="search">
                 <button type="submit"><i class="fas fa-search"></i></button>
             </form>
         </div>
         
-            <button onclick="document.getElementById('signInForm').style.display='block'">Sign In</button>
-            <button onclick="document.getElementById('registerForm').style.display='block'">Register</button>
+      <!--      <button onclick="document.getElementById('signInForm').style.display='block'">Sign In</button>
+            <button onclick="window.location.href='register.html'">Register</button>
         
         
       <div id="signInForm" class="form-popup" style="display: none;">
@@ -54,7 +54,7 @@
             </form>
         </div>
     
-        <div id="registerForm" class="form-popup" style="display: none;">
+    <div id="registerForm" class="form-popup" style="display: none;">
             <form class="form-container" >
                 <h2>Register</h2>
                 <label for="newUsername">Username:</label><br>
@@ -69,9 +69,8 @@
                 <button type="submit" class="btn">Register</button>
                 <button type="button" class="btn cancel" onclick="document.getElementById('registerForm').style.display='none'">Close</button>
             </form>
-        </div>
-    
-        <div id="forgotPasswordForm" class="form-popup" style="display: none;">
+        </div> 
+      <div id="forgotPasswordForm" class="form-popup" style="display: none;">
             <form class="form-container">
                 <h2>Forgot Password</h2>
                 <p>Please enter your email address to receive a password reset link.</p>
@@ -81,7 +80,7 @@
                 <button type="submit" class="btn">Send Reset Link</button>
                 <button type="button" class="btn cancel" onclick="closeForm('forgotPasswordForm')">Close</button>
             </form>
-        </div>
+        </div>-->    
 
 
         <section class="profile">
@@ -193,10 +192,12 @@
                 </div>
     
                 <div class="option">
-                    <h2><button class="sellButton" onclick="sellItems()">Sell Items</button></h2>
+                    <h2><button onclick="window.location.href='Sell.html'">Sell Items</button>
+                    </h2>
                 </div>
             </div>
-   <div class="recommend">
+
+   <!--<div class="recommend">
     <h1 style="display: block;"><b> Just For You!</b></h1>
     <div class="order">
         <h2><b>Orange Crochet Top</b></h2>
@@ -208,7 +209,7 @@
         <p class="condition">Condition: Brand New</p>
         <p class="date">Date: 2024-05-02</p>
     </div>
-   </div>    
+   </div> -->    
     </section>   
 
 
