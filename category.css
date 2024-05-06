@@ -109,6 +109,44 @@ body {
 }
 
 
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.navbar {
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000; 
+} 
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+    padding: 5px 10px;
+}
+
+.navbar a.category:hover {
+    background-color: #ddd; 
+}
+
+
+.selected-category {
+    text-align: center;
+    margin-top: 30px;
+}
+
 .selected-category img {
     max-width: 100%;
     height: auto;
@@ -189,6 +227,9 @@ body {
 }
 .landscape-rec-2{
     background-image: url(landscapemen.jpg);
+}
+.landscape-rec-3{
+    background-image: url(landscapegirls222.jpg);
 }
 
 .aboutus{
