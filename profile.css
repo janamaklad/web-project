@@ -7,6 +7,12 @@ body {
     border-radius: 5px;
   
 }
+h1 {
+  text-align: center;
+  margin-top: 10px; /* Adjust the margin-top as needed */
+  size: 5em;
+}
+
 
 .navbar {
   position: fixed; 
@@ -60,6 +66,7 @@ body {
   border: 1px solid #ccc;
   border-radius: 7px;
   margin-right: 5px;
+  margin-top: 9px;
 }
 
 .search-bar button {
@@ -74,70 +81,6 @@ body {
 .search-bar button:hover {
   background-color: #0056b3;
 }
-
-/* .register-btn, .signin-btn {
-    padding: 10px 20px;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    margin: 0 10px;
-    border-radius: 5px;
-    border: 2px solid white;
-    color: white;
-}
-
-.register-btn:hover, .signin-btn:hover {
-    background-color: transparent;
-    color: #0056b3;
-}
- 
-.form-popup {
-    display: none;
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,0.5);
-    z-index: 1;
-}
-
-
-.form-container {
-    background-color: #fefefe;
-    margin: 10% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-    max-width: 400px;
-}
-
-
-.form-container .cancel {
-    color: white;
-    background-color: red;
-    border: none;
-    cursor: pointer;
-    padding: 8px 12px;
-    margin-top: 10px;
-    width: 100%;
-}
-
-
-.form-container .btn {
-    background-color: #4CAF50;
-    color: white;
-    padding: 8px 12px;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-    margin-top: 10px;
-}
-
-
-.form-container .btn:hover, .open-button:hover {
-    opacity: 0.8;
-}  */
 
 .profile{
     height: 100vh; /* Set the height of the profile section to 100% of the viewport height */
@@ -295,4 +238,6 @@ input {
         
     }
 }
+
+
   

@@ -1,8 +1,4 @@
-.bebas-neue-regular {
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
+
 
 body {
     margin: 0;
@@ -109,6 +105,7 @@ body {
 }
 
 
+
 .selected-category img {
     max-width: 100%;
     height: auto;
@@ -120,7 +117,7 @@ body {
 
 .subcategories {
     position: absolute;
-    top:85%;
+    top:83%;
     width:100%;
    padding-top: 2px;
    padding-left: 2px;
@@ -189,6 +186,18 @@ body {
 }
 .landscape-rec-2{
     background-image: url(landscapemen.jpg);
+}
+.landscape-rec-3{
+    background-image: url(landscapegirls222.jpg);
+}
+.landscape-rec-4{
+    background-image: url(landscapeboys.jpg);
+}
+.landscape-rec-5{
+    background-image: url(landscapebaby.jpg);
+}
+.landscape-rec-6{
+    background-image: url(landscapehome2.jpg);
 }
 
 .aboutus{
