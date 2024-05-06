@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="Admin.css">
+
+    <title>Top Wear Products</title>
+    <link rel="stylesheet" href="AdminProducts.css"> <!-- Link to your CSS file -->
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="Thrifting.html" class="logo">
+            <img src="logo.jpg" width="125px">
+        </a>
+        
+        <div class="icons">
+            <a href="#profile"><i class="far fa-user"></i></a>
+            <a href="#Cart"><i class="fas fa-shopping-cart"></i></a>
+            <a href="#favorites"><i class="fas fa-heart"></i></a>
+          
+
+        </div>
+        
+        <div class="search-bar">
+            <form action="#">
+                <input type="search" placeholder="Search..." name="search">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+        </div>
+    </div>
+
+    <h1>Women Top Wear</h1>
+    <div class="product" onclick="showModal('yellowShirt1.jpg', ['yellowShirt1.jpg', 'yellowShirt2.PNG'], 'Oversized Yellow Shirt', '350 LE', 'H&M','Medium')">
+        <img src="yellowShirt1.jpg" >
+        <div class="product-details">
+            <h2>Oversized Yellow Shirt</h2>
+            <p>Price: 350 LE</p>
+            <p>Brand: H&M</p>
+            <p>Size: Medium </p>
+            <button onclick="removeProduct('yellowShirt1.jpg', 'Oversized Yellow Shirt', '350 LE', 'H&M', 'Medium')">Remove</button>
+        </div>
+    </div>
+    <div class="product" onclick="showModal('offshoulder1.PNG', ['offshoulder1.PNG', 'offshoulder2.PNG'], 'Army Offshoulder', '300 LE', 'LcWakiki','Small')">
+        <img src="offshoulder1.PNG" >
+        <div class="product-details">
+            <h2>Army Offshoulder</h2>
+            <p>Price: 300 LE</p>
+            <p>Brand: LcWakiki</p>
+            <p>Size: Small </p>
+            <button onclick="removeProduct('offshoulder1.PNG', 'Army Offshoulder', '300 LE', 'LcWakiki', 'Small')">Remove</button>
+           
+            
+        </div>
+    </div>
+    <!-- Add more products -->
+
+
+    <div id="modal" class="modal" onclick="closeModal()">
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div class="modal-images">
+                <img id="modal-img" src="" alt="">
+                <div class="thumbnails" id="thumbnails"></div>
+            </div>
+            <div class="product-info">
+                <h2 id="modal-title"></h2>
+                <p id="modal-price"></p>
+                <p id="modal-brand"></p>
+                <p id="modal-size"></p>
+           <!--     <button onclick="removeProduct()">Add To Cart</button> -->
+            </div>
+            <div class="arrow-container">
+                <button class="prev" onclick="changeImage(-1)">&#10094;</button>
+                <button class="next" onclick="changeImage(1)">&#10095;</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        // Simulating admin login state
+        let isAdminLoggedIn = true; // Set to true to simulate admin logged in
+
+        function addToCartOrRemove(image, title, price, brand, size) {
+    if (isAdminLoggedIn) {
+        // Show confirmation message
+        removeProductConfirmation();
+        
+        // Remove the product from the page
+        console.log("Product removed:", title);
+        // Here you can implement the logic to actually remove the product
+    } else {
+        // Perform add to cart action
+        console.log("Product added to cart:", title);
+        // Here you can implement the logic to add the product to cart
+    }
+}
+
+
+       
+    </script>
+    <script src="remove.js"></script>
+    <script src="products.js"></script>
+</body>
+</html>
