@@ -10,10 +10,14 @@
     <div class="container">
     <div class="sidebar">
         <h2>Admin Dashboard</h2>
+        
         <ul>
             <li><a href="#" onclick="manage('products')">Manage Products</a></li>
             <li><a href="#" onclick="manage('users')">Manage Users</a></li>
             <li><a href="#" onclick="manage('orders')">Manage Orders</a></li>
+            <div class="bottom-element">
+                <a href="admin.html" class="backButton">Back</a>
+            </div> 
         </ul>
     </div>
     <div class="panel">
@@ -39,13 +43,13 @@
         <div id="orders" class="tab">
             <h3>Manage Orders</h3>
             <div class="options">
-                <button class="option">View</button>
+                <button class="option" onclick="window.location.href='viewOrders.html'">View</button>
                 <button class="option">Add</button>
                 <button class="option">Edit</button>
                 <button class="option">Remove</button>
             </div>
         </div>
-    </div>
+        
 </div>
 </div>
     <script src="dashboard.js"></script>
