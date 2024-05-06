@@ -55,9 +55,10 @@ document.addEventListener('DOMContentLoaded', function() {
         const lname = document.getElementById('lname').value;
         const username = document.getElementById('username').value;
         const email = document.getElementById('email').value;
+        const num= document.getElementById('num').value;
         const password = document.getElementById('password').value;
 
-        const isValid = validateForm(fname, lname, username, email, password);
+        const isValid = validateForm(fname, lname, username, email, num, password);
 
         if (isValid) {
           
@@ -66,7 +67,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    function validateForm(fname, lname, username, email, password) {
+    function validateForm(fname, lname, username, email, num, password) {
         let isValid = true;
 
         if (fname.trim() === '') {
@@ -118,6 +119,16 @@ document.addEventListener('DOMContentLoaded', function() {
          else {
             removeError('email');
         }
+        }
+
+        if(num.trim()===''){
+            showError('phone','A phone number is required');
+            isValid=false;
+        }else if(num.length!==10){
+            showError('num','Your phone number must be 10 digits');
+            isValid=false;
+        }else{
+            removeError('num');
         }
 
         if (password.trim() === '') {

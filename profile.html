@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,8 +8,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="profile.css" >
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
- 
-   
+    <link rel="stylesheet" href="visa.css">
+<link rel="stylesheet" href="products.css">   
 </head>
 <body>
 
@@ -21,7 +22,7 @@
         <div class="icons">
             <a href="profile.html?signedin=true" id="profileLink"><i class="far fa-user"></i></a>
             <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
-            <a href="#favorites"><i class="fas fa-heart"></i></a>
+            <a href="favorites.html"><i class="fas fa-heart"></i></a>
         </div>
         
         <div class="search-bar">
@@ -31,57 +32,6 @@
             </form>
         </div>
         
-      <!--      <button onclick="document.getElementById('signInForm').style.display='block'">Sign In</button>
-            <button onclick="window.location.href='register.html'">Register</button>
-        
-        
-      <div id="signInForm" class="form-popup" style="display: none;">
-            <form class="form-container"  >
-               
-                <label for="username">Username:</label><br>
-                <input type="text" placeholder="Enter Username" name="username" required><br>
-    
-                <label for="password">Password:</label><br>
-                <input type="password" placeholder="Enter Password" name="password" required><br>
-    
-                <input type="checkbox" id="rememberMe" name="rememberMe">
-                <label for="rememberMe">Remember Me</label><br>
-    
-                <a href="#" onclick="openForgotPassword()">Forgot Password?</a><br>
-    
-                <button type="submit" class="btn">Sign In</button>
-                <button type="button" class="btn cancel" onclick="document.getElementById('signInForm').style.display='none'">Close</button>
-            </form>
-        </div>
-    
-    <div id="registerForm" class="form-popup" style="display: none;">
-            <form class="form-container" >
-                <h2>Register</h2>
-                <label for="newUsername">Username:</label><br>
-                <input type="text" placeholder="Enter Username" name="newUsername" required><br>
-    
-                <label for="newPassword">Password:</label><br>
-                <input type="password" placeholder="Enter Password" name="newPassword" required><br>
-    
-                <label for="confirmPassword">Confirm Password:</label><br>
-                <input type="password" placeholder="Confirm Password" name="confirmPassword" required><br>
-    
-                <button type="submit" class="btn">Register</button>
-                <button type="button" class="btn cancel" onclick="document.getElementById('registerForm').style.display='none'">Close</button>
-            </form>
-        </div> 
-      <div id="forgotPasswordForm" class="form-popup" style="display: none;">
-            <form class="form-container">
-                <h2>Forgot Password</h2>
-                <p>Please enter your email address to receive a password reset link.</p>
-                <label for="email">Email:</label><br>
-                <input type="email" placeholder="Enter Email" name="email" required><br>
-    
-                <button type="submit" class="btn">Send Reset Link</button>
-                <button type="button" class="btn cancel" onclick="closeForm('forgotPasswordForm')">Close</button>
-            </form>
-        </div>-->    
-
 
         <section class="profile">
            <h1 style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">Welcome Back!</h1>
@@ -99,8 +49,11 @@
                            
                             <div class="orders-container" id="history">
 
-                                <h1><b> Previously Purchased </b> <br></h1>
-                              <div class="order">
+                                <h1 style="display: block;"><b> Previously Purchased </b> </h1>
+                      
+                                <div class="order">
+                                    
+
                                 <img src="StradivariosDenim.jpeg" alt="Product Image">
                                 <div class="order-info">
                                 <p class="price">EGP 500</p>
@@ -143,17 +96,21 @@
                 <div class="option" id="payment-methods">
                     <div class="profile-options">
                         <div class="option" id="payment-methods">
-                          <h2>
-                            <span><i class="fa fa-money-check"></i></span>
-                            Payment Methods
-                          </h2>
+                            <h2>
+                                <span><i class="fa fa-money-check"></i></span>
+                                <a href="#">Payment Methods</a> 
+                            </h2>
                         </div>
-                      </div>
-                      
-                      <div id="visa" style="display: none;">
-                        <input type="radio" name="payment" id="visa-radio" checked>
-                        <label for="visa-radio">Visa</label>
-                      </div>
+                    </div>
+                
+                    <div id="visa" style="display: none;">
+                        
+                            <input type="radio" name="payment" id="visa-radio" checked>
+                            <label for="visa-radio">Visa</label>
+                        
+                    </div>
+                </div>
+                
                       
                       <div id="cash" style="display: none;">
                         <input type="radio" name="payment" id="cash-radio">
@@ -172,50 +129,29 @@
                             <button type="submit" class="sellButton">Submit</button>
                           </form>    
                       </div>
-                      
-                <!--      <div id="cash-content" class="payment-content" style="display: none;">
-                        <p>order payment with cash <span><i class="fas fa-money-bill"></i></span></p>
-                      </div>
-                    -->  
-                  
+                
                   
                   
                 <div class="option">
                     <h2>
                         <span><i class="fas fa-address-book"></i></span>
-                        <a href="#ContactUs">Contact Us</a></h2>
+                        <a href="contactus.html">Contact Us</a></h2>
+                 
+                       
                 </div>
                 <div class="option">
                     <h2>
                        <span> <i class="fas fa-info-circle"></i> </span>
-                        <a href="#MyDetails">My Details</a></h2>
+                        <a href="#" id="viewDetails">My Details</a></h2>
                 </div>
     
                 <div class="option">
-                    <h2><button onclick="window.location.href='Sell.html'">Sell Items</button>
+                    <h2><button onclick="window.location.href='Sell.html'" class="sellButton">Sell Items</button>
                     </h2>
                 </div>
             </div>
-
-   <!--<div class="recommend">
-    <h1 style="display: block;"><b> Just For You!</b></h1>
-    <div class="order">
-        <h2><b>Orange Crochet Top</b></h2>
-        <img src="crochetTop.jpeg" alt="Product Image">
-        <div class="order-info">
-        <p class="price">EGP 450</p>
-        <P class="brand">H&M</P>
-        <p class="size">Size: S</p>
-        <p class="condition">Condition: Brand New</p>
-        <p class="date">Date: 2024-05-02</p>
-    </div>
-   </div> -->    
     </section>   
-
-
-        
         <script src="profile.js">    
-         
         </script>  
       
 </body>

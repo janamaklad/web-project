@@ -2,11 +2,12 @@ document.getElementById("payment-methods").addEventListener("click", function() 
     document.getElementById("visa").style.display = "block";
     document.getElementById("cash").style.display = "block";
   });
-  
   document.getElementById("visa").addEventListener("click", function() {
     document.getElementById("visa-content").style.display = "block";
     document.getElementById("cash-content").style.display = "none";
   });
+  
+
   
   document.getElementById("cash").addEventListener("click", function() {
     document.getElementById("visa-content").style.display = "none";
@@ -62,6 +63,11 @@ document.getElementById("payment-methods").addEventListener("click", function() 
     } else {
         ordersContainer.style.display = "none";
     }
+});
+
+//view details form
+document.getElementById("viewDetails").addEventListener("click", function() {
+    window.location.href = "details.html";
 });
 
 
