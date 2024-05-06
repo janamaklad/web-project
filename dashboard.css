@@ -67,3 +67,26 @@ table th {
 .option:hover {
     background-color: #e0e0e0;
 }
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    height: 100vh; /* Full height of the viewport */
+}
+
+a{
+    display: inline-block;
+    color: #f0f0f0;
+    text-decoration: none;
+    transition: transform 0.3s; 
+}
+a:hover{
+    transform: scale(1.1);
+}
+.panel {
+    /* Panel styles */
+    flex: 1; /* Take up remaining space */
+    background-color: #fff;
+    padding: 20px;
+}
