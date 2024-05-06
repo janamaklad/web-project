@@ -21,5 +21,10 @@
 .product-details {
     flex: 1;
 }
-
+body{
+    font-family: Arial, sans-serif;
+    background-image: url('sell\ background.jpg'); 
+    background-size: cover; 
+    background-position: center;
+}
 
