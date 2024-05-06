@@ -51,15 +51,24 @@ h3{
     font-weight: 200;
     font-size: 2em;
 }
-.combobox.select{
-    border-top: none;
-    list-style: none;
-    display: none;
-}
+
 .checkbox-label {
     display: inline-block;
     margin-bottom: 5px;
+    font-size: 15px;
     font-weight: 150;
+}
+label, select, input, textarea {
+    display: block;
+    margin-bottom: 10px;
+}
+
+select, input[type="text"], textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
 }
 
 .form-group {
@@ -95,6 +104,7 @@ h3{
     color:#2596b5;
     
 }
+
 
 .form-group input::placeholder{
     font-size: 10px;
