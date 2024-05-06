@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Wear Products</title>
+    <Link rel="stylesheet" href="products.css">
+    <link rel="stylesheet" href="search.css"> <!-- Link to your CSS file -->
+   
+</head>
+<body>
+    <!-- Control buttons -->
+<div id="myBtnContainer">
+    <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+    <button class="btn" onclick="filterSelection('tops')"> Tops</button>
+    <button class="btn" onclick="filterSelection('bottoms')"> bottoms</button>
+    <button class="btn" onclick="filterSelection('dresses')"> dresses</button>
+    <button class="btn" onclick="filterSelection('bags')"> bags</button>
+    <button class="btn" onclick="filterSelection('accessories')"> accessories</button>
+    <button class="btn" onclick="filterSelection('jackets')"> jackets</button>
+    <button class="btn" onclick="filterSelection('outwear')"> outwear</button>
+    <button class="btn" onclick="filterSelection('shoes')"> shoes</button>
+    <button class="btn" onclick="filterSelection('sportsWear')"> sportsWear</button>
+  </div>
+  
+  <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
+  <div class="container">
+    <div class="filterDiv tops">Tops
+        <div class="product" onclick="showModal('yellowShirt1.jpg', ['yellowShirt1.jpg', 'yellowShirt2.PNG'], 'Oversized Yellow Shirt', '350 LE', 'H&M','Medium')">
+            <img src="yellowShirt1.jpg" >
+            <div class="product-details">
+                <h2>Yellow Shirt</h2>
+                <p>Price: 350 LE</p>
+                <p>Brand: H&M</p>
+                <p>Size: Medium </p>
+                <a href="cart.html"><button>Add To Cart</button></a>
+                <a href="favorites.html"><button>Add To Favorites</button></a>
+            </div>
+        </div>
+        </div>
+    
+    <div class="filterDiv tops">Tops
+        <div class="product" onclick="showModal('offshoulder1.PNG', ['offshoulder1.PNG', 'offshoulder2.PNG'], 'Army Offshoulder', '300 LE', 'LcWakiki','Small')">
+            <img src="offshoulder1.PNG" >
+            <div class="product-details">
+                <h2>Army Offshoulder</h2>
+                <p>Price: 300 LE</p>
+                <p>Brand: LcWakiki</p>
+                <p>Size: Small </p>
+                <a href="cart.html"><button>Add To Cart</button></a>
+                <a href="favorites.html"><button>Add To Favorites</button></a>
+            </div>
+        </div>
+        </div>
+        <div class="filterDiv tops">Tops 
+            <div class="product" onclick="showModal('wool vest.jpg', ['wool vest.jpg', 'wool vest.PNG'], 'wool vest', '1250 LE', 'chateau','large')">
+                <img src="wool vest.png">
+                <div class="product-details">
+                    <h2>wool vest</h2>
+                    <p>Price: 1250LE</p>
+                    <p>Brand: chateau</p>
+                    <p>Size: large </p>
+                    <a href="cart.html"><button>Add To Cart</button></a>
+                    <a href="favorites.html"><button>Add To Favorites</button></a>
+                </div>
+            </div>
+            </div>
+            <div class="filterDiv tops">Tops
+                <div class="product" onclick="showModal('tru shirt.PNG', ['tru shirt.PNG', 'tru shirt.PNG'], 'tru shirt', '528 LE', 'LcWakiki','large')">
+                    <img src="tru shirt.png" >
+                    <div class="product-details">
+                        <h2>tru shirt</h2>
+                        <p>Price: 528</p>
+                        <p>Brand: LcWakiki</p>
+                        <p>Size: large </p>
+                        <a href="cart.html"><button>Add To Cart</button></a>
+                        <a href="favorites.html"><button>Add To Favorites</button></a>
+                    </div>
+                </div>
+                </div>
+                </div>
+    <div class="filterDiv bottoms">Bottoms
+        <div class="product" onclick="showModal('wjeans1.PNG', ['wjeans1.PNG', 'wjeans2.PNG'], 'Blue Denim', '500 LE', 'Zara','32 EUR')">
+            <img src="wjeans1.PNG" >
+            <div class="product-details">
+                <h2>Blue Denim</h2>
+                <p>Price: 500 LE</p>
+                <p>Brand: Zara</p>
+                <p>Size: 32 EUR </p>
+                <a href="cart.html"><button>Add To Cart</button></a>
+                <button class="favorite-btn">Add to Favorites</button>
+            </div>
+        </div>
+        </div>
+    
+    <div class="filterDiv bottoms">Bottoms 
+        <div class="product" onclick="showModal('beij pants1.PNG', ['beij pants1.PNG', 'beij pants2.PNG'], 'Beij Denim', '450 LE', 'Zara','34 EUR')">
+            <img src="beij pants1.PNG" >
+            <div class="product-details">
+                <h2>Beij Denim</h2>
+                <p>Price: 450 LE</p>
+                <p>Brand: Zara</p>
+                <p>Size: 34 EUR </p>
+                <a href="cart.html"><button>Add To Cart</button></a>
+                <button class="favorite-btn">Add to Favorites</button>
+            </div>
+        </div>
+    
+    <div class="filterDiv bottoms">Bottoms
+        <div class="product" onclick="showModal('Bershka checkered pants.PNG', ['Bershka checkered pants.PNG', 'Bershka checkered pants.PNG'], 'checkered pants', '688 LE', 'Bershka','38 EUR')">
+            <img src="Bershka checkered pants.png" >
+            <div class="product-details">
+                <h2> checkered pants</h2>
+                <p>Price: 688 LE</p>
+                <p>Brand: Bershka</p>
+                <p>Size: 38 EUR </p>
+                <a href="cart.html"><button>Add To Cart</button></a>
+                <button class="favorite-btn">Add to Favorites</button>
+            </div>
+        </div>
+        </div>
+    <div class="filterDiv bottoms">Bottoms
+        <div class="product" onclick="showModal('Decked out Joggers.PNG', ['Decked out Joggers.PNG', 'Decked out Joggers.PNG'], 'gray Denim', '900 LE', 'Deckeout','small')">
+            <img src="Decked out Joggers.png" >
+            <div class="product-details">
+                <h2>gray Denim</h2>
+                <p>Price: 900 LE</p>
+                <p>Brand: Deckeout</p>
+                <p>Size: small </p>
+                <a href="cart.html"><button>Add To Cart</button></a>
+                <button class="favorite-btn">Add to Favorites</button>
+            </div>
+        </div>
+        </div>
+        </div>
+    
+    <div class="filterDiv dresses">dresses
+        <div class="product" onclick="showModal('floraldress1.PNG', ['floraldress1.PNG', 'floraldress2.PNG'], 'Floral Dress', '550 LE', 'Defecto','Small')">
+            <img src="floraldress1.PNG" >
+            <div class="product-details">
+                <h2>Floral Dress</h2>
+                <p>Price: 550 LE</p>
+                <p>Brand: Defecto</p>
+                <p>Size: Small </p>
+                <a href="cart.html"><button>Add To Cart</button></a>
+                <a href="favorites.html"><button>Add To Favorites</button></a>
+            </div>
+        </div>
+        </div>
+        </div>
+    
+    
+    <div class="filterDiv dresses">dresses
+        <div class="product" onclick="showModal('Ruffles pink dress1.PNG', ['Ruffles pink dress1.PNG', 'Ruffles pink dress2.PNG'], 'Ruffles Pink Dress', '750 LE', 'H&M','Medium')">
+            <img src="Ruffles pink dress1.PNG" >
+            <div class="product-details">
+                <h2>Ruffles Pink Dress</h2>
+                <p>Price: 750 LE</p>
+                <p>Brand: H&M</p>
+                <p>Size: Medium </p>
+                <a href="cart.html"><button>Add To Cart</button></a>
+                <a href="favorites.html"><button>Add To Favorites</button></a>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="filterDiv dresses">dresses
+        <div class="product" onclick="showModal('short black dress1.PNG', ['short black dress1.PNG', 'short black dress2.PNG'], 'Short Black Dress', '1000 LE', 'H&M','Small')">
+            <img src="short black dress1.png" >
+            <div class="product-details">
+                <h2>Short Black Dress</h2>
+                <p>Price: 1000 LE</p>
+                <p>Brand: H&M</p>
+                <p>Size: Small </p>
+                <a href="cart.html"><button>Add To Cart</button></a>
+                <a href="favorites.html"><button>Add To Favorites</button></a>
+            </div>
+        </div>
+        </div>
+        </div>
+    <div class="filterDiv bags">bags
+        <div class="product" onclick="showModal('blackbag1.PNG', ['blackbag1.PNG'], 'Black Guess Bag', '2,000 LE', 'guess')">
+            <img src="blackbag1.PNG" >
+            <div class="product-details">
+                <h2>Black Guess Bag</h2>
+                <p>Price: 2,000 LE</p>
+                <p>Brand:guess</p>
+        
+                <a href="cart.html"><button>Add To Cart</button></a>
+                <button class="favorite-btn">Add to Favorites</button>
+            </div>
+        </div>
+        </div>
+    </div>
+  
+
+    <div class="filterDiv bags">bags
+        <div class="product" onclick="showModal('floralbag1.PNG', ['floralbag1.PNG','floralbag2.PNG'], 'Floral Bag', '700 LE', 'parfois')">
+            <img src="floralbag1.PNG" >
+            <div class="product-details">
+                <h2>Floral Bag</h2>
+                <p>Price: 700 LE</p>
+                <p>Brand:parfios</p>
+        
+                <a href="cart.html"><button>Add To Cart</button></a>
+                <a href="favorites.html"><button>Add To Favorites</button></a>
+            </div>
+        </div>
+        </div>
+        
+    <div class="filterDiv bags">bags
+        <div class="product" onclick="showModal('crochetbag1.PNG', ['crochetbag1.PNG','crochetbag2.PNG'], 'Crochet Bag', '550 LE', 'Mango')">
+            <img src="crochetbag1.PNG" >
+            <div class="product-details">
+                <h2>Crochet Bag</h2>
+                <p>Price: 550 LE</p>
+                <p>Brand:Mango</p>
+        
+                <a href="cart.html"><button>Add To Cart</button></a>
+                <a href="favorites.html"><button>Add To Favorites</button></a>
+            </div>
+        </div>
+        </div>
+    <div class="filterDiv bags">bags
+        <div class="product" onclick="showModal('iys tote bag.PNG', ['iys tote bag.PNG'], 'iys tote bag', '250 LE', 'in your shoe')">
+            <img src="iys tote bag.png" >
+            <div class="product-details">
+                <h2>brown tote</h2>
+                <p>Price: 250 LE</p>
+                <p>Brand:in your shoe</p>
+        
+                <a href="cart.html"><button>Add To Cart</button></a>
+                <button class="favorite-btn">Add to Favorites</button>
+            </div>
+        </div>
+        </div>
+    
+
+    <div class="filterDiv bags">bags
+        <div class="product" onclick="showModal('kanken bag.PNG', ['kanken bag.PNG','kanken bag.PNG'], 'kanken bag', '530 LE', 'Fjallraven')">
+            <img src="kanken bag.png" >
+            <div class="product-details">
+                <h2>kanken bag</h2>
+                <p>Price: 530 LE</p>
+                <p>Brand:Fjallraven</p>
+        
+                <a href="cart.html"><button>Add To Cart</button></a>
+                <a href="favorites.html"><button>Add To Favorites</button></a>
+            </div>
+        </div>
+    
+    <div class="filterDiv bags">bags
+        <div class="product" onclick="showModal('blackguess bag.PNG', ['blackguess bag.PNG','blackguess bag.PNG'], 'black bag', '1,125 LE', 'Guess')">
+            <img src="blackguess bag copy.png" >
+            <div class="product-details">
+                <h2>black bag</h2>
+                <p>Price: 1,125 LE</p>
+                <p>Brand:Guess</p>
+        
+                <a href="cart.html"><button>Add To Cart</button></a>
+                <a href="favorites.html"><button>Add To Favorites</button></a>
+            </div>
+        </div>
+        </div>
+        </div>
+   
+    
+    <div class="filterDiv jackets">jackets
+    <div class="product" onclick="showModal('the north face.PNG', ['the north face.PNG', 'the north face.PNG', 'the north face.PNG'], 'blue Jacket', '1,250 LE', 'North Face','Medium/Large')">
+        <img src="the north face.png" >
+        <div class="product-details">
+            <h2>blue Jacket</h2>
+            <p>Price: 1,250 LE</p>
+            <p>Brand:North Face</p>
+            <p>Size: Medium/Large </p>
+            <a href="cart.html"><button>Add To Cart</button></a>
+            <button class="favorite-btn">Add to Favorites</button>
+        </div>
+    </div>
+    </div>
+    
+    
+    <div class="filterDiv jackets">jackets
+        <div class="product" onclick="showModal('ck vest.PNG', ['ck vest.PNG', 'ck vest.PNG'], 'Blue vest', '3,375 LE', 'calvin klein','XLarge')">
+            <img src="ck vest.png" >
+            <div class="product-details">
+                <h2>blue vest</h2>
+                <p>Price: 3,375 LE</p>
+                <p>Brand:calvin klein</p>
+                <p>Size: XLarge </p>
+                <a href="cart.html"><button>Add To Cart</button></a>
+                <a href="favorites.html"><button>Add To Favorites</button></a>
+            </div>
+        </div>
+        </div>
+   
+    <div class="filterDiv outwear">outwear
+        <div class="product" onclick="showModal('denim jacket1.PNG', ['denim jacket1.PNG', 'denim jacket2.PNG', 'denim jacket3.PNG'], 'Denim Jacket', '800 LE', 'Bersheka','Medium')">
+            <img src="denim jacket1.PNG" >
+            <div class="product-details">
+                <h2>Denim Jacket</h2>
+                <p>Price: 800 LE</p>
+                <p>Brand:Bersheka</p>
+                <p>Size: Medium </p>
+                <a href="cart.html"><button>Add To Cart</button></a>
+                <button class="favorite-btn">Add to Favorites</button>
+            </div>
+        </div>
+        </div>
+      
+    
+    <div class="filterDiv outwear">outwear
+        <div class="product" onclick="showModal('brown cardigan1.PNG', ['brown cardigan1.PNG', 'brown cardigan2.PNG'], 'Brown Cardigan', '500 LE', 'defacto','free-size')">
+            <img src="brown cardigan1.PNG" >
+            <div class="product-details">
+                <h2>Brown Cardigan</h2>
+                <p>Price: 500 LE</p>
+                <p>Brand:defacto</p>
+                <p>Size: free-size </p>
+                <a href="cart.html"><button>Add To Cart</button></a>
+                <a href="favorites.html"><button>Add To Favorites</button></a>
+            </div>
+        </div>
+        </div>
+    
+    <div class="filterDiv outwear">outwear
+        <div class="product" onclick="showModal('grey coat1.PNG', ['grey coat1.PNG', 'grey coat2.PNG'], 'grey coat1', '1,400 LE', 'Stradivarius','Small')">
+            <img src="grey coat1.png" >
+            <div class="product-details">
+                <h2>grey coat1</h2>
+                <p>Price: 1,400 LE</p>
+                <p>Brand:Stradivarius</p>
+                <p>Size: Small </p>
+                <a href="cart.html"><button>Add To Cart</button></a>
+                <button class="favorite-btn">Add to Favorites</button>
+            </div>
+        </div>
+   </div>
+   <div class="filterDiv shoes">shoes
+    <div class="product" onclick="showModal('tommy jeans sneakers1.PNG', ['tommy jeans sneakers1.PNG', 'Tommy Jeans Sneakers2.PNG', 'tommy jeans sneakers3.PNG'], 'tommy jeans sneakers', '2,200 LE', 'tommy jeans','38')">
+        <img src="tommy jeans sneakers1.PNG" >
+        <div class="product-details">
+            <h2>Tommy Jeans Sneakers</h2>
+            <p>Price: 2,200 LE</p>
+            <p>Brand:tommy jeans </p>
+            <p>Size: 38 </p>
+            <a href="cart.html"><button>Add To Cart</button></a>
+            <button class="favorite-btn">Add to Favorites</button>
+        </div>
+    </div>
+    </div>
+    
+    
+
+    <div class="filterDiv shoes">shoes
+        <div class="product" onclick="showModal('Leather Chunky Loafers1.PNG', ['Leather Chunky Loafers1.PNG', 'Leather Chunky Loafers2.PNG'], 'Leather Chunky Loafers', '700 LE', 'dejavu','39')">
+            <img src="Leather Chunky Loafers1.PNG" >
+            <div class="product-details">
+                <h2>Leather Chunky Loafers</h2>
+                <p>Price: 700 LE</p>
+                <p>Brand:dejavu </p>
+                <p>Size: 39 </p>
+                <a href="cart.html"><button>Add To Cart</button></a>
+                <button class="favorite-btn">Add to Favorites</button>
+            </div>
+        </div>
+        </div>
+        <div class="filterDiv shoes">shoes
+            <div class="product" onclick="showModal('Louis Vuitton Pool Pillow1.PNG', ['Louis Vuitton Pool Pillow1.PNG', 'Louis Vuitton Pool Pillow2.PNG'], 'Louis Vuitton Pool Pillow', '10,000 LE', 'Louis Vuitton','38')">
+                <img src="Louis Vuitton Pool Pillow1.PNG" >
+                <div class="product-details">
+                    <h2>Louis Vuitton Pool Pillow</h2>
+                    <p>Price: 10,000 LE</p>
+                    <p>Brand:Louis Vuitton </p>
+                    <p>Size: 38 </p>
+                    <a href="cart.html"><button>Add To Cart</button></a>
+                    <a href="favorites.html"><button>Add To Favorites</button></a>
+                </div>
+            </div>
+            </div>
+        
+            
+            <div class="filterDiv shoes">shoes
+                <div class="product" onclick="showModal('new vans.PNG', ['new vans.PNG', 'new vans.PNG', 'new vans.PNG'], 'new vans', '2,500 LE', 'black sneakers','44.5')">
+                    <img src="new vans.png" >
+                    <div class="product-details">
+                        <h2>black sneakers</h2>
+                        <p>Price: 2,500 LE</p>
+                        <p>Brand:Vans </p>
+                        <p>Size: 44.5 </p>
+                        <a href="cart.html"><button>Add To Cart</button></a>
+                        <a href="favorites.html"><button>Add To Favorites</button></a>
+                    </div>
+                </div>
+                </div>
+                <div class="filterDiv shoes">shoes
+                    <div class="product" onclick="showModal('air jordan.PNG', ['air jordan.PNG', 'air jordan.PNG'], 'air jordan', '4,375 LE', 'Nike','42.5')">
+                        <img src="air jordan.png" >
+                        <div class="product-details">
+                            <h2> air jordan</h2>
+                            <p>Price: 4,375 LE</p>
+                            <p>Brand:Nike </p>
+                            <p>Size: 42.5 </p>
+                            <a href="cart.html"><button>Add To Cart</button></a>
+                            <button class="favorite-btn">Add to Favorites</button>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="filterDiv accessories">accessories
+                        <div class="product" onclick="showModal('buckethat1.PNG', ['buckethat1.PNG','buckethat2.PNG'], ' satin bucket hat', '200 LE', 'lc waikiki')">
+                            <img src="buckethat1.PNG" >
+                            <div class="product-details">
+                                <h2> satin bucket hat</h2>
+                                <p>Price:200 LE</p>
+                                <p>Brand:lc waikiki</p>
+                                <a href="cart.html"><button>Add To Cart</button></a>
+                                <button class="favorite-btn">Add to Favorites</button>
+                            </div>
+                        </div>
+                        </div>
+                  </div>
+                
+                    <div class="filterDiv accessories">accessories
+                        <div class="product" onclick="showModal('versaceglass1.PNG', ['versaceglass1.PNG','versaceglass2.PNG'], 'Versace Glasses', '1,500 LE', 'versace')">
+                            <img src="versaceglass1.PNG" >
+                            <div class="product-details">
+                                <h2>Versace Glasses</h2>
+                                <p>Price: 1,500 LE</p>
+                                <p>Brand:versace</p>
+                        <a href="cart.html"><button>Add To Cart</button></a>
+                                <button class="favorite-btn">Add to Favorites</button>
+                            </div>
+                        </div>
+                        </div>
+                
+                    
+                        
+                    <div class="filterDiv accessories">accessories
+                        <div class="product" onclick="showModal('guesswatch.PNG', ['guesswatch.PNG'], 'Guess Watch', '1,000 LE', 'guess')">
+                            <img src="guesswatch.png" >
+                            <div class="product-details">
+                                <h2>Guess Watch </h2>
+                                <p>Price: 1,000 LE</p>
+                                <p>Brand:guess</p>
+                                <a href="cart.html"><button>Add To Cart</button></a>
+                                <a href="favorites.html"><button>Add To Favorites</button></a>
+                            </div>
+                        </div>
+                        </div>
+                  
+                        
+                    <div class="filterDiv accessories">accessories
+                        <div class="product" onclick="showModal('lc wakiki bucket hat.PNG', ['lc wakiki bucket hat.PNG','lc wakiki bucket hat.PNG'], ' lc wakiki bucket hat', '94 LE', 'lc waikiki')">
+                            <img src="lc wakiki bucket hat.png" >
+                            <div class="product-details">
+                                <h2>  bucket hat</h2>
+                                <p>Price:94 LE</p>
+                                <p>Brand:lc waikiki</p>
+                                <a href="cart.html"><button>Add To Cart</button></a>
+                                <button class="favorite-btn">Add to Favorites</button>
+                            </div>
+                        </div>
+                        </div>
+              
+                        
+                    <div class="filterDiv accessories">accessories
+                        <div class="product" onclick="showModal('Ted baker cap.PNG', ['Ted baker cap.PNG','Ted baker cap.PNG'], 'white cap', '699 LE', 'Ted baker')">
+                            <img src="Ted baker cap.png" >
+                            <div class="product-details">
+                                <h2> white cap</h2>
+                                <p>Price: 699 LE</p>
+                                <p>Brand:Ted baker</p>
+                                <a href="cart.html"><button>Add To Cart</button></a>
+                                <button class="favorite-btn">Add to Favorites</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="filterDiv sportsWear">sportsWear
+                        <div class="product" onclick="showModal('biker short1.PNG', ['biker short1.PNG'], 'Biker Short', '250 LE', 'Shein','Large')">
+                            <img src="biker short1.png" >
+                            <div class="product-details">
+                                <h2>Biker Short</h2>
+                                <p>Price: 250 LE</p>
+                                <p>Brand:Shein</p>
+                                <p>Size: Large </p>
+                                <a href="cart.html"><button>Add To Cart</button></a>
+                                <button class="favorite-btn">Add to Favorites</button>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="filterDiv sportsWear">sportsWear
+                            <div class="product" onclick="showModal('nike leggings.PNG', ['nike leggings.PNG'], 'Nike Leggings', '1,100 LE', 'nike','xs/s')">
+                                <img src="nike leggings.PNG" >
+                                <div class="product-details">
+                                    <h2>Nike Leggings</h2>
+                                    <p>Price: 1,100 LE</p>
+                                    <p>Brand:Nike</p>
+                                    <p>Size: xs/s </p>
+                                    <a href="cart.html"><button>Add To Cart</button></a>
+                                    <button class="favorite-btn">Add to Favorites</button>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="filterDiv sportsWear">sportsWear
+                                <div class="product" onclick="showModal('Nike Joggers.PNG', ['Nike Joggers.PNG'], 'Nike Joggers', '875 LE', 'Nike','Medium/Large')">
+                                    <img src="Nike Joggers.png" >
+                                    <div class="product-details">
+                                        <h2>nike Joggers</h2>
+                                        <p>Price: 875 LE</p>
+                                        <p>Brand:Nike</p>
+                                        <p>Size: Medium/Large </p>
+                                        <a href="cart.html"><button>Add To Cart</button></a>
+                                        <button class="favorite-btn">Add to Favorites</button>
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="filterDiv sportsWear">sportsWear
+                                    <div class="product" onclick="showModal('adidas squadra.PNG', ['adidas squadra.PNG'], 'red t.shirt', '581 LE', 'Adidas','Large')">
+                                        <img src="adidas squadra.png" >
+                                        <div class="product-details">
+                                            <h2>red t.shirt</h2>
+                                            <p>Price: 581 LE</p>
+                                            <p>Brand:Adidas</p>
+                                            <p>Size: Large </p>
+                                            <a href="cart.html"><button>Add To Cart</button></a>
+                                            <button class="favorite-btn">Add to Favorites</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    
+                                
+                      
+
+  </div>
+</body>
+<script src="search.js"></script>
+
+</html>
