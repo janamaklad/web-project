@@ -1,84 +1,90 @@
-
-
-/* Global styles */
-.logo {
-    max-width: 200px;
-    display: block;
-    margin-right: auto; 
-    margin-left: 20px; 
-}
-
-body {
-    font-family: Arial, sans-serif;
+/* Reset CSS */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-h2 {
-    margin: 0;
-}
-
-/* Product item styles */
-.product-item {
-    display: flex;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    padding: 10px;
-}
-
-.product-item img {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    margin-right: 20px;
-}
-
-.product-details {
-    flex: 1;
-}
-
-.product-details h2 {
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
     color: #333;
 }
 
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #333;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.navbar .logo img {
+    width: 125px;
+    height: auto;
+}
+
+/* Favorites section */
+#favorites {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+#favorites h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Product items */
+.product-item {
+    background-color: #fff;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.product-item:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.product-details h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
 .product-details p {
-    margin: 5px 0;
+    margin-bottom: 8px;
 }
 
 .product-details button {
-    background-color: #4CAF50;
-    border: none;
-    color: white;
+    background-color: #333;
+    color: #fff;
     padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-/* Favorites section styles */
-#favorites-section {
-    margin-top: 50px;
+.product-details button:hover {
+    background-color: #555;
 }
-
-#favorites-section h2 {
-    color: #000000;
-}
-
-#favorites-list {
-    margin-top: 20px;
-}
-
-#favorites-list div {
-    background-color: #f9f9f9;
-    padding: 10px;
-    border: 1px solid #ddd;
-}
-
-#favorites-list p {
-    color:#000000;
-    font-style: italic;
-}
-
