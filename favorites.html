@@ -6,9 +6,8 @@
     <title>Top Wear Products</title>
     <link rel="stylesheet" href="products.css"> <!-- Link to your CSS file -->
     <link rel="stylesheet" href="favorites.css"> <!-- Link to your CSS file -->
-   
+    
 </head>
-
 
 <body>
     <div class="navbar">
@@ -17,17 +16,10 @@
         </a>
         </div>
    <!-- Example product item -->
- 
-    <!-- Favorites section -->
-<div id="favorites-section">
-    <h2> Favorites</h2>
-    <div id="favorites-list">
-        <!-- Favorites will be dynamically added here -->
-    </div>
-</div>
- 
+   <!-- Favorites section -->
+
+  
 <div class="product-item">
-    
     <img src="floralbag1.PNG" >
         <div class="product-details">
             <h2>floral bag</h2>
@@ -60,8 +52,42 @@
 
 </div>
 </div>
+<div class="product" onclick="showModal('Nike Joggers.PNG', ['Nike Joggers.PNG'], 'Nike Joggers', '875 LE', 'Nike','Medium/Large')">
+    <img src="Nike Joggers.png" >
+    <div class="product-details">
+        <h2>nike Joggers</h2>
+        <p>Price: 875 LE</p>
+        <p>Brand:Nike</p>
+        <p>Size: Medium/Large </p>
+        <a href="cart.html"><button>Add To Cart</button></a>
+       
+    </div>
+</div>
+<div class="product" onclick="showModal('new vans.PNG', ['new vans.PNG', 'new vans.PNG', 'new vans.PNG'], 'new vans', '2,500 LE', 'black sneakers','44.5')">
+    <img src="new vans.png" >
+    <div class="product-details">
+        <h2>black sneakers</h2>
+        <p>Price: 2,500 LE</p>
+        <p>Brand:Vans </p>
+        <p>Size: 44.5 </p>
+        <a href="cart.html"><button>Add To Cart</button></a>
+  
+    </div>
+</div>
+<div class="product" onclick="showModal('Ruffles pink dress1.PNG', ['Ruffles pink dress1.PNG', 'Ruffles pink dress2.PNG'], 'Ruffles Pink Dress', '750 LE', 'H&M','Medium')">
+    <img src="Ruffles pink dress1.PNG" >
+    <div class="product-details">
+        <h2>Ruffles Pink Dress</h2>
+        <p>Price: 750 LE</p>
+        <p>Brand: H&M</p>
+        <p>Size: Medium </p>
+        <a href="cart.html"><button>Add To Cart</button></a>
+        
+    </div>
+</div>
 
-</body> 
+
+
 <script>
     // Function to toggle favorite status
 function toggleFavorite(button) {
@@ -126,5 +152,13 @@ window.onload = function() {
 };
 
 </script>
+</body> 
+ 
+<body>
+    <div class="favorites">
+    <H2> Here's Ur Favorites</H2>
+    </div>
+</body>
+
 
 </html>

@@ -51,15 +51,24 @@ h3{
     font-weight: 200;
     font-size: 2em;
 }
-.combobox.select{
-    border-top: none;
-    list-style: none;
-    display: none;
-}
+
 .checkbox-label {
     display: inline-block;
     margin-bottom: 5px;
+    font-size: 15px;
     font-weight: 150;
+}
+label, select, input, textarea {
+    display: block;
+    margin-bottom: 10px;
+}
+
+select, input[type="text"], textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
 }
 
 .form-group {
@@ -96,6 +105,7 @@ h3{
     
 }
 
+
 .form-group input::placeholder{
     font-size: 10px;
     font-weight: 100;
@@ -127,8 +137,8 @@ button {
     color: #fff;
     cursor: pointer;
     font-family: "Bebas Neue", sans-serif;
-    font-weight: 150;
-    font-size: 1.1em;
+    font-weight: 155;
+    font-size: 1.2em;
     width: 45%;
     margin:0 auto;
 }

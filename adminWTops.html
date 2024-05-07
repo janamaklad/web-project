@@ -6,9 +6,10 @@
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="Admin.css">
-
+    <link rel="stylesheet" href="AdminProducts.css"> 
     <title>Top Wear Products</title>
-    <link rel="stylesheet" href="AdminProducts.css"> <!-- Link to your CSS file -->
+    
+
 </head>
 
 <body>
@@ -26,25 +27,29 @@
     </div>
 
     <h1>Women Top Wear</h1>
-    <div class="product" onclick="showModal('yellowShirt1.jpg', ['yellowShirt1.jpg', 'yellowShirt2.PNG'], 'Yellow Shirt', '350 LE', 'H&M','Medium')">
+
+    <div class="product" >
         <img src="yellowShirt1.jpg" >
         <div class="product-details">
-            <h2>Yellow Shirt</h2>
-            <p>Price: 350 LE</p>
+            <h2>Oversized Yellow Shirt</h2>
+            <p>Price: 350 </p>
             <p>Brand: H&M</p>
             <p>Size: Medium </p>
             <button onclick="removeProduct('yellowShirt1.jpg', 'Oversized Yellow Shirt', '350 LE', 'H&M', 'Medium')">Remove</button>
+            <button class="edit-button" onclick="editProduct('yellowShirt1.jpg', 'Oversized Yellow Shirt', '350 LE', 'H&M', 'Medium')">Edit</button>
         </div>
     </div>
-    <div class="product" onclick="showModal('offshoulder1.PNG', ['offshoulder1.PNG', 'offshoulder2.PNG'], 'Army Offshoulder', '300 LE', 'LcWakiki','Small')">
+    <div class="product" >
         <img src="offshoulder1.PNG" >
         <div class="product-details">
             <h2>Army Offshoulder</h2>
-            <p>Price: 300 LE</p>
+            <p>Price: 300 </p>
             <p>Brand: LcWakiki</p>
             <p>Size: Small </p>
             <button onclick="removeProduct('offshoulder1.PNG', 'Army Offshoulder', '300 LE', 'LcWakiki', 'Small')">Remove</button>
-           
+            <button class="edit-button" onclick="editProduct('offshoulder1.PNG', 'Army Offshoulder', '300 LE', 'LcWakiki', 'Small')">Edit</button>
+
+
             
         </div>
     </div>
@@ -71,6 +76,27 @@
             </div>
         </div>
     </div>
+    <div id="editModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeEditModal()">&times;</span>
+            <h2>Edit Product</h2>
+            <form id="editForm">
+                <label for="edit-price">Price:</label>
+                <input type="numeric" id="edit-price" name="edit-price">
+    
+                <label for="edit-size">Size:</label>
+                <select id="edit-size" name="edit-size">
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+          </select>
+
+                <button id="saveButton" type="button" onclick="submitEdit()">Save</button>
+            </form>
+        </div>
+    </div>
+    
+    
     <script>
         // Simulating admin login state
         let isAdminLoggedIn = true; // Set to true to simulate admin logged in
@@ -93,7 +119,8 @@
 
        
     </script>
-    <script src="remove.js"></script>
+    
+   <script src="remove.js"></script> 
     <script src="products.js"></script>
 </body>
 </html>
