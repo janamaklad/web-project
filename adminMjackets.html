@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="AdminCategory.css">
     <link rel="stylesheet" href="AdminProducts.css"> 
-    <title>Accessories Products</title>
+    <title>Outer Wear Products</title>
     
 
 </head>
@@ -33,40 +33,36 @@
         </div>
     </div>
 
-   
-    <div class="product">
-        <img src="buckethat1.PNG" >
-        <div class="product-details">
-            <h2> satin bucket hat</h2>
-            <p>Price:200 LE</p>
-            <p>Brand:lc waikiki</p>
-            <button onclick="removeProduct('buckethat1.PNG', ' satin bucket hat', '200 LE', 'lc waikiki',null)">Remove</button>
-            <button class="edit-button" onclick="editProduct('buckethat1.PNG', ' satin bucket hat', '200 LE', 'lc waikiki',null)">Edit</button>
-        </div>
-    </div>
-
-    <div class="product">
-        <img src="versaceglass1.PNG" >
-        <div class="product-details">
-            <h2>Versace Glasses</h2>
-            <p>Price: 1,500 LE</p>
-            <p>Brand:versace</p>
-            <button onclick="removeProduct('versaceglass1.PNG', 'Versace Glasses', '1,500 LE', 'versace',null)">Remove</button>
-            <button class="edit-button" onclick="editProduct('versaceglass1.PNG', 'Versace Glasses', '1,500 LE', 'versace',null)">Edit</button>
-        </div>
-    </div>
+    
 
 
     <div class="product" >
-        <img src="guesswatch.png" >
+        <img src="the north face.png" >
         <div class="product-details">
-            <h2>Guess Watch </h2>
-            <p>Price: 1,000 LE</p>
-            <p>Brand:guess</p>
-            <button onclick="removeProduct('guesswatch.PNG', 'Guess Watch', '1,000 LE', 'guess',null)">Remove</button>
-            <button class="edit-button" onclick="editProduct('guesswatch.PNG','Guess Watch', '1,000 LE', 'guess',null)">Edit</button>
+            <h2>blue Jacket</h2>
+            <p>Price: 1,250 LE</p>
+            <p>Brand:North Face</p>
+            <p>Size: Medium/Large </p>
+            <button onclick="removeProduct('the north face.PNG', ['the north face.PNG', 'the north face.PNG', 'the north face.PNG'], 'blue Jacket', '1,250 LE', 'North Face','Medium/Large')">Remove</button>
+            <button class="edit-button" onclick="editProduct('the north face.PNG', ['the north face.PNG', 'the north face.PNG', 'the north face.PNG'], 'blue Jacket', '1,250 LE', 'North Face','Medium/Large')">Edit</button>
         </div>
     </div>
+
+
+    <div class="product">
+        <img src="ck vest.png" >
+        <div class="product-details">
+            <h2>blue vest</h2>
+            <p>Price: 3,375 LE</p>
+            <p>Brand:calvin klein</p>
+            <p>Size: XLarge </p>
+            <button onclick="removeProduct('ck vest.PNG', ['ck vest.PNG', 'ck vest.PNG'], 'Blue vest', '3,375 LE', 'calvin klein','XLarge')">Remove</button>
+            <button class="edit-button" onclick="editProduct('ck vest.PNG', ['ck vest.PNG', 'ck vest.PNG'], 'Blue vest', '3,375 LE', 'calvin klein','XLarge')">Edit</button>
+        </div>
+    </div>
+
+
+   
    
     <div id="modal" class="modal" onclick="closeModal()">
         <div class="modal-content" onclick="event.stopPropagation()">
