@@ -39,3 +39,6 @@ body{
 .addOrderForm button:hover {
     background-color: #555;
 }
+.error {
+    border-color: red;
+}
