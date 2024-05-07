@@ -7,23 +7,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="products.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <title>bags Products</title>
+    <title>girls Products</title>
 
 </head>
 
 <body>
     <div class="navbar">
-        <a href="Thrifting.html" class="logo">
+        <a href="admin.html" class="logo">
             <img src="logo.jpg" width="125px">
         </a>
         
-        <div class="icons">
-            <a href="profile.html"><i class="far fa-user"></i></a>
-            <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
-            <a href="favorites.html"><i class="fas fa-heart"></i></a>
-          
 
-        </div>
         
         <div class="search-bar">
             <form action="#">
@@ -32,37 +26,37 @@
             </form>
         </div>
         <div class="categories">
-            <a href="women.html" class="category active">Women</a>
-            <a href="men.html" class="category">Men</a>
-            <a href="girls.html" class="category">Girls</a>
-            <a href="boys.html" class="category">Boys</a>
-            <a href="baby.html" class="category">Baby</a>
-            <a href="home.html" class="category">Home</a> 
+            <a href="AdminWomen.html" class="category active">Women</a>
+            <a href="AdminMen.html" class="category">Men</a>
+            <a href="AdminGirls.html" class="category">Girls</a>
+            <a href="AdminBoys.html" class="category">Boys</a>
+            <a href="AdminBaby.html" class="category">Baby</a>
+            <a href="AdminHome.html" class="category">Home</a> 
         </div>
     </div>
 
-    <h1>Girls Bags</h1>
-    <div class="product" onclick="showModal('crossbody bag.png', ['crossbody bag.png'], 'purple polyster', '305LE', 'mitama','no')">
-        <img src="crossbody bag.png" >
+    <h1>Girls dresses</h1>
+    <div class="product" onclick="showModal('pink dress.png', ['pink dress.png'], 'birthday dress', '2,500 LE', 'unbranded','9-11 y')">
+        <img src="pink dress.png" >
         <div class="product-details">
-            <h2> purple polyster</h2>
-            <p>Price: 305 LE</p>
-            <p>Brand: mitama</p>
-            <p>Size:no </p>
-            <a href="cart.html"><button>Add To Cart</button></a>
-            <a href="favorites.html"><button>Add To Favorites</button></a>
+            <h2> birthday dress</h2>
+            <p>Price: 2,500 LE</p>
+            <p>Brand: unbranded</p>
+            <p>Size:9-11 y </p>
+            <button onclick="removeProduct('pink dress.PNG','birthday dress', '2,500 LE', 'unbranded','9-11 y')">Remove</button>
+            <button class="edit-button" onclick="editProduct('pink dress.png', 'birthday dress', '2,500 LE', 'unbranded','9-11 y')">Edit</button>
         </div>
     </div>
 
-    <div class="product" onclick="showModal('converse pink.PNG', ['converse pink.PNG','pink22.png'], 'bumbag', '305LE', 'converse','no')">
-        <img src="converse pink.png" >
+    <div class="product" onclick="showModal('floral dress.PNG', ['floral dress.PNG'], 'white dress', '1,770LE', 'unbranded','small')">
+        <img src="floral dress.png" >
         <div class="product-details">
-            <h2>bumbag</h2>
-            <p>Price: 305 LE</p>
-            <p>Brand: converse</p>
-            <p>Size: no </p>
-            <a href="cart.html"><button>Add To Cart</button></a>
-            <a href="favorites.html"><button>Add To Favorites</button></a>
+            <h2>white dress</h2>
+            <p>Price: 1,770 LE</p>
+            <p>Brand: unbranded</p>
+            <p>Size: small </p>
+            <button onclick="removeProduct('floral dress.PNG', 'white dress', '1,770LE', 'unbranded','small')">Remove</button>
+            <button class="edit-button" onclick="editProduct('floral dress.PNG','white dress', '1,770LE', 'unbranded','small')">Edit</button>
         </div>
     </div>
     <!-- Add more products -->
