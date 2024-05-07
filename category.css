@@ -207,7 +207,7 @@ body {
     transform:translate(-50%, -50%);
     border-radius: 20px;
     padding: 15px 25px;
-  
+    text-align: center;
     font-size: 24px;
     font-weight: 120;
     background-color: transparent;
@@ -218,5 +218,9 @@ body {
     margin-top:965px;
     margin-bottom: 30%;
 
+}
+.aboutus:hover{
+    background-color: #bbbbbb;
+    color:white;
 }
 
