@@ -99,29 +99,8 @@
         </div>
     </div>
     
-    
-    <script>
-        // Simulating admin login state
-        let isAdminLoggedIn = true; // Set to true to simulate admin logged in
 
-        function addToCartOrRemove(image, title, price, brand, size) {
-    if (isAdminLoggedIn) {
-        // Show confirmation message
-        removeProductConfirmation();
-        
-        // Remove the product from the page
-        console.log("Product removed:", title);
-        // Here you can implement the logic to actually remove the product
-    } else {
-        // Perform add to cart action
-        console.log("Product added to cart:", title);
-        // Here you can implement the logic to add the product to cart
-    }
-}
-   
-    </script>
-    
    <script src="remove.js"></script> 
-    <script src="products.js"></script>
+
 </body>
 </html>
