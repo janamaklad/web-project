@@ -1,0 +1,41 @@
+
+body{
+    font-family: Arial, sans-serif;
+    background-image: url('sell\ background.jpg'); 
+    background-size: cover; 
+    background-position: center;
+}
+.addOrderForm {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.addOrderForm label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.addOrderForm input[type="text"],
+.addOrderForm select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.addOrderForm button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.addOrderForm button:hover {
+    background-color: #555;
+}
