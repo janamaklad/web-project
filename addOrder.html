@@ -47,11 +47,11 @@
 <div id="addOrderModal" class="modal">
     <div class="modal-content">
 
-        <span class="close">&times;</span>
+        <span class="close" onclick="document.getElementById('addOrderModal').style.display='none'">&times;</span>
 
         <h2>Add Order</h2>
 
-        <form id="addOrderForm" class="addOrderForm">
+        <form id="addOrderForm" class="addOrderForm" onsubmit="return validateForm()">
 
             <label for="orderId">Order ID:</label>
             <input type="text" id="orderId" name="orderId" required>
@@ -69,13 +69,23 @@
             <input type="text" id="productPrice" name="productPrice" required>
 
             <label for="productSize">Size:</label>
-            <input type="text" id="productSize" name="productSize" required>
+<select id="productSize" name="productSize" required>
+    <option value="small">Small</option>
+    <option value="medium">Medium</option>
+    <option value="large">Large</option>
+</select>
 
             <label for="productBrand">Brand:</label>
             <input type="text" id="productBrand" name="productBrand" required>
 
             <label for="orderStatus">Status:</label>
-            <input type="text" id="orderStatus" name="orderStatus" required>
+<select id="orderStatus" name="orderStatus" required>
+    <option value="pending">Pending</option>
+    <option value="processing">Processing</option>
+    <option value="shipped">Shipped</option>
+    <option value="delivered">Delivered</option>
+    <option value="cancelled">cancelled</option>
+</select>
 
             <button type="submit">Add</button>
         </form>
@@ -84,3 +94,5 @@
 </div>
 <script src="addOrder.js"></script>
 </body>
+
+</html>
