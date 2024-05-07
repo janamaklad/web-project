@@ -55,4 +55,4 @@ function filterSelection(category) {
         product.style.display = "none";
       }
     }
-  }
+}
