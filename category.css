@@ -116,8 +116,7 @@ body {
 }
 
 .subcategories {
-    position: absolute;
-    top:83%;
+   
     width:100%;
    padding-top: 2px;
    padding-left: 2px;
@@ -215,8 +214,9 @@ body {
     text-decoration: none;
     border: 1px solid #000;
     width:25%;
-    margin-top:965px;
-    margin-bottom: 30%;
+    margin-top:75%;
+    
+
 
 }
 .aboutus:hover{

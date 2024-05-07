@@ -139,6 +139,33 @@ body {
 .categories img:hover {
     transform: scale(1.05);
 }
+
+.aboutus{
+    position: absolute;
+   margin-left: 50%;
+   margin-top:10%;
+    transform:translate(-50%, -50%);
+    border-radius: 20px;
+    padding: 15px 25px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 120;
+    background-color: transparent;
+    color:black;
+    text-decoration: none;
+    border: 1px solid #000;
+    width:25%;
+   
+    
+
+
+}
+.aboutus:hover{
+    background-color: #bbbbbb;
+    color:white;
+}
+
+
 .sell-now {
     position: relative;
     text-align: center;
