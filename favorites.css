@@ -1,35 +1,74 @@
-/* Reset CSS */
-* {
+.body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-/* Global styles */
-body {
     font-family: Arial, sans-serif;
-    background-color: #f8f8f8;
-    color: #333;
+    background-color: white;
+    border-radius: 5px;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-/* Navbar */
 .navbar {
-    background-color: #333;
-    padding: 10px 0;
-    text-align: center;
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000; 
+} 
+
+.logo {
+    max-width: 200px;
+    display: block;
+    margin-right: auto; 
+    margin-left: 20px; 
+    z-index: 1001; /* Ensure it's above the fixed cart */
+}
+.icons {
+    margin-left: auto; 
+    margin-right: 20px; 
 }
 
-.navbar .logo img {
-    width: 125px;
-    height: auto;
+
+.icons a {
+    color: black;
+    font-size: 1.3em;
+    padding-right: 20px;
+}
+.icons :hover {
+    transform: scale(1.05);
 }
 
+.search-bar {
+    margin-right: 20px; 
+}
+
+.search-bar form {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input[type=search] {
+    padding: 8px;
+    border: 1px solid rgb(19, 19, 19);
+    border-radius: 7px;
+    margin-right: 5px;
+}
+
+.search-bar button {
+    padding: 8px 12px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 11px;
+    color: white;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #0056b3;
+}
 /* Favorites section */
 #favorites {
     background-color: #fff;

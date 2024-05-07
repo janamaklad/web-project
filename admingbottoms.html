@@ -5,17 +5,19 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="AdminProducts.css">
+    <link rel="stylesheet" href="products.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <title>Home Fragrance</title>
+    <title>bottom Products</title>
 
 </head>
 
 <body>
     <div class="navbar">
-        <a href="Admin.html" class="logo">
+        <a href="admin.html" class="logo">
             <img src="logo.jpg" width="125px">
         </a>
+        
+
         
         <div class="search-bar">
             <form action="#">
@@ -33,18 +35,30 @@
         </div>
     </div>
 
-    <div class="product" onclick="showModal('sink1.PNG', ['sink1.PNG'], 'Glass Sink', '6000 LE', 'Hanumex')">
-        <img src="sink1.PNG" >
+    <h1>Girls bottom</h1>
+    <div class="product" onclick="showModal('benetton short.png', ['benetton short.png','benetton short.png'], 'pink polyster', '683LE', 'unbranded','32 waist')">
+        <img src="benetton short.png" >
         <div class="product-details">
-            <h2>Glass Sink</h2>
-            <p>Price: 6000 LE</p>
-            <p>Brand: Hanumex</p>
-            <button onclick="removeProduct('sink1.PNG', 'Glass Sink', ' 6000 LE', 'Hanumex')">Remove</button>
-            <button class="edit-button" onclick="editProduct('sink1.PNG', 'Glass Sink', ' 6000 LE', 'Hanumex')">Edit</button>
+            <h2> pink polyster</h2>
+            <p>Price: 683 LE</p>
+            <p>Brand: unbranded</p>
+            <p>Size:32 waist </p>
+            <button onclick="removeProduct('benetton short.PNG','pink polyster', '683LE', 'unbranded','32 waist')">Remove</button>
+            <button class="edit-button" onclick="editProduct('benetton short.png', 'pink polyster', '683LE', 'unbranded','32 waist')">Edit</button>
         </div>
     </div>
 
-            
+    <div class="product" onclick="showModal('purple short.PNG', ['purple short.PNG','pshort2.png'], 'purple cotton', '683LE', 'levis','age 7')">
+        <img src="purple short.png" >
+        <div class="product-details">
+            <h2>purple cotton</h2>
+            <p>Price: 683 LE</p>
+            <p>Brand: levis</p>
+            <p>Size: age 7 </p>
+            <button onclick="removeProduct('purple short.PNG', 'purple cotton', '683LE', 'levis','age 7')">Remove</button>
+            <button class="edit-button" onclick="editProduct('purple short.PNG', 'purple cotton', '683LE', 'levis','age 7')">Edit</button>
+        </div>
+    </div>
     <!-- Add more products -->
 
 
@@ -60,7 +74,8 @@
                 <p id="modal-price"></p>
                 <p id="modal-brand"></p>
                 <p id="modal-size"></p>
-
+                <a href="cart.html"><button>Add To Cart</button></a>
+                <a href="favorites.html"><button>Add To Favorites</button></a>
             </div>
             <div class="arrow-container">
                 <button class="prev" onclick="changeImage(-1)">&#10094;</button>
@@ -68,30 +83,6 @@
             </div>
         </div>
     </div>
-    <div id="editModal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeEditModal()">&times;</span>
-            <h2>Edit Product</h2>
-            <form id="editForm">
-                <label for="edit-price">Price:</label>
-                <input type="numeric" id="edit-price" name="edit-price">
-    
-                <label for="edit-size">Size:</label>
-                <select id="edit-size" name="edit-size">
-                <option value="small">Small</option>
-                <option value="medium">Medium</option>
-                <option value="large">Large</option>
-          </select>
-
-                <button id="saveButton" type="button" onclick="submitEdit()">Save</button>
-            </form>
-        </div>
-    </div>
-    
-    
-
-    
-   <script src="remove.js"></script> 
     <script src="products.js"></script>
 </body>
 </html>

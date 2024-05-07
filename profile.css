@@ -227,6 +227,7 @@ input {
     font-size: small;
   }
   
+
   @media (max-width: 768px) {
     .orders-container {
         display: block; /* Display vertically on mobile */
@@ -237,4 +238,5 @@ input {
         margin-bottom: 20px; 
         
     }
+
   }

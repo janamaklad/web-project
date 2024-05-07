@@ -5,17 +5,19 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="AdminProducts.css">
+    <link rel="stylesheet" href="products.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <title>Home Fragrance</title>
+    <title>girls Products</title>
 
 </head>
 
 <body>
     <div class="navbar">
-        <a href="Admin.html" class="logo">
+        <a href="admin.html" class="logo">
             <img src="logo.jpg" width="125px">
         </a>
+        
+
         
         <div class="search-bar">
             <form action="#">
@@ -33,18 +35,30 @@
         </div>
     </div>
 
-    <div class="product" onclick="showModal('sink1.PNG', ['sink1.PNG'], 'Glass Sink', '6000 LE', 'Hanumex')">
-        <img src="sink1.PNG" >
+    <h1>Girls jackets</h1>
+    
+    <div class="product" onclick="showModal('north face fleece.png', ['north face fleece.png', 'fleece2.png'], 'pink Jacket', '731LE', 'north face','x large')">
+        <img src="north face fleece.png" >
         <div class="product-details">
-            <h2>Glass Sink</h2>
-            <p>Price: 6000 LE</p>
-            <p>Brand: Hanumex</p>
-            <button onclick="removeProduct('sink1.PNG', 'Glass Sink', ' 6000 LE', 'Hanumex')">Remove</button>
-            <button class="edit-button" onclick="editProduct('sink1.PNG', 'Glass Sink', ' 6000 LE', 'Hanumex')">Edit</button>
+            <h2> pink Jacket</h2>
+            <p>Price: 731 LE</p>
+            <p>Brand: north face</p>
+            <p>Size:x large </p>
+            <button onclick="removeProduct('north face fleece.PNG','pink Jacket', '731LE', 'north face','x large')">Remove</button>
+            <button class="edit-button" onclick="editProduct('north face fleece.png', 'pink Jacket', '731LE', 'north face','x large')">Edit</button>
         </div>
     </div>
 
-            
+    <div class="product" onclick="showModal('girl pink jacketf.PNG', ['girl pink jacket.PNG','pinkishh.png'], 'pink polyster', '586LE', 'adidas','medium')">
+        <img src="girl pink jacket.png" >
+        <div class="product-details">
+            <h2>pink polyster</h2>
+            <p>Price: 586 LE</p>
+            <p>Brand: adidas</p>
+            <p>Size: medium </p>
+                <button onclick="removeProduct('girl pink jacket.PNG', 'pink polyster', '586LE', 'adidas','medium')">Remove</button>
+                <button class="edit-button" onclick="editProduct('girl pink jackett.png', 'pink polyster', '586LE', 'adidas','medium')">Edit</button>
+    </div>
     <!-- Add more products -->
 
 
@@ -60,7 +74,8 @@
                 <p id="modal-price"></p>
                 <p id="modal-brand"></p>
                 <p id="modal-size"></p>
-
+                <a href="cart.html"><button>Add To Cart</button></a>
+                <a href="favorites.html"><button>Add To Favorites</button></a>
             </div>
             <div class="arrow-container">
                 <button class="prev" onclick="changeImage(-1)">&#10094;</button>
@@ -68,30 +83,6 @@
             </div>
         </div>
     </div>
-    <div id="editModal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeEditModal()">&times;</span>
-            <h2>Edit Product</h2>
-            <form id="editForm">
-                <label for="edit-price">Price:</label>
-                <input type="numeric" id="edit-price" name="edit-price">
-    
-                <label for="edit-size">Size:</label>
-                <select id="edit-size" name="edit-size">
-                <option value="small">Small</option>
-                <option value="medium">Medium</option>
-                <option value="large">Large</option>
-          </select>
-
-                <button id="saveButton" type="button" onclick="submitEdit()">Save</button>
-            </form>
-        </div>
-    </div>
-    
-    
-
-    
-   <script src="remove.js"></script> 
     <script src="products.js"></script>
 </body>
 </html>

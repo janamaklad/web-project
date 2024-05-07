@@ -5,17 +5,19 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="AdminProducts.css">
+    <link rel="stylesheet" href="products.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <title>Home Fragrance</title>
+    <title>girls Products</title>
 
 </head>
 
 <body>
     <div class="navbar">
-        <a href="Admin.html" class="logo">
+        <a href="admin.html" class="logo">
             <img src="logo.jpg" width="125px">
         </a>
+        
+
         
         <div class="search-bar">
             <form action="#">
@@ -33,18 +35,30 @@
         </div>
     </div>
 
-    <div class="product" onclick="showModal('sink1.PNG', ['sink1.PNG'], 'Glass Sink', '6000 LE', 'Hanumex')">
-        <img src="sink1.PNG" >
+    <h1>Girls costumes</h1>
+    <div class="product" onclick="showModal('ballgown.PNG', ['ballgown.PNG','ballgown2.png'], 'pink dress', '2,929LE', 'unbranded','7-8y')">
+        <img src="ballgown.png" >
         <div class="product-details">
-            <h2>Glass Sink</h2>
-            <p>Price: 6000 LE</p>
-            <p>Brand: Hanumex</p>
-            <button onclick="removeProduct('sink1.PNG', 'Glass Sink', ' 6000 LE', 'Hanumex')">Remove</button>
-            <button class="edit-button" onclick="editProduct('sink1.PNG', 'Glass Sink', ' 6000 LE', 'Hanumex')">Edit</button>
+            <h2>pink dress</h2>
+            <p>Price: 2,929 LE</p>
+            <p>Brand: unbranded</p>
+            <p>Size: 7-8y </p>
+            <button onclick="removeProduct('ballgown.PNG','pink dress', '2,929LE', 'unbranded','7-8y')">Remove</button>
+            <button class="edit-button" onclick="editProduct('ballgown.png', 'pink dress', '2,929LE', 'unbranded','7-8y')">Edit</button>
         </div>
     </div>
 
-            
+    <div class="product" onclick="showModal('banana leaf.png', ['banana leaf.png','leaf2.png'], 'hawaiian set', '1,145 LE', 'unbranded','8-10 y')">
+        <img src="banana leaf.png" >
+        <div class="product-details">
+            <h2> hawaiian set</h2>
+            <p>Price: 1,145 LE</p>
+            <p>Brand: unbranded</p>
+            <p>Size:8-10 y </p>
+            <button onclick="removeProduct('banana leaf.PNG', 'hawaiian set', '1,145 LE', 'unbranded','8-10 y')">Remove</button>
+            <button class="edit-button" onclick="editProduct('banana leaf.PNG','hawaiian set', '1,145 LE', 'unbranded','8-10 y')">Edit</button>
+        </div>
+    </div>
     <!-- Add more products -->
 
 
@@ -60,7 +74,8 @@
                 <p id="modal-price"></p>
                 <p id="modal-brand"></p>
                 <p id="modal-size"></p>
-
+                <a href="cart.html"><button>Add To Cart</button></a>
+                <a href="favorites.html"><button>Add To Favorites</button></a>
             </div>
             <div class="arrow-container">
                 <button class="prev" onclick="changeImage(-1)">&#10094;</button>
@@ -68,30 +83,6 @@
             </div>
         </div>
     </div>
-    <div id="editModal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeEditModal()">&times;</span>
-            <h2>Edit Product</h2>
-            <form id="editForm">
-                <label for="edit-price">Price:</label>
-                <input type="numeric" id="edit-price" name="edit-price">
-    
-                <label for="edit-size">Size:</label>
-                <select id="edit-size" name="edit-size">
-                <option value="small">Small</option>
-                <option value="medium">Medium</option>
-                <option value="large">Large</option>
-          </select>
-
-                <button id="saveButton" type="button" onclick="submitEdit()">Save</button>
-            </form>
-        </div>
-    </div>
-    
-    
-
-    
-   <script src="remove.js"></script> 
     <script src="products.js"></script>
 </body>
 </html>

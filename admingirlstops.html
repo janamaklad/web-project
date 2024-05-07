@@ -5,17 +5,19 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="AdminProducts.css">
+    <link rel="stylesheet" href="products.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <title>Home Fragrance</title>
+    <title>girls Products</title>
 
 </head>
 
 <body>
     <div class="navbar">
-        <a href="Admin.html" class="logo">
+        <a href="admin.html" class="logo">
             <img src="logo.jpg" width="125px">
         </a>
+        
+
         
         <div class="search-bar">
             <form action="#">
@@ -33,18 +35,30 @@
         </div>
     </div>
 
-    <div class="product" onclick="showModal('sink1.PNG', ['sink1.PNG'], 'Glass Sink', '6000 LE', 'Hanumex')">
-        <img src="sink1.PNG" >
+    <h1>Girls tops</h1>
+    <div class="product" onclick="showModal('pink cotton.png', ['pink cotton.png', 'pink cotton2.PNG'], 'pink t.shirt', '342 LE', 'Nike','age 13-14')">
+        <img src="pink cotton.png" >
         <div class="product-details">
-            <h2>Glass Sink</h2>
-            <p>Price: 6000 LE</p>
-            <p>Brand: Hanumex</p>
-            <button onclick="removeProduct('sink1.PNG', 'Glass Sink', ' 6000 LE', 'Hanumex')">Remove</button>
-            <button class="edit-button" onclick="editProduct('sink1.PNG', 'Glass Sink', ' 6000 LE', 'Hanumex')">Edit</button>
+            <h2>pink t.shirt</h2>
+            <p>Price: 342 LE</p>
+            <p>Brand: Nike</p>
+            <p>Size: age 13-14 </p> 
+
+            <button onclick="removeProduct('pink cotton.PNG','pink t.shirt', '342 LE', 'Nike','age 13-14')">Remove</button>
+            <button class="edit-button" onclick="editProduct('pink cotton.png', 'pink t.shirt', '342 LE', 'Nike','age 13-14')">Edit</button>
         </div>
     </div>
 
-            
+    <div class="product" onclick="showModal('adidas t.shirt.PNG', ['adidas t.shirt.PNG', 'adidasss2.PNG'], 'white cotton', '342 LE', 'adidas','x large')">
+        <img src="adidas t.shirt.png" >
+        <div class="product-details">
+            <h2>white cotton</h2>
+            <p>Price: 342 LE</p>
+            <p>Brand: adidas</p>
+            <p>Size: x large 
+                <button onclick="removeProduct('adidas t.shirt.PNG', 'white cotton', '342 LE', 'adidas','x large')">Remove</button>
+                <button class="edit-button" onclick="editProduct('adidas t.shirt.png', 'white cotton', '342 LE', 'adidas','x large')">Edit</button>
+    </div>
     <!-- Add more products -->
 
 
@@ -60,7 +74,8 @@
                 <p id="modal-price"></p>
                 <p id="modal-brand"></p>
                 <p id="modal-size"></p>
-
+                <a href="cart.html"><button>Add To Cart</button></a>
+                <a href="favorites.html"><button>Add To Favorites</button></a>
             </div>
             <div class="arrow-container">
                 <button class="prev" onclick="changeImage(-1)">&#10094;</button>
@@ -68,30 +83,6 @@
             </div>
         </div>
     </div>
-    <div id="editModal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeEditModal()">&times;</span>
-            <h2>Edit Product</h2>
-            <form id="editForm">
-                <label for="edit-price">Price:</label>
-                <input type="numeric" id="edit-price" name="edit-price">
-    
-                <label for="edit-size">Size:</label>
-                <select id="edit-size" name="edit-size">
-                <option value="small">Small</option>
-                <option value="medium">Medium</option>
-                <option value="large">Large</option>
-          </select>
-
-                <button id="saveButton" type="button" onclick="submitEdit()">Save</button>
-            </form>
-        </div>
-    </div>
-    
-    
-
-    
-   <script src="remove.js"></script> 
     <script src="products.js"></script>
 </body>
 </html>
