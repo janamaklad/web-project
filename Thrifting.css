@@ -176,3 +176,89 @@ body {
   .sell-now img:hover {
     transform: scale(1.005); /* Increase scale on hover */
   }
+
+  @media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo {
+        margin-left: 20px; /* Adjust as needed */
+        margin-bottom: 10px; /* Add space between logo and other elements */
+    }
+
+    .icons {
+        margin-left: 20px; /* Adjust as needed */
+        margin-right: 20px;
+        margin-bottom: 10px; /* Add space between icons and other elements */
+    }
+
+    .search-bar {
+        margin: 0;
+        margin-bottom: 10px; /* Add space between search bar and other elements */
+        width: 100%; /* Make search bar full width */
+    }
+
+    .search-bar form {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .search-bar input[type=search] {
+        width: calc(100% - 20px); /* Adjust as needed */
+        margin: 0 auto; /* Center search input */
+    }
+
+    .search-bar button {
+        width: calc(100% - 20px); /* Adjust as needed */
+        margin: 0 auto; /* Center search button */
+    }
+
+    .center-pic {
+        margin-top: 20px; /* Adjust as needed */
+    }
+
+    .center-pic img {
+        margin-top: 20px; /* Adjust as needed */
+    }
+
+    .buttons {
+        position: static; /* Remove fixed position */
+        width: 100%; /* Make buttons full width */
+        text-align: center; /* Center buttons */
+    }
+
+    .register-btn,
+    .signin-btn {
+        margin: 10px;
+    }
+
+    .categories-header {
+        margin-left: 20px; /* Adjust as needed */
+        font-size: 24px; /* Adjust as needed */
+        text-align: center; /* Center text */
+    }
+
+    .categories a {
+        margin: 10px; /* Adjust as needed */
+        width: 100px; /* Adjust as needed */
+        height: 100px; /* Adjust as needed */
+    }
+
+    .categories img {
+        border-radius: 0; /* Remove border radius */
+    }
+
+    .sell-now img {
+        margin-top: 20px; /* Adjust as needed */
+    }
+
+    .sell-button {
+        position: static; /* Remove absolute position */
+        width: 100%; /* Make button full width */
+        margin-top: 20px; /* Adjust as needed */
+        left: 0; /* Reset left position */
+        transform: none; /* Reset transform */
+    }
+}
