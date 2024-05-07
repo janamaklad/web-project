@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="products.css">
-    <title>Top Wear Products</title>
+    <title> accessories</title>
 </head>
 <body>
     <div class="navbar">
@@ -14,9 +14,9 @@
         </a>
         
         <div class="icons">
-            <a href="#profile"><i class="far fa-user"></i></a>
-            <a href="#Cart"><i class="fas fa-shopping-cart"></i></a>
-            <a href="#favorites"><i class="fas fa-heart"></i></a>
+            <a href="profile.html"><i class="far fa-user"></i></a>
+            <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+            <a href="favorites.html"><i class="fas fa-heart"></i></a>
         </div>
         
         <div class="search-bar">
@@ -35,34 +35,35 @@
         </div>
     </div>
 
-    <h1>Men Bottom Wear</h1>
-
-    <div class="product" onclick="showModal('Bershka checkered pants.PNG', ['Bershka checkered pants.PNG', 'bershka2.PNG'], 'checkered pants', '688 LE', 'Bershka','38 EUR')">
-        <img src="Bershka checkered pants.png" >
+    <h1> boys accessories</h1>
+    <div class="product" onclick="showModal('chigaco bulls hat.PNG', ['chigaco bulls hat.PNG',  'bulls2.PNG'], 'red hat', '305 LE', 'bulls','no')">
+        <img src="chigaco bulls hat.png" >
         <div class="product-details">
-            <h2> checkered pants</h2>
-            <p>Price: 688 LE</p>
-            <p>Brand: Bershka</p>
-            <p>Size: 38 EUR </p>
+            <h2>red hat</h2>
+            <p>Price: 305 LE</p>
+            <p>Brand: bulls </p>
+            <p>Size: no </p>
             <a href="cart.html"><button>Add To Cart</button></a>
-            <button class="favorite-btn">Add to Favorites</button>
-        </div>
-    </div>
-
-    <div class="product" onclick="showModal('Decked out Joggers.PNG', ['Decked out Joggers.PNG', 'decked2.PNG'], 'gray Denim', '900 LE', 'Deckeout','small')">
-        <img src="Decked out Joggers.png" >
-        <div class="product-details">
-            <h2>gray Denim</h2>
-            <p>Price: 900 LE</p>
-            <p>Brand: Deckeout</p>
-            <p>Size: small </p>
-            <a href="cart.html"><button>Add To Cart</button></a>
-            <button class="favorite-btn">Add to Favorites</button>
+            <button class="favorites.html">Add to Favorites</button>
         </div>
     </div>
 
 
-     <!-- Add more product  -->
+    <div class="product" onclick="showModal('vintage scarf.PNG', ['vintage scarf.PNG', 'vintagescarf2.PNG'], 'vintage scarf', '305 LE', 'unbranded','no')">
+        <img src="vintage scarf.png" >
+        <div class="product-details">
+            <h2>vintage scarf</h2>
+            <p>Price: 305 LE</p>
+            <p>Brand: unbranded </p>
+            <p>Size: no </p>
+            <a href="cart.html"><button>Add To Cart</button></a>
+            <button class="favorites.html">Add to Favorites</button>
+        </div>
+    </div>
+
+
+
+    / <!-- Add more product -->
 
 
     <div id="modal" class="modal" onclick="closeModal()">
@@ -85,7 +86,6 @@
                 <button class="next" onclick="changeImage(1)">&#10095;</button>
             </div>
         </div>
-
     </div>
     <script src="products.js"></script>
 </body>
