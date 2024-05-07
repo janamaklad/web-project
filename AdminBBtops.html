@@ -2,17 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="AdminProducts.css">
-    <title>Baby SleepSuit</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Baby Tops</title>
+
 </head>
+
 <body>
     <div class="navbar">
         <a href="Admin.html" class="logo">
             <img src="logo.jpg" width="125px">
         </a>
-        
         
         <div class="search-bar">
             <form action="#">
@@ -24,42 +27,41 @@
             <a href="AdminWomen.html" class="category active">Women</a>
             <a href="AdminMen.html" class="category">Men</a>
             <a href="AdminGirls.html" class="category">Girls</a>
-            <a href="AdminBaby.html" class="category">Boys</a>
+            <a href="AdminBoys.html" class="category">Boys</a>
             <a href="AdminBaby.html" class="category">Baby</a>
-            <a href="AdminBaby.html" class="category">Home</a> 
+            <a href="AdminHome.html" class="category">Home</a> 
         </div>
     </div>
 
-    <div class="product" onclick="showModal('bbsleepsuit1.PNG', ['bbsleepsuit1.PNG'], 'turtle sleepsuit', '400 LE', 'mothercare','3-6 Months')">
-        <img src="bbsleepsuit1.png" >
+    <div class="product" onclick="showModal('bbtops1.PNG', ['bbtops1.PNG'], 'floral baby top', '350 LE', 'mothercare','3-6 Months')">
+        <img src="bbtops1.png" >
         <div class="product-details">
-            <h2> turtle sleepsuit</h2>
-            <p>Price: 400 LE</p>
+            <h2> floral baby top</h2>
+            <p>Price: 350 LE</p>
             <p>Brand: mothercare</p>
             <p>Size: 3-6 Months </p>
-            <button onclick="removeProduct('bbsleepsuit1.PNG', 'turtle sleepsuit', ' 400 LE', 'mothercare','3-6 Months')">Remove</button>
-            <button class="edit-button" onclick="editProduct('bbsleepsuit1.PNG', 'turtle sleepsuit', ' 400 LE', 'mothercare','3-6 Months')">Edit</button>
+            <button onclick="removeProduct('bbtops1.PNG', 'floral baby top', ' 350 LE', 'mothercare',' 3-6 Months')">Remove</button>
+            <button class="edit-button" onclick="editProduct('bbtops1.PNG', 'floral baby top', ' 350 LE', 'mothercare',' 3-6 Months')">Edit</button>
         </div>
     </div>
 
-    <div class="product" onclick="showModal('bbsleepsuit2.PNG', ['bbsleepsuit2.PNG'], 'pink stars sleepsuit', '450 LE', 'mothercare','0-3 Months')">
-        <img src="bbsleepsuit2.png" >
+    <div class="product" onclick="showModal('bbtops2.PNG', ['bbtops2.PNG'], 'dinosaur t-shirt', '300 LE', 'mothercare',' 1 year')">
+        <img src="bbtops2.png" >
         <div class="product-details">
-            <h2>pink stars sleepsuit</h2>
-            <p>Price: 450 LE</p>
+            <h2>dinosaur t-shirt </h2>
+            <p>Price: 300 LE</p>
             <p>Brand: mothercare</p>
-            <p>Size: 0-3 Months </p>
-            <button onclick="removeProduct('bbsleepsuit2.PNG', 'pink stars sleepsuit', ' 450 LE', 'mothercare','0-3 Months')">Remove</button>
-            <button class="edit-button" onclick="editProduct('bbsleepsuit2.PNG', 'pink stars sleepsuit', ' 450 LE', 'mothercare','0-3 Months')">Edit</button>
+            <p>Size: 1 year </p>
+            <button onclick="removeProduct('bbtops2.PNG', 'dinosaur t-shirt', ' 300 LE', 'mothercare','1 year')">Remove</button>
+            <button class="edit-button" onclick="editProduct('bbtops2.PNG', 'dinosaur t-shirt', ' 300 LE', 'mothercare','1 year')">Edit</button>
         </div>
     </div>
 
+            
+    <!-- Add more products -->
 
-     <!-- Add more product  -->
 
-
-   
-     <div id="modal" class="modal" onclick="closeModal()">
+    <div id="modal" class="modal" onclick="closeModal()">
         <div class="modal-content" onclick="event.stopPropagation()">
             <span class="close" onclick="closeModal()">&times;</span>
             <div class="modal-images">
@@ -99,8 +101,7 @@
         </div>
     </div>
     
-   
-    
+
    <script src="remove.js"></script> 
 
 </body>
