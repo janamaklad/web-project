@@ -5,9 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="products.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <title>Top Wear Products</title>
-
+    <title> accessories</title>
 </head>
 <body>
     <div class="navbar">
@@ -16,11 +14,9 @@
         </a>
         
         <div class="icons">
-            <a href="#profile"><i class="far fa-user"></i></a>
-            <a href="#Cart"><i class="fas fa-shopping-cart"></i></a>
-            <a href="#favorites"><i class="fas fa-heart"></i></a>
-          
-
+            <a href="profile.html"><i class="far fa-user"></i></a>
+            <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+            <a href="favorites.html"><i class="fas fa-heart"></i></a>
         </div>
         
         <div class="search-bar">
@@ -38,31 +34,36 @@
             <a href="home.html" class="category">Home</a> 
         </div>
     </div>
-    <h1>Boys shoes</h1>
-    <div class="product" onclick="showModal('nike trainers.png', ['nike trainers.png', 'niketrainers2.PNG'], 'blue Leather', '611 LE', 'Nike','uk 4.5')">
-        <img src="nike trainers.png" >
+
+    <h1> boys accessories</h1>
+    <div class="product" onclick="showModal('chigaco bulls hat.PNG', ['chigaco bulls hat.PNG',  'bulls2.PNG'], 'red hat', '305 LE', 'bulls','no')">
+        <img src="chigaco bulls hat.png" >
         <div class="product-details">
-            <h2>blue Leather</h2>
-            <p>Price: 611 LE</p>
-            <p>Brand: Nike</p>
-            <p>Size: uk 4.5 </p>
+            <h2>red hat</h2>
+            <p>Price: 305 LE</p>
+            <p>Brand: bulls </p>
+            <p>Size: no </p>
             <a href="cart.html"><button>Add To Cart</button></a>
-            <a href="favorites.html"><button>Add To Favorites</button></a>
+            <button class="favorites.html">Add to Favorites</button>
         </div>
     </div>
 
-    <div class="product" onclick="showModal('beige uggs.PNG', ['beige uggs.PNG', 'ugg2.PNG'], 'beige wool', '2,859 LE', 'ugg','uk 3')">
-        <img src="beige uggs.png" >
+
+    <div class="product" onclick="showModal('vintage scarf.PNG', ['vintage scarf.PNG', 'vintagescarf2.PNG'], 'vintage scarf', '305 LE', 'unbranded','no')">
+        <img src="vintage scarf.png" >
         <div class="product-details">
-            <h2> beige wool</h2>
-            <p>Price: 2,859 LE</p>
-            <p>Brand: ugg </p>
-            <p>Size: uk 3</p>
+            <h2>vintage scarf</h2>
+            <p>Price: 305 LE</p>
+            <p>Brand: unbranded </p>
+            <p>Size: no </p>
             <a href="cart.html"><button>Add To Cart</button></a>
-            <a href="favorites.html"><button>Add To Favorites</button></a>
+            <button class="favorites.html">Add to Favorites</button>
         </div>
     </div>
-    <!-- Add more products -->
+
+
+
+    / <!-- Add more product -->
 
 
     <div id="modal" class="modal" onclick="closeModal()">
@@ -87,6 +88,5 @@
         </div>
     </div>
     <script src="products.js"></script>
- 
 </body>
 </html>
