@@ -2,15 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="AdminProducts.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <title>Home Fragrance</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <link rel="stylesheet" href="AdminProducts.css"> 
+    <link rel="stylesheet" href="AdminCategory.css">
+    <title>Sport Wear Products</title>
+    
 
 </head>
-
 <body>
     <div class="navbar">
         <a href="Admin.html" class="logo">
@@ -33,31 +34,30 @@
         </div>
     </div>
 
-    <div class="product" onclick="showModal('vase.PNG', ['vase.PNG'], 'Antique Vase', '2500 LE', 'Antique')">
-        <img src="vase.PNG" >
+    
+    <div class="product">
+        <img src="adidas fulltracksuit.png" >
         <div class="product-details">
-            <h2>Antique vase</h2>
-            <p>Price: 2500 LE</p>
-            <p>Brand: Antique</p>
-            <button onclick="removeProduct('vase.PNG', 'Antique Vase', ' 2500 LE', 'Antiques')">Remove</button>
-            <button class="edit-button" onclick="editProduct('vase.PNG', 'Antique Vase', ' 2500 LE', 'Antiques')">Edit</button>
+            <h2>full set</h2>
+            <p>Price: 1,222 LE</p>
+            <p>Brand: adidas</p>
+            <p>Size: large </p>
+            <button onclick="removeProduct('adidas fulltracksuit.png', ['adidas fulltracksuit.png', 'fullset2.PNG'], 'full set', '1,222 LE', 'adidas','large')">Remove</button>
+            <button class="edit-button" onclick="editProduct('adidas fulltracksuit.png', ['adidas fulltracksuit.png', 'fullset2.PNG'], 'full set', '1,222 LE', 'adidas','large')">Edit</button>
         </div>
     </div>
 
-    <div class="product" onclick="showModal('clock1.PNG', ['clock1.PNG', 'clock2.PNG'], 'Grand Clock', '20000 LE', 'Hans')">
-        <img src="clock1.PNG" >
+    <div class="product">
+        <img src="puma football.png" >
         <div class="product-details">
-            <h2>Grand Clock</h2>
-            <p>Price: 20000 LE</p>
-            <p>Brand: Hans</p>
-            <button onclick="removeProduct('clock1.PNG', 'Grand Clock', ' 20000 LE', 'Hans')">Remove</button>
-            <button class="edit-button" onclick="editProduct('clock1.PNG', 'Grand Clock', ' 20000 LE', 'Hans')">Edit</button>
+            <h2> green polyster</h2>
+            <p>Price: 782 LE</p>
+            <p>Brand: puma </p>
+            <p>Size: large</p>
+            <button onclick="removeProduct('puma football.PNG', ['puma football.PNG', 'football2.PNG'], 'green polyster', '782 LE', 'puma','large')">Remove</button>
+            <button class="edit-button" onclick="editProduct('puma football.PNG', ['puma football.PNG', 'football2.PNG'], 'green polyster', '782 LE', 'puma','large')">Edit</button>
         </div>
     </div>
-            
-    <!-- Add more products -->
-
-
     <div id="modal" class="modal" onclick="closeModal()">
         <div class="modal-content" onclick="event.stopPropagation()">
             <span class="close" onclick="closeModal()">&times;</span>
@@ -70,7 +70,7 @@
                 <p id="modal-price"></p>
                 <p id="modal-brand"></p>
                 <p id="modal-size"></p>
-
+           <!--     <button onclick="removeProduct()">Add To Cart</button> -->
             </div>
             <div class="arrow-container">
                 <button class="prev" onclick="changeImage(-1)">&#10094;</button>
@@ -99,7 +99,29 @@
     </div>
     
     
+    
+    <script>
+        // Simulating admin login state
+        let isAdminLoggedIn = true; // Set to true to simulate admin logged in
+
+        function addToCartOrRemove(image, title, price, brand, size) {
+    if (isAdminLoggedIn) {
+        // Show confirmation message
+        removeProductConfirmation();
+        
+        // Remove the product from the page
+        console.log("Product removed:", title);
+        // Here you can implement the logic to actually remove the product
+    } else {
+        // Perform add to cart action
+        console.log("Product added to cart:", title);
+        // Here you can implement the logic to add the product to cart
+    }
+}
+   
+    </script>
+    
    <script src="remove.js"></script> 
- 
+    <script src="products.js"></script>
 </body>
 </html>

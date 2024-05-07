@@ -2,12 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="AdminProducts.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <title>Home Fragrance</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+   
+    <link rel="stylesheet" href="AdminProducts.css"> 
+<link rel="stylesheet" href="AdminCategory.css">
+    <title>Top Wear Products</title>
+    
 
 </head>
 
@@ -33,28 +35,33 @@
         </div>
     </div>
 
-    <div class="product" onclick="showModal('vase.PNG', ['vase.PNG'], 'Antique Vase', '2500 LE', 'Antique')">
-        <img src="vase.PNG" >
-        <div class="product-details">
-            <h2>Antique vase</h2>
-            <p>Price: 2500 LE</p>
-            <p>Brand: Antique</p>
-            <button onclick="removeProduct('vase.PNG', 'Antique Vase', ' 2500 LE', 'Antiques')">Remove</button>
-            <button class="edit-button" onclick="editProduct('vase.PNG', 'Antique Vase', ' 2500 LE', 'Antiques')">Edit</button>
-        </div>
-    </div>
+    
 
-    <div class="product" onclick="showModal('clock1.PNG', ['clock1.PNG', 'clock2.PNG'], 'Grand Clock', '20000 LE', 'Hans')">
-        <img src="clock1.PNG" >
+    <div class="product" >
+        <img src="wool vest.png" >
         <div class="product-details">
-            <h2>Grand Clock</h2>
-            <p>Price: 20000 LE</p>
-            <p>Brand: Hans</p>
-            <button onclick="removeProduct('clock1.PNG', 'Grand Clock', ' 20000 LE', 'Hans')">Remove</button>
-            <button class="edit-button" onclick="editProduct('clock1.PNG', 'Grand Clock', ' 20000 LE', 'Hans')">Edit</button>
+            <h2>wool vest</h2>
+            <p>Price: 1250LE</p>
+            <p>Brand: chateau</p>
+            <p>Size: large </p>
+            <button onclick="removeProduct('wool vest.png', ['wool vest.png'], 'wool vest', '1250 LE', 'chateau','large')">Remove</button>
+            <button class="edit-button" onclick="editProduct('wool vest.png', ['wool vest.png'], 'wool vest', '1250 LE', 'chateau','large')">Edit</button>
         </div>
     </div>
+    <div class="product" >
+        <img src="tru shirt.png" >
+        <div class="product-details">
+            <h2>tru shirt</h2>
+            <p>Price: 528</p>
+            <p>Brand: LcWakiki</p>
+            <p>Size: large </p>
+            <button onclick="removeProduct('tru shirt.PNG', ['tru shirt.PNG', 'trushirt2.PNG'], 'tru shirt', '528 LE', 'LcWakiki','large')">Remove</button>
+            <button class="edit-button" onclick="editProduct('tru shirt.PNG', ['tru shirt.PNG', 'trushirt2.PNG'], 'tru shirt', '528 LE', 'LcWakiki','large')">Edit</button>
+
+
             
+        </div>
+    </div>
     <!-- Add more products -->
 
 
@@ -70,7 +77,7 @@
                 <p id="modal-price"></p>
                 <p id="modal-brand"></p>
                 <p id="modal-size"></p>
-
+           <!--     <button onclick="removeProduct()">Add To Cart</button> -->
             </div>
             <div class="arrow-container">
                 <button class="prev" onclick="changeImage(-1)">&#10094;</button>
@@ -99,7 +106,30 @@
     </div>
     
     
+    <script>
+        // Simulating admin login state
+        let isAdminLoggedIn = true; // Set to true to simulate admin logged in
+
+        function addToCartOrRemove(image, title, price, brand, size) {
+    if (isAdminLoggedIn) {
+        // Show confirmation message
+        removeProductConfirmation();
+        
+        // Remove the product from the page
+        console.log("Product removed:", title);
+        // Here you can implement the logic to actually remove the product
+    } else {
+        // Perform add to cart action
+        console.log("Product added to cart:", title);
+        // Here you can implement the logic to add the product to cart
+    }
+}
+
+
+       
+    </script>
+    
    <script src="remove.js"></script> 
- 
+    <script src="products.js"></script>
 </body>
 </html>
