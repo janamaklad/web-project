@@ -227,4 +227,15 @@ input {
     font-size: small;
   }
   
-  
+
+  @media (max-width: 768px) {
+    .orders-container {
+        display: block; /* Display vertically on mobile */
+    }
+
+    .order {
+        flex: 0 0 100%; /* Take full width on mobile */
+        margin-bottom: 20px; 
+        
+    }
+
