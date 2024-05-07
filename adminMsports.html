@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="AdminCategory.css">
+    
     <link rel="stylesheet" href="AdminProducts.css"> 
-    <title>Accessories Products</title>
+    <link rel="stylesheet" href="AdminCategory.css">
+    <title>Sport Wear Products</title>
     
 
 </head>
@@ -33,41 +34,30 @@
         </div>
     </div>
 
-   
+    
     <div class="product">
-        <img src="buckethat1.PNG" >
+        <img src="Nike Joggers.png" >
         <div class="product-details">
-            <h2> satin bucket hat</h2>
-            <p>Price:200 LE</p>
-            <p>Brand:lc waikiki</p>
-            <button onclick="removeProduct('buckethat1.PNG', ' satin bucket hat', '200 LE', 'lc waikiki',null)">Remove</button>
-            <button class="edit-button" onclick="editProduct('buckethat1.PNG', ' satin bucket hat', '200 LE', 'lc waikiki',null)">Edit</button>
+            <h2>nike Joggers</h2>
+            <p>Price: 875 LE</p>
+            <p>Brand:Nike</p>
+            <p>Size: Medium/Large </p>
+            <button onclick="removeProduct('Nike Joggers.PNG', ['Nike Joggers.PNG', 'jogg2.png'], '875 LE', 'Nike','Medium/Large')">Remove</button>
+            <button class="edit-button" onclick="editProduct('Nike Joggers.PNG', ['Nike Joggers.PNG', 'jogg2.png'], '875 LE', 'Nike','Medium/Large')">Edit</button>
         </div>
     </div>
 
     <div class="product">
-        <img src="versaceglass1.PNG" >
+        <img src="adidas squadra.png" >
         <div class="product-details">
-            <h2>Versace Glasses</h2>
-            <p>Price: 1,500 LE</p>
-            <p>Brand:versace</p>
-            <button onclick="removeProduct('versaceglass1.PNG', 'Versace Glasses', '1,500 LE', 'versace',null)">Remove</button>
-            <button class="edit-button" onclick="editProduct('versaceglass1.PNG', 'Versace Glasses', '1,500 LE', 'versace',null)">Edit</button>
+            <h2>red t.shirt</h2>
+            <p>Price: 581 LE</p>
+            <p>Brand:Adidas</p>
+            <p>Size: Large </p>
+            <button onclick="removeProduct('adidas squadra.PNG', ['adidas squadra.PNG ', 'squad2.png'], 'red t.shirt', '581 LE', 'Adidas','Large')">Remove</button>
+            <button class="edit-button" onclick="editProduct('adidas squadra.PNG', ['adidas squadra.PNG ', 'squad2.png'], 'red t.shirt', '581 LE', 'Adidas','Large')">Edit</button>
         </div>
     </div>
-
-
-    <div class="product" >
-        <img src="guesswatch.png" >
-        <div class="product-details">
-            <h2>Guess Watch </h2>
-            <p>Price: 1,000 LE</p>
-            <p>Brand:guess</p>
-            <button onclick="removeProduct('guesswatch.PNG', 'Guess Watch', '1,000 LE', 'guess',null)">Remove</button>
-            <button class="edit-button" onclick="editProduct('guesswatch.PNG','Guess Watch', '1,000 LE', 'guess',null)">Edit</button>
-        </div>
-    </div>
-   
     <div id="modal" class="modal" onclick="closeModal()">
         <div class="modal-content" onclick="event.stopPropagation()">
             <span class="close" onclick="closeModal()">&times;</span>
@@ -128,9 +118,7 @@
         // Here you can implement the logic to add the product to cart
     }
 }
-
-
-       
+   
     </script>
     
    <script src="remove.js"></script> 
