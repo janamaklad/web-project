@@ -16,7 +16,7 @@
                 <button class="manage-btn" onclick="toggleOptions('products')">Manage Products</button>
                 <button class="manage-btn" onclick="toggleOptions('users')">Manage Users</button>
                 <button class="manage-btn" onclick="toggleOptions('orders')">Manage Orders</button>
-                <button class="manage-btn" onclick="toggleOptions('money')">Revenue</button>
+                <button class="manage-btn" onclick="toggleOptions('sales')">View Sales</button>
                 <div class="bottom-element">
                     <a href="Admin.html" class="backButton">Back</a>
                 </div> 
@@ -33,6 +33,8 @@
                         <h2>Manage Users</h2>
                         <button class="option" onclick="window.location.href='viewusers.html'">View</button>
                         <button class="option" onclick="window.location.href='removeusers.html'">Remove</button>
+                        <button class="option" onclick="window.location.href=''">Add</button>
+                        <button class="option" onclick="window.location.href=''">Edit</button>                        
                     </div>
                 </div>
             
@@ -41,14 +43,14 @@
                         <h2>Manage Orders</h2>
                         <button class="option" onclick="window.location.href='viewOrders.html'">View</button>
                         <button class="option" onclick="window.location.href='addOrder.html'">Add</button>
-                        <button class="option">Edit</button>
-                        <button class="option">Remove</button>
+                        <button class="option" onclick="window.location.href='editorder.html'">Edit</button> 
+                        <button class="option" onclick="window.location.href='removeorder.html'">Remove</button> 
                     </div>
                 </div>
                 <div id="sales" class="tab">
                     <div class="options">
-                        <h2>Manage Orders</h2>
-                        <button class="option" onclick="window.location.href='revenue.html'">View Sales</button>
+                        <h2>View Sales</h2>
+                        <button class="option" onclick="window.location.href='AdminSales.html'">View Sales</button>
                     </div>
                 </div>
             </div>

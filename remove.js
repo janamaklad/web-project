@@ -73,19 +73,12 @@ function submitEdit() {
     // Get the updated values from the modal
     let newPrice = document.getElementById('edit-price').value;
     let newSize = document.getElementById('edit-size').value;
- 
-
-    
 
     // Perform logic to update the product with newPrice and newSize
     // For example, you can update the product details directly on the page
     document.querySelector('.product-details h2').innerText = productName; // Update title
     document.querySelectorAll('.product-details p')[0].innerText = "Price: " + newPrice; // Update price
     document.querySelectorAll('.product-details p')[2].innerText = "Size: " + newSize; // Update size
-
-    // Call the saveChanges function with the updated values
-    saveChanges(productName, newPrice, newSize);
-
 
     // Hide the modal
     document.getElementById('editModal').style.display = 'none';
