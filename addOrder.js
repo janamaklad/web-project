@@ -62,3 +62,59 @@ document.getElementById("addOrderForm").addEventListener("submit", function(even
     // Close the modal
     modal.style.display = "none";
 });
+
+function validateForm() {
+    var orderId = document.getElementById("orderId").value;
+    var orderDate = document.getElementById("orderDate").value;
+    var productName = document.getElementById("productName").value;
+    var productPrice = document.getElementById("productPrice").value;
+    var productSize = document.getElementById("productSize").value;
+    var productBrand = document.getElementById("productBrand").value;
+    var orderStatus = document.getElementById("orderStatus").value;
+    var valid = true;
+
+    if (orderId.trim() === "") {
+        displayError("orderId", "Order ID is required.");
+        valid = false;
+    }
+
+    if (orderDate.trim() === "") {
+        displayError("orderDate", "Purchase Date is required.");
+        valid = false;
+    }
+
+    if (productName.trim() === "") {
+        displayError("productName", "Product Name is required.");
+        valid = false;
+    }
+
+    if (productPrice.trim() === "") {
+        displayError("productPrice", "Price is required.");
+        valid = false;
+    }
+
+    if (productSize.trim() === "") {
+        displayError("productSize", "Size is required.");
+        valid = false;
+    }
+
+    if (productBrand.trim() === "") {
+        displayError("productBrand", "Brand is required.");
+        valid = false;
+    }
+
+    if (orderStatus.trim() === "") {
+        displayError("orderStatus", "Status is required.");
+        valid = false;
+    }
+
+    return valid;
+}
+
+function displayError(fieldId, message) {
+    var error = document.createElement("div");
+    error.className = "error-message";
+    error.textContent = "*" + message;
+    var field = document.getElementById(fieldId);
+    field.parentNode.insertBefore(error, field.nextSibling);
+}
