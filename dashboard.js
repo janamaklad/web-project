@@ -10,3 +10,15 @@ function manage(anchorId) {
         contentDiv.style.display = 'block';
     }
 }
+function toggleOptions(tabName) {
+    var tabs = document.querySelectorAll('.tab');
+    tabs.forEach(tab => {
+        if (tab.id === tabName) {
+            tab.style.display = 'flex';
+        } else {
+            tab.style.display = 'none';
+        }
+    });
+}
+
+

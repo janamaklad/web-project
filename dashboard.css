@@ -1,115 +1,87 @@
 body {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 50px;
+    overflow-x: hidden;
     font-family: Arial, sans-serif;
-    
-    background-image: url('sell\ background.jpg'); 
-    background-size: cover; 
-    background-position: center;
+    background-color: rgb(215, 214, 214);
+    border-radius: 5px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+
+
+.dashboard-header {
+    font-size: 24px;
+    margin-bottom: 20px;
 }
 
 .sidebar {
-    
-    width: 250px;
-    height: 100vh;
-    background-color: #333;
-    color: white;
-    padding: 20px;
     display: flex;
     flex-direction: column;
-    box-sizing: border-box;
+    align-items: center;
+    margin-right: 20px;
 }
 
-.sidebar h2 {
-    margin-bottom: 20px;
-    text-align: center;
+.panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.sidebar ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+.manage-btn {
+    margin-bottom: 30px;
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    border-radius: 9px;
+    background-color: #399b94;
+    color: white;
 }
 
-.sidebar li {
-    margin-bottom: 10px;
-}
-
-.content {
-    padding: 20px;
+.manage-btn:hover {
+    background-color: #88c6d4;
 }
 
 .tab {
     display: none;
 }
 
-table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-table th, table td {
-    border: 1px solid #ddd;
-    padding: 8px;
-    text-align: left;
-}
-
-table th {
-    background-color: #f2f2f2;
-}
-.options {
-    margin-top: 20px;
-    display: flex;
-    gap: 10px;
-}
-
 .option {
-    padding: 5px 10px;
-    background-color: #f0f0f0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    margin-right: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
     cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #6a6d6d;
+    color: white;
 }
 
 .option:hover {
-    background-color: #e0e0e0;
+    background-color: #999b9c;
 }
-.container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: stretch;
-    height: 100vh; /* Full height of the viewport */
+h2 {
+    display: block;
+    font-size: 1.3em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    font-weight: bold;
+    text-align: center; /* Center the text */
 }
-
-a{
-    display: inline-block;
-    color: #f0f0f0;
-    text-decoration: none;
-    transition: transform 0.3s; 
-}
-a:hover{
-    transform: scale(1.1);
-}
-.panel {
-    /* Panel styles */
-    
-    flex: 1; /* Take up remaining space */
-    background-color: #fff;
-    padding: 20px;
+/* Add this to your CSS file */
+h1 {
+    text-align: left;
+    margin-left: 90px;
+    font-style: italic;
     
 }
-.bottom-element {
-    margin-top: auto; /* Push the element to the bottom */
-    text-align: center; /* Center the content horizontally */
-}
-
-.backButton {
-    
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 0;
-    background-color: #333;
-    color: white;
-    padding: 10px 0;
-    margin-top: auto;
-}
-

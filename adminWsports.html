@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="Admin.css">
     <link rel="stylesheet" href="AdminProducts.css"> 
-    <title>Top Wear Products</title>
+    <title>Sport Wear Products</title>
     
 
 </head>
@@ -25,44 +25,30 @@
         </div>
     </div>
 
-    <h1>Women Dresses</h1>
+    <h1>Women sports Wear</h1>
     <div class="product">
-        <img src="floraldress1.PNG" >
+        <img src="biker short1.png" >
         <div class="product-details">
-            <h2>Floral Dress</h2>
-            <p>Price: 550 LE</p>
-            <p>Brand: Defecto</p>
-            <p>Size: Small </p>
-            <button onclick="removeProduct('floraldress1.PNG','Floral Dress', '550 LE', 'Defecto','Small')">Remove</button>
-            <button class="edit-button" onclick="editProduct('floraldress1.PNG','Floral Dress', '550 LE', 'Defecto','Small')">Edit</button>
-        </div>
-    </div>
-
-
-    <div class="product">
-        <img src="Ruffles pink dress1.PNG" >
-        <div class="product-details">
-            <h2>Ruffles Pink Dress</h2>
-            <p>Price: 750 LE</p>
-            <p>Brand: H&M</p>
-            <p>Size: Medium </p>
-            <button onclick="removeProduct('Ruffles pink dress1.PNG','Ruffles Pink Dress','750 LE', 'H&M','Medium')">Remove</button>
-            <button class="edit-button" onclick="editProduct('Ruffles pink dress1.PNG','Ruffles Pink Dress','750 LE', 'H&M','Medium')">Edit</button>
+            <h2>Biker Short</h2>
+            <p>Price: 250 LE</p>
+            <p>Brand:Shein</p>
+            <p>Size: Large </p>
+            <button onclick="removeProduct('biker short1.PNG','Biker Short', '250 LE', 'Shein','Large')">Remove</button>
+            <button class="edit-button" onclick="editProduct('biker short1.PNG','Biker Short', '250 LE', 'Shein','Large')">Edit</button>
         </div>
     </div>
 
     <div class="product">
-        <img src="short black dress1.png" >
+        <img src="nike leggings.PNG" >
         <div class="product-details">
-            <h2>Short Black Dress</h2>
-            <p>Price: 1000 LE</p>
-            <p>Brand: H&M</p>
-            <p>Size: Small </p>
-            <button onclick="removeProduct('short black dress1.PNG','Short Black Dress', '1000 LE', 'H&M','Small')">Remove</button>
-            <button class="edit-button" onclick="editProduct('short black dress1.PNG','Short Black Dress', '1000 LE', 'H&M','Small')">Edit</button>
+            <h2>Nike Leggings</h2>
+            <p>Price: 1,100 LE</p>
+            <p>Brand:Nike</p>
+            <p>Size: xs/s </p>
+            <button onclick="removeProduct('nike leggings.PNG', ['nike leggings.PNG'], 'Nike Leggings', '1,100 LE', 'nike','xs/s')">Remove</button>
+            <button class="edit-button" onclick="editProduct('nike leggings.PNG', ['nike leggings.PNG'], 'Nike Leggings', '1,100 LE', 'nike','xs/s')">Edit</button>
         </div>
     </div>
-     <!-- Add more product -->
     <div id="modal" class="modal" onclick="closeModal()">
         <div class="modal-content" onclick="event.stopPropagation()">
             <span class="close" onclick="closeModal()">&times;</span>
@@ -98,10 +84,11 @@
                 <option value="large">Large</option>
           </select>
 
-                <button id="saveButton" type="submit" onclick="submitEdit()">Save</button>
+                <button id="saveButton" type="button" onclick="submitEdit()">Save</button>
             </form>
         </div>
     </div>
+    
     
     
     <script>
@@ -122,13 +109,10 @@
         // Here you can implement the logic to add the product to cart
     }
 }
-
-
-       
+   
     </script>
     
    <script src="remove.js"></script> 
     <script src="products.js"></script>
 </body>
 </html>
-

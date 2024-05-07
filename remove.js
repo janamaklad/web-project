@@ -57,12 +57,14 @@ function restoreProduct(image, title, price, brand, size) {
     productContainer.appendChild(productElement);
 }
 
+let editedProductIndex; // Global variable to store the index of the edited product
 
-function editProduct(image, title, price, brand, size) {
+function editProduct(image, title, price, brand, size, index) {
     // Populate the modal with current product details
     document.getElementById('edit-price').value = price;
     document.getElementById('edit-size').value = size;
-
+    productName = title;
+    editedProductIndex = index; // Store the index of the edited product
     // Display the modal
     document.getElementById('editModal').style.display = 'block';
 }
@@ -74,7 +76,7 @@ function submitEdit() {
 
     // Perform logic to update the product with newPrice and newSize
     // For example, you can update the product details directly on the page
-    document.querySelector('.product-details h2').innerText = "Oversized Yellow Shirt"; // Update title
+    document.querySelector('.product-details h2').innerText = productName; // Update title
     document.querySelectorAll('.product-details p')[0].innerText = "Price: " + newPrice; // Update price
     document.querySelectorAll('.product-details p')[2].innerText = "Size: " + newSize; // Update size
 
@@ -86,6 +88,13 @@ function submitEdit() {
 }
 
 
+
+
+// Add event listener for saveButton click
+document.getElementById("saveButton").addEventListener("click", submitEdit);
+
+
+
 function closeEditModal() {
     document.getElementById('editModal').style.display = 'none';
 }
@@ -93,17 +102,25 @@ function closeEditModal() {
 
 function saveChanges(image, title, brand) {
     // Get the edited price and size values
-    let editedPrice = document.getElementById("edit-price").value;
-    let editedSize = document.getElementById("edit-size").value;
+   // let editedPrice = document.getElementById("edit-price").value;
+    //let editedSize = document.getElementById("edit-size").value;
     
     // Perform logic to update the product with the edited values
-    console.log("Product edited:", title, editedPrice, editedSize);
-    
-    // Remove the form after saving changes
-    let form = document.querySelector("form");
-    if (form) {
-        form.remove();
-    }
+   // Perform logic to update the product with the edited values
+   console.log("Product edited:", title, editedPrice, editedSize);
+
+   // Find the product element to update
+   let productElement = document.querySelector(`.product-details h2:contains(${title})`).closest('.product-details');
+
+   // Update the product details
+   productElement.querySelector('p:nth-of-type(1)').innerText = "Price: " + editedPrice; // Update price
+   productElement.querySelector('p:nth-of-type(3)').innerText = "Size: " + editedSize; // Update size
+
+   // Hide the modal
+   document.getElementById('editModal').style.display = 'none';
+
+   // Display a success message
+   alert("Product updated successfully.");
     
     // You can update the product details on the page with the new values
     let productDetails = document.querySelector(".product-details");
@@ -116,5 +133,3 @@ function saveChanges(image, title, brand) {
         <button onclick="removeProduct('${image}', '${title}', '${editedPrice}', '${brand}', '${editedSize}')">Remove</button>
     `;
 }
-
-

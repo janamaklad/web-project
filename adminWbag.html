@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="Admin.css">
     <link rel="stylesheet" href="AdminProducts.css"> 
-    <title>Top Wear Products</title>
+    <title>bags Products</title>
     
 
 </head>
@@ -25,44 +25,41 @@
         </div>
     </div>
 
-    <h1>Women Dresses</h1>
+    <h1>Women Bags</h1>
     <div class="product">
-        <img src="floraldress1.PNG" >
+        <img src="blackbag1.PNG" >
         <div class="product-details">
-            <h2>Floral Dress</h2>
+            <h2>Black Guess Bag</h2>
+            <p>Price: 2,000 LE</p>
+            <p>Brand:guess</p>
+            <button onclick="removeProduct('blackbag1.PNG','Black Guess Bag', '2,000 LE', 'guess',null)">Remove</button>
+            <button class="edit-button" onclick="editProduct('blackbag1.PNG', 'Black Guess Bag', '2,000 LE', 'guess',null)">Edit</button>
+        </div>
+    </div>
+
+    <div class="product" >
+        <img src="floralbag1.PNG" >
+        <div class="product-details">
+            <h2>Floral Bag</h2>
+            <p>Price: 700 LE</p>
+            <p>Brand:parfios</p>
+            <button onclick="removeProduct('floralbag1.PNG','Floral Bag', '700 LE', 'parfois',null)">Remove</button>
+            <button class="edit-button" onclick="editProduct('floralbag1.PNG', 'Floral Bag', '700 LE', 'parfois',null)">Edit</button>
+        </div>
+    </div>
+
+
+    <div class="product">
+        <img src="crochetbag1.PNG" >
+        <div class="product-details">
+            <h2>Crochet Bag</h2>
             <p>Price: 550 LE</p>
-            <p>Brand: Defecto</p>
-            <p>Size: Small </p>
-            <button onclick="removeProduct('floraldress1.PNG','Floral Dress', '550 LE', 'Defecto','Small')">Remove</button>
-            <button class="edit-button" onclick="editProduct('floraldress1.PNG','Floral Dress', '550 LE', 'Defecto','Small')">Edit</button>
+            <p>Brand:Mango</p>
+            <button onclick="removeProduct('crochetbag1.PNG', 'Crochet Bag', '550 LE', 'Mango',null)">Remove</button>
+            <button class="edit-button" onclick="editProduct('crochetbag1.PNG', 'Crochet Bag', '550 LE', 'Mango',null)">Edit</button>
         </div>
     </div>
-
-
-    <div class="product">
-        <img src="Ruffles pink dress1.PNG" >
-        <div class="product-details">
-            <h2>Ruffles Pink Dress</h2>
-            <p>Price: 750 LE</p>
-            <p>Brand: H&M</p>
-            <p>Size: Medium </p>
-            <button onclick="removeProduct('Ruffles pink dress1.PNG','Ruffles Pink Dress','750 LE', 'H&M','Medium')">Remove</button>
-            <button class="edit-button" onclick="editProduct('Ruffles pink dress1.PNG','Ruffles Pink Dress','750 LE', 'H&M','Medium')">Edit</button>
-        </div>
-    </div>
-
-    <div class="product">
-        <img src="short black dress1.png" >
-        <div class="product-details">
-            <h2>Short Black Dress</h2>
-            <p>Price: 1000 LE</p>
-            <p>Brand: H&M</p>
-            <p>Size: Small </p>
-            <button onclick="removeProduct('short black dress1.PNG','Short Black Dress', '1000 LE', 'H&M','Small')">Remove</button>
-            <button class="edit-button" onclick="editProduct('short black dress1.PNG','Short Black Dress', '1000 LE', 'H&M','Small')">Edit</button>
-        </div>
-    </div>
-     <!-- Add more product -->
+   
     <div id="modal" class="modal" onclick="closeModal()">
         <div class="modal-content" onclick="event.stopPropagation()">
             <span class="close" onclick="closeModal()">&times;</span>
@@ -98,10 +95,11 @@
                 <option value="large">Large</option>
           </select>
 
-                <button id="saveButton" type="submit" onclick="submitEdit()">Save</button>
+                <button id="saveButton" type="button" onclick="submitEdit()">Save</button>
             </form>
         </div>
     </div>
+    
     
     
     <script>
@@ -131,4 +129,3 @@
     <script src="products.js"></script>
 </body>
 </html>
-
