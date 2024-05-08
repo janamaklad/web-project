@@ -33,27 +33,27 @@
         </div>
     </div>
 
-    <div class="product" onclick="showModal('bbbodysuit1.PNG', ['bbbodysuitc1.PNG'], 'new born bodysuit', '350 LE', 'mothercare','newborn')">
+    <div class="product" >
         <img src="bbbodysuit1.png" >
         <div class="product-details">
             <h2> new born bodysuit</h2>
             <p>Price: 350 LE</p>
             <p>Brand: mothercare</p>
             <p>Size: newborn </p>
-            <button onclick="removeProduct('bbbodysuit1.PNG', 'new born bodysuit', ' 350 LE', 'mothercare','new born')">Remove</button>
-            <button class="edit-button" onclick="editProduct('bbbodysuit1.PNG', 'new born bodysuit', ' 350 LE', 'mothercare','new born')">Edit</button>
+            <button onclick="removeProduct('bbbodysuit1.PNG', 'new born bodysuit', '350 LE', 'mothercare','newborn')">Remove</button>
+            <button class="edit-button" onclick="editProduct('bbbodysuit1.PNG', 'new born bodysuit', '350 LE', 'mothercare','newborn')">Edit</button>
         </div>
     </div>
 
-    <div class="product" onclick="showModal('bbbodysuit2.PNG', ['bbbodysuit2.PNG'], 'yellow bodysuit', '250 LE', 'mothercare','6-9 Months')">
+    <div class="product" >
         <img src="bbbodysuit2.png" >
         <div class="product-details">
             <h2>yellow bodysuit</h2>
             <p>Price: 250 LE</p>
             <p>Brand: mothercare</p>
             <p>Size: 6-9 Months </p>
-            <button onclick="removeProduct('bbbodysuit2.PNG', 'yellow bodysuit', ' 250 LE', 'mothercare','6-9 Months')">Remove</button>
-            <button class="edit-button" onclick="editProduct('bbbodysuit2.PNG', 'yellow bodysuit', ' 250 LE', 'mothercare','6-9 Months')">Edit</button>
+            <button onclick="removeProduct('bbbodysuit2.PNG','yellow bodysuit', '250 LE', 'mothercare','6-9 Months')">Remove</button>
+            <button class="edit-button" onclick="editProduct('bbbodysuit2.PNG', 'yellow bodysuit', '250 LE', 'mothercare','6-9 Months')">Edit</button>
         </div>
     </div>
 
@@ -73,7 +73,7 @@
                 <p id="modal-price"></p>
                 <p id="modal-brand"></p>
                 <p id="modal-size"></p>
-
+           <!--     <button onclick="removeProduct()">Add To Cart</button> -->
             </div>
             <div class="arrow-container">
                 <button class="prev" onclick="changeImage(-1)">&#10094;</button>
@@ -102,8 +102,30 @@
     </div>
     
     
+    <script>
+        // Simulating admin login state
+        let isAdminLoggedIn = true; // Set to true to simulate admin logged in
 
+        function addToCartOrRemove(image, title, price, brand, size) {
+    if (isAdminLoggedIn) {
+        // Show confirmation message
+        removeProductConfirmation();
+        
+        // Remove the product from the page
+        console.log("Product removed:", title);
+        // Here you can implement the logic to actually remove the product
+    } else {
+        // Perform add to cart action
+        console.log("Product added to cart:", title);
+        // Here you can implement the logic to add the product to cart
+    }
+}
+
+
+       
+    </script>
+    
    <script src="remove.js"></script> 
-
+    <script src="products.js"></script>
 </body>
 </html>
