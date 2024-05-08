@@ -227,8 +227,6 @@ input {
     font-size: small;
   }
   
-
-  @media (max-width: 768px) {
     .orders-container {
         display: block; /* Display vertically on mobile */
     }
@@ -238,5 +236,39 @@ input {
         margin-bottom: 20px; 
         
     }
+    @media (max-width: 768px) {
+      .navbar {
+          padding: 10px;
+      }
+  
+      .logo {
+          max-width: 150px;
+          margin-left: 10px;
+      }
+  
+      .icons {
+          margin-right: 10px;
+          justify-content: center; /* Center icons horizontally */
+      }
+  
+      .icons a {
+          font-size: 1em;
+          padding-right: 5px;
+      }
+  
+      .search-bar {
+          margin-right: 10px;
+      }
+  
+      .search-bar input[type=search] {
+          padding: 6px;
+          margin-right: 3px;
+      }
+  
+      .search-bar button {
+          padding: 6px 10px;
+      }
+  
 
   }
+  

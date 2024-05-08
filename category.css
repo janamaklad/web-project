@@ -224,3 +224,48 @@ body {
     color:white;
 }
 
+@media only screen and (max-width: 768px) {
+    /* Existing media query styles... */
+
+    .navbar {
+        padding: 10px;
+    }
+    .navbar a {
+        text-decoration: none;
+        color: black;
+        padding: 3px 6px;
+    }
+
+    .logo {
+        max-width: 150px;
+        margin-left: 10px;
+    }
+
+    .icons {
+        margin-right: 19px;
+        justify-content: center; /* Center icons horizontally */
+    }
+
+    .icons a {
+        font-size: 1em;
+        padding-right: 5px;
+    }
+
+    .search-bar {
+        margin-right: 10px;
+    }
+
+    .search-bar input[type=search] {
+        padding: 6px;
+        margin-right: 3px;
+    }
+
+    .search-bar button {
+        padding: 6px 10px;
+    }
+
+    .categories-header {
+        margin-left: 20px;
+        font-size: 24px;
+    }
+}
