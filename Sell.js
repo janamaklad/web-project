@@ -1,7 +1,8 @@
-
 document.addEventListener('DOMContentLoaded', function() {
     const categorySelect = document.getElementById('category');
     const subCategorySelect = document.getElementById('subCategory');
+    const priceInput = document.getElementById('price');
+    const priceError = document.getElementById('priceError');
 
     // Populate subcategories based on the selected category
     categorySelect.addEventListener('change', function() {
@@ -109,6 +110,16 @@ document.addEventListener('DOMContentLoaded', function() {
         const sizeLabel = document.querySelector('label[for="size"]');
         sizeLabel.style.display = 'none';
     }
+
+    // Event listener for price input
+    priceInput.addEventListener('input', function() {
+        const priceValue = this.value;
+        if (!/^\d+(\.\d{0,2})?$/.test(priceValue)) {
+            priceError.textContent = "Price must be a valid number.";
+            priceError.style.display = 'block'; // Show error message
+        } else {
+            priceError.textContent = ""; // Clear error message
+            priceError.style.display = 'none'; // Hide error message
+        }
+    });
 });
-
-
