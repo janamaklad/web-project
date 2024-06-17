@@ -98,6 +98,13 @@ input[type="password"] {
     border-radius: 5px;
 }
 
+.error{
+    color:red;
+    font-size: 0.8em;
+    margin-top: 5px;
+    display:block;
+}
+
 button {
     display: block;
     width: 100%;
