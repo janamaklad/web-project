@@ -122,4 +122,53 @@ window.addEventListener('DOMContentLoaded', () => {
         filterProductsByCategory(category);
     }
 });
+document.addEventListener("DOMContentLoaded", function() {
+    // Fetch all category links and underline element
+    var categoryLinks = document.querySelectorAll('.category');
+    var underline = document.querySelector('.underline');
+
+    // Initial adjustment of underline for the first category
+    adjustUnderline(categoryLinks[0]); 
+
+    // Add click event listener to each category link
+    categoryLinks.forEach(function(link) {
+        link.addEventListener('click', function(event) {
+            event.preventDefault(); // Prevent default link behavior
+            
+            // Adjust underline and filter products on click
+            adjustUnderline(this);
+            var category = this.getAttribute('data-category');
+            filterProductsByCategory(category);
+        });
+    });
+
+    // Function to adjust the underline position based on the selected category link
+    function adjustUnderline(selectedLink) {
+        var linkOffset = selectedLink.offsetLeft;
+        var linkWidth = selectedLink.offsetWidth;
+
+        underline.style.left = linkOffset + 'px';
+        underline.style.width = linkWidth + 'px';
+    }
+
+    // Function to show products of a specific category
+    function filterProductsByCategory(category) {
+        const products = document.querySelectorAll('.product');
+        products.forEach(product => {
+            const productCategory = product.getAttribute('data-category');
+            if (productCategory === category || category === 'all') {
+                product.classList.remove('hidden');
+            } else {
+                product.classList.add('hidden');
+            }
+        });
+    }
+
+    // Initially filter products based on URL parameter (if provided)
+    const urlParams = new URLSearchParams(window.location.search);
+    const category = urlParams.get('category');
+    if (category) {
+        filterProductsByCategory(category);
+    }
+});
 
