@@ -122,3 +122,4 @@ window.addEventListener('DOMContentLoaded', () => {
         filterProductsByCategory(category);
     }
 });
+
