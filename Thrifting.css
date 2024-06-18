@@ -31,8 +31,9 @@ body {
 
 
 .icons {
-    margin-left: auto; 
-    margin-right: 20px; 
+   
+    display: flex;
+    align-items: center;
 }
 
 .icons a {
@@ -91,20 +92,25 @@ body {
     transform: translateX(-50%); /* Center horizontally */
 }
 
-.register-btn, .signin-btn {
-    padding: 10px 20px;
-    background-color: transparent;
-    border: none;
-    color: #007bff;
-    cursor: pointer;
-    margin: 0 10px;
-    border-radius: 5px;
+
+
+
+.two-btns{
+    display:flex;
+    flex-direction: column;
+    margin-right: 7px;
+}
+.navbar .nav-btn{
+   font-size:1.1em;
+    color: black;
+    text-decoration: none;
+
+}
+.navbar .nav-btn:hover {
+    color:#299ab9;
 }
 
-.register-btn:hover, .signin-btn:hover {
-    background-color: transparent;
-    color: #0056b3;
-}
+
 .categories-header {
     margin-top: 30px;
     margin-left: 90px; 
@@ -161,8 +167,8 @@ body {
 
 }
 .aboutus:hover{
-    background-color: #bbbbbb;
-    color:white;
+    
+    color:rgb(56, 159, 190);
 }
 
 
