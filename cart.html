@@ -20,7 +20,6 @@
             <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
             <a href="favorites.html"><i class="fas fa-heart"></i></a>
             <a href="search.html"><i class="fa fa-filter"></i>
-     
         </div>
         
         <div class="search-bar">
@@ -28,70 +27,87 @@
                 <input type="search" placeholder="Search..." name="search">
                 <button type="submit"><i class="fas fa-search"></i></button>
             </form>
-        </section>
-
-       <!--
-            <div class="container">
-            <div id="root"></div>
-            <div class="sidebar">
-                <div class="head"><p>My Cart</p></div>
-                <div id="cartItem">Your cart is empty</div>
-                <div class="foot">
-                    <h3>Total</h3>
-                    <h2 id="total">EGP 0.00</h2>
-            </div>
         </div>
-       --> 
+    </section>
 
-    
-
-    <section class="fixed-cart" >
-        <h1 class="title">your added items</h1>
-        <div class="items">
-            <div class="product">
-                <img src="beij pants1.PNG" >
-                <div class="product-details">
-                    <h2>beij Denim</h2>
-                    <p>Price: 450 LE</p>
-                    <p>Brand: Zara</p>
-                    <p>Size: 34 EUR </p>
+    <section class="cart-container">
+        <div class="cart-details">
+            <h1 class="title">my shopping bag (1 items)</h1>
+            <div class="info-banner">
+                <p><strong>FREE Returns</strong> Now Available Online!</p>
+            </div>
+            <div class="items">
+                <div class="product">
+                    <img src="beij pants1.PNG">
+                    <div class="product-details">
+                        <h2>beij Denim</h2>
+                        <p>Price: 450 LE</p>
+                        <p>Brand: Zara</p>
+                        <p>Size: 34 EUR</p>
+                    </div>
+                    <div class="quantity">
+                        <select>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="wjeans1.PNG">
+                    <div class="product-details">
+                        <h2>Blue Denim</h2>
+                        <p>Price: 500 LE</p>
+                        <p>Brand: Zara</p>
+                        <p>Size: 32 EUR</p>
+                    </div>
+                    <div class="quantity">
+                        <select>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="Ruffles pink dress1.PNG">
+                    <div class="product-details">
+                        <h2>Ruffles Pink Dress</h2>
+                        <p>Price: 750 LE</p>
+                        <p>Brand: H&M</p>
+                        <p>Size: Medium</p>
+                    </div>
+                    <div class="quantity">
+                        <select>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </div>
                 </div>
             </div>
-           
         </div>
-        <div class="product">
-        <img src="wjeans1.PNG" >
-        <div class="product-details">
-            <h2>Blue Denim</h2>
-            <p>Price: 500 LE</p>
-            <p>Brand: Zara</p>
-            <p>Size: 32 EUR </p>
+        <div class="order-summary">
+            <h2>Order Summary</h2>
+            <div class="promo-code">
+                <input type="text" placeholder="Promo Code">
+                <button>DONE</button>
+            </div>
+            <div class="summary-details">
+                <p>Subtotal: <span>EGP 1700.00</span></p>
+                <p>Order Total: <span>EGP 1700.00</span></p>
+                <p class="vat-info">Inclusive of VAT</p>
+            </div>
+        <a href="checkout.html"><button class="checkout" >CONTINUE TO CHECKOUT</button></a>
+            <div class="payment-options">
+                <img src="visa.png" alt="Visa">
+                <img src="mastercard.png" alt="MasterCard">
+            </div>
         </div>
-     </div>
-
-     <div class="product" onclick="showModal('Ruffles pink dress1.PNG', ['Ruffles pink dress1.PNG', 'Ruffles pink dress2.PNG'], 'Ruffles Pink Dress', '750 LE', 'H&M','Medium')">
-        <img src="Ruffles pink dress1.PNG" >
-        <div class="product-details">
-            <h2>Ruffles Pink Dress</h2>
-            <p>Price: 750 LE</p>
-            <p>Brand: H&M</p>
-            <p>Size: Medium </p></a>
-        </div>
-    </div>
     </section>
+
     
-    <div class="fixed-bottom-bar">
-        <div class="total">
-            Total Price: <span id="total-price">1750 LE</span>
-        </div>
-        <div>
-            <a href="updatecart.html"><button class="updatecart">update cart</button></a>
-            <a href="checkout.html"><button class="checkout">checkout</button></a>
-        </div>
-    </div>
-           
-            
-   
+    
     <script src="cart.js"></script>
 </body>
 </html>
