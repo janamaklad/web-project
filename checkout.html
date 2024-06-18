@@ -75,6 +75,7 @@
                     <label for="phone">phone</label>
                     <span id="phone-error" class="error"></span>
                 </div>
+               
                 <form>
                     <label for="info" class="checkbox-label">
                         <input type="checkbox" id="info" name="info" value="info">
@@ -82,12 +83,68 @@
                     </label>
                   </form>
             </div>
-            
-            <a href="Thrifting.html"><button class="submit"> checkout</button></a>
+            <div id="payment-options">
+                <h3>Payment Method</h3>
+                <div class="form-group">
+                    <input type="radio" name="payment" id="cash-radio" onclick="showPaymentForm('cash')">
+                    <label for="cash-radio">Cash</label>
+                </div>
+                <div class="form-group">
+                    <input type="radio" name="payment" id="visa-radio" onclick="showPaymentForm('visa-content')">
+                    <label for="visa-radio">Visa</label>
+                </div>
+            </div>
+
+            <div id="cash" class="payment-content" style="display: none;">
+                <p>Please have the exact amount ready at delivery.</p>
+            </div>
+
+            <div id="visa-content" class="payment-content" style="display: none;">
+                <div class="form-header">
+                    <img src="visaCard.jpeg" class="visaCard" alt="Visa Card">
+                </div>
+                <form id="payment-form" onsubmit="return validateForm()">
+                    <div class="form-group">
+                        <input type="text" id="cardNumber" placeholder="Card Number" name="cardNumber" maxlength="16" size="16" required>
+                        <label for="cardNumber">Card Number</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="fullName" placeholder="Full Name" name="fullName" required>
+                        <label for="fullName">Full Name</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="expiration" name="expiration" placeholder="MM / YY" maxlength="5" size="5" required>
+                        <label for="expiration">Expiration Date</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="cvc" placeholder="CVC" name="cvc" maxlength="3" pattern="\d*" required>
+                        <label for="cvc">CVC</label>
+                    </div>
+                    <button type="submit" class="sellButton">Submit</button>
+                </form>
+            </div>
+
+            <a href="Thrifting.html"><button class="submit">Checkout</button></a>
+        </form>
+    </div>
+    <script src="checkout.js"></script>
+    <script>
+        function showPaymentForm(paymentType) {
+            document.getElementById('cash').style.display = 'none';
+            document.getElementById('visa-content').style.display = 'none';
+            if (paymentType === 'cash') {
+                document.getElementById('cash').style.display = 'block';
+            } else if (paymentType === 'visa-content') {
+                document.getElementById('visa-content').style.display = 'block';
+            }
+        }
+    </script>
+   <!--         <a href="Thrifting.html"><button class="submit"> checkout</button></a>
 
            </form> 
         </form>
     </div>
+    -->
     <script src="checkout.js"></script>
 </body>
 </html>
