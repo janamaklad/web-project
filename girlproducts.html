@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="products.css">
+    <title>girls Products</title>
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="Thrifting.html" class="logo">
+            <img src="logo.jpg" width="125px">
+        </a>
+        
+        <div class="icons">
+            <a href="#profile"><i class="far fa-user"></i></a>
+            <a href="#Cart"><i class="fas fa-shopping-cart"></i></a>
+            <a href="#favorites"><i class="fas fa-heart"></i></a>
+        </div>
+        
+        <div class="search-bar">
+            <form action="#">
+                <input type="search" placeholder="Search..." name="search">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+        </div>
+        <div class="categories">
+            <a href="women.html" class="category">Women</a>
+            <a href="men.html" class="category">Men</a>
+            <a href="girls.html" class="category active">Girls</a>
+            <a href="boys.html" class="category">Boys</a>
+            <a href="baby.html" class="category">Baby</a>
+            <a href="home.html" class="category">Home</a> 
+        </div>
+    </div>
+
+    <h1>girls Products</h1>
+
+    <div id="products-container">
+        <div class="product" data-category="top" onclick="showModal('pink cotton.png', ['pink cotton.png', 'pink cotton2.PNG'], 'pink t.shirt', '342 LE', 'Nike','age 13-14')">
+            <img src="pink cotton.png" >
+            <div class="product-details">
+                <h2>pink t.shirt</h2>
+                <p>Price: 342 LE</p>
+                <p>Brand: Nike</p>
+                <p>Size: age 13-14 </p>
+                <a href="cart.html"><button>Add To Cart</button></a>
+                <a href="favorites.html"><button>Add To Favorites</button></a>
+            </div>
+        </div>
+    
+        <div class="product" data-category="top" onclick="showModal('adidas t.shirt.PNG', ['adidas t.shirt.PNG', 'adidasss2.PNG'], 'white cotton', '342 LE', 'adidas','x large')">
+            <img src="adidas t.shirt.png" >
+            <div class="product-details">
+                <h2>white cotton</h2>
+                <p>Price: 342 LE</p>
+                <p>Brand: adidas</p>
+                <p>Size: x large </p>
+                <a href="cart.html"><button>Add To Cart</button></a>
+                <a href="favorites.html"><button>Add To Favorites</button></a>
+            </div>
+        </div>
+            <div class="product" data-category="bottom" onclick="showModal('benetton short.png', ['benetton short.png','benetton short.png'], 'pink polyster', '683LE', 'unbranded','32 waist')">
+                <img src="benetton short.png" >
+                <div class="product-details">
+                    <h2> pink polyster</h2>
+                    <p>Price: 683 LE</p>
+                    <p>Brand: unbranded</p>
+                    <p>Size:32 waist </p>
+                    <a href="cart.html"><button>Add To Cart</button></a>
+                    <a href="favorites.html"><button>Add To Favorites</button></a>
+                </div>
+            </div>
+        
+            <div class="product" data-category="bottom" onclick="showModal('purple short.PNG', ['purple short.PNG','pshort2.png'], 'purple cotton', '683LE', 'levis','age 7')">
+                <img src="purple short.png" >
+                <div class="product-details">
+                    <h2>purple cotton</h2>
+                    <p>Price: 683 LE</p>
+                    <p>Brand: levis</p>
+                    <p>Size: age 7 </p>
+                    <a href="cart.html"><button>Add To Cart</button></a>
+                    <a href="favorites.html"><button>Add To Favorites</button></a>
+                </div>
+            </div>
+
+            <div class="product" data-category="dress" onclick="showModal('pink dress.png', ['pink dress.png'], 'birthday dress', '2,500 LE', 'unbranded','9-11 y')">
+                <img src="pink dress.png" >
+                <div class="product-details">
+                    <h2> birthday dress</h2>
+                    <p>Price: 2,500 LE</p>
+                    <p>Brand: unbranded</p>
+                    <p>Size:9-11 y </p>
+                    <a href="cart.html"><button>Add To Cart</button></a>
+                    <a href="favorites.html"><button>Add To Favorites</button></a>
+                </div>
+            </div>
+        
+            <div class="product" data-category="dress" onclick="showModal('floral dress.PNG', ['floral dress.PNG'], 'white dress', '1,770LE', 'unbranded','small')">
+                <img src="floral dress.png" >
+                <div class="product-details">
+                    <h2>white dress</h2>
+                    <p>Price: 1,770 LE</p>
+                    <p>Brand: unbranded</p>
+                    <p>Size: small </p>
+                    <a href="cart.html"><button>Add To Cart</button></a>
+                    <a href="favorites.html"><button>Add To Favorites</button></a>
+                </div>
+            </div>
+
+            <div class="product" data-category="jacket" onclick="showModal('north face fleece.png', ['north face fleece.png', 'fleece2.png'], 'pink Jacket', '731LE', 'north face','x large')">
+                <img src="north face fleece.png" >
+                <div class="product-details">
+                    <h2> pink Jacket</h2>
+                    <p>Price: 731 LE</p>
+                    <p>Brand: north face</p>
+                    <p>Size:x large </p>
+                    <a href="cart.html"><button>Add To Cart</button></a>
+                    <a href="favorites.html"><button>Add To Favorites</button></a>
+                </div>
+            </div>
+        
+            <div class="product" data-category="jacket" onclick="showModal('girl pink jacketf.PNG', ['girl pink jacket.PNG','pinkishh.png'], 'pink polyster', '586LE', 'adidas','medium')">
+                <img src="girl pink jacket.png" >
+                <div class="product-details">
+                    <h2>pink polyster</h2>
+                    <p>Price: 586 LE</p>
+                    <p>Brand: adidas</p>
+                    <p>Size: medium </p>
+                    <a href="cart.html"><button>Add To Cart</button></a>
+                    <a href="favorites.html"><button>Add To Favorites</button></a>
+                </div>
+            </div>
+
+            <div class="product" data-category="sportwear" onclick="showModal('fila pink.png', ['fila pink.png', 'fila2.png'], 'pink set', '977LE', 'fila','medium')">
+                <img src="fila pink.png" >
+                <div class="product-details">
+                    <h2> pink set</h2>
+                    <p>Price: 977 LE</p>
+                    <p>Brand: fila</p>
+                    <p>Size: medium </p>
+                    <a href="cart.html"><button>Add To Cart</button></a>
+                    <a href="favorites.html"><button>Add To Favorites</button></a>
+                </div>
+            </div>
+        
+            <div class="product" data-category="sportwear" onclick="showModal('sports bra.PNG', ['sports brat.PNG','sports bra2.png'], 'pink cotton', '244LE', 'unbranded','large')">
+                <img src="sports bra.png" >
+                <div class="product-details">
+                    <h2>pink cotton</h2>
+                    <p>Price: 244 LE</p>
+                    <p>Brand: unbranded</p>
+                    <p>Size: large </p>
+                    <a href="cart.html"><button>Add To Cart</button></a>
+                    <a href="favorites.html"><button>Add To Favorites</button></a>
+                </div>
+            </div>
+
+            <div class="product" data-category="customes" onclick="showModal('banana leaf.png', ['banana leaf.png','leaf2.png'], 'hawaiian set', '1,145 LE', 'unbranded','8-10 y')">
+                <img src="banana leaf.png" >
+                <div class="product-details">
+                    <h2> hawaiian set</h2>
+                    <p>Price: 1,145 LE</p>
+                    <p>Brand: unbranded</p>
+                    <p>Size:8-10 y </p>
+                    <a href="cart.html"><button>Add To Cart</button></a>
+                    <a href="favorites.html"><button>Add To Favorites</button></a>
+                </div>
+            </div>
+        
+            <div class="product" data-category="customes" onclick="showModal('ballgown.PNG', ['ballgown.PNG','ballgown2.png'], 'pink dress', '2,929LE', 'unbranded','7-8y')">
+                <img src="ballgown.png" >
+                <div class="product-details">
+                    <h2>pink dress</h2>
+                    <p>Price: 2,929 LE</p>
+                    <p>Brand: unbranded</p>
+                    <p>Size: 7-8y </p>
+                    <a href="cart.html"><button>Add To Cart</button></a>
+                    <a href="favorites.html"><button>Add To Favorites</button></a>
+                </div>
+            </div>
+
+            <div class="product" data-category="shoes" onclick="showModal('kurt shoes.png', ['kurt shoes.png', 'kurt2.PNG'], 'white shoes', '7,521 LE', 'kurt geiger','39')">
+                <img src="kurt shoes.png" >
+                <div class="product-details">
+                    <h2>white shoes</h2>
+                    <p>Price: 7,521 LE</p>
+                    <p>Brand: kurt geiger</p>
+                    <p>Size:39 </p>
+                    <a href="cart.html"><button>Add To Cart</button></a>
+                    <a href="favorites.html"><button>Add To Favorites</button></a>
+                </div>
+            </div>
+        
+            <div class="product" data-category="shoes" onclick="showModal('girls shoes.PNG', ['girls shoes.PNG', 'girls2.PNG'], 'white shoes', '375LE', 'unbranded','21')">
+                <img src="girls shoes.png" >
+                <div class="product-details">
+                    <h2>white shoes</h2>
+                    <p>Price: 375 LE</p>
+                    <p>Brand: unbranded</p>
+                    <p>Size: 21 </p>
+                    <a href="cart.html"><button>Add To Cart</button></a>
+                    <a href="favorites.html"><button>Add To Favorites</button></a>
+                </div>
+            </div>
+
+            <div class="product" data-category="bag" onclick="showModal('crossbody bag.png', ['crossbody bag.png'], 'purple polyster', '305LE', 'mitama','no')">
+                <img src="crossbody bag.png" >
+                <div class="product-details">
+                    <h2> purple polyster</h2>
+                    <p>Price: 305 LE</p>
+                    <p>Brand: mitama</p>
+                    <p>Size:no </p>
+                    <a href="cart.html"><button>Add To Cart</button></a>
+                    <a href="favorites.html"><button>Add To Favorites</button></a>
+                </div>
+            </div>
+        
+            <div class="product" data-category="bag" onclick="showModal('converse pink.PNG', ['converse pink.PNG','pink22.png'], 'bumbag', '305LE', 'converse','no')">
+                <img src="converse pink.png" >
+                <div class="product-details">
+                    <h2>bumbag</h2>
+                    <p>Price: 305 LE</p>
+                    <p>Brand: converse</p>
+                    <p>Size: no </p>
+                    <a href="cart.html"><button>Add To Cart</button></a>
+                    <a href="favorites.html"><button>Add To Favorites</button></a>
+                </div>
+            </div>
+             
+            <div class="product" data-category="accessories" onclick="showModal('gloves.png', ['gloves.png', 'gloves2.png'], 'purple gloves', '305LE', 'briko','one')">
+                <img src="gloves.png" >
+                <div class="product-details">
+                    <h2> purple gloves</h2>
+                    <p>Price: 305 LE</p>
+                    <p>Brand: briko</p>
+                    <p>Size:one </p>
+                    <a href="cart.html"><button>Add To Cart</button></a>
+                    <a href="favorites.html"><button>Add To Favorites</button></a>
+                </div>
+            </div>
+        
+            <div class="product" data-category="accessories" onclick="showModal('pink scarf.PNG', ['pink scarf.PNG','scarff22.png'], 'pink polyster', '305LE', 'unbranded','no')">
+                <img src="pink scarf.png" >
+                <div class="product-details">
+                    <h2>pink polyster</h2>
+                    <p>Price: 305 LE</p>
+                    <p>Brand: unbranded</p>
+                    <p>Size: no </p>
+                    <a href="cart.html"><button>Add To Cart</button></a>
+                    <a href="favorites.html"><button>Add To Favorites</button></a>
+                </div>
+            </div>
+
+    
+</div>
+
+    <div id="modal" class="modal" onclick="closeModal()">
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div class="modal-images">
+                <img id="modal-img" src="" alt="">
+                <div class="thumbnails" id="thumbnails"></div>
+            </div>
+            <div class="product-info">
+                <h2 id="modal-title"></h2>
+                <p id="modal-price"></p>
+                <p id="modal-brand"></p>
+                <p id="modal-size"></p>
+                <a href="cart.html"><button>Add To Cart</button></a>
+                <a href="favorites.html"><button>Add To Favorites</button></a>
+            </div>
+            <div class="arrow-container">
+                <button class="prev" onclick="changeImage(-1)">&#10094;</button>
+                <button class="next" onclick="changeImage(1)">&#10095;</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="products.js"></script>
+</body>
+</html>
