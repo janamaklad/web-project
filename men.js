@@ -17,4 +17,15 @@ document.addEventListener("DOMContentLoaded", function() {
         underline.style.left = linkOffset + 'px';
         underline.style.width = linkWidth + 'px';
     }
-}); 
+}); function showMenProducts(category) {
+    var params = new URLSearchParams(window.location.search);
+    var categoryParam = params.get('category');
+
+    var allMenProducts = document.querySelectorAll('.men-products');
+    allMenProducts.forEach(function (productSection) {
+        productSection.style.display = 'none';
+    });
+
+    document.getElementById('men-products-' + categoryParam).style.display = 'block';
+}
+

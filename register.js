@@ -127,9 +127,13 @@ document.addEventListener('DOMContentLoaded', function() {
         }else if(num.length!==10){
             showError('num','Your phone number must be 10 digits');
             isValid=false;
+        }else if(!/^\d+$/.test(num)){
+         showError('num', 'Your phone number must contain digits only');
+         isValid=false;
         }else{
             removeError('num');
         }
+    
 
         if (password.trim() === '') {
             showError('password', 'Password is required');
@@ -158,4 +162,4 @@ document.addEventListener('DOMContentLoaded', function() {
         const errorSpan = document.getElementById(fieldId + '-error');
         errorSpan.textContent = '';
     }
-});  
+});
