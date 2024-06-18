@@ -6,6 +6,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="products.css">
     <title>Men Products</title>
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
 </head>
 <body>
     <div class="navbar">
@@ -38,8 +43,101 @@
     <h1>Men Products</h1>
 
     <div id="products-container">
-        <!-- Products will be dynamically added here -->
+        <div class="product" data-category="tops" onclick="showModal('wool vest.png', ['wool vest.png'], 'Wool Vest', '1250 LE', 'Chateau', 'Large')">
+            <img src="wool vest.png">
+            <div class="product-details">
+                <h3>wool vest</h3>
+                <p>Price: 1250 LE</p>
+                <p>Brand: chateau</p>
+                <p>Size: large</p>
+                <a href="cart.html"><button>Add To Cart</button></a>
+                <button class="favorite-btn">Add to Favorites</button>
+            </div>
+        </div>
+        <div class="product" data-category="tops" onclick="showModal('tru shirt.PNG', ['tru shirt.PNG'], 'Tru Shirt', '528 LE', 'LcWakiki', 'Large')">
+            <img src="tru shirt.PNG">
+            <div class="product-details">
+                <h3>trushirt</h3>
+                <p>Price: 528 LE</p>
+                <p>Brand: LcWakiki</p>
+                <p>Size: large</p>
+                <a href="cart.html"><button>Add To Cart</button></a>
+                <button class="favorite-btn">Add to Favorites</button>
+            </div>
+        </div>
+        <div class="product" data-category="bottoms" onclick="showModal('Bershka checkered pants.PNG', ['Bershka checkered pants.PNG'], 'Checkered Pants', '688 LE', 'Bershka', '38 EUR')">
+            <img src="Bershka checkered pants.PNG">
+            <div class="product-details">
+                <h3>checkered pants</h3>
+                <p>Price: 688 LE</p>
+                <p>Brand: Bershka</p>
+                <p>Size: 38 EUR</p>
+                <a href="cart.html"><button>Add To Cart</button></a>
+                <button class="favorite-btn">Add to Favorites</button>
+            </div>
+        </div>
+        <div class="product" data-category="bottoms" onclick="showModal('Decked out Joggers.PNG', ['Decked out Joggers.PNG'], 'Gray Denim', '900 LE', 'Deckeout', 'Small')">
+            <img src="Decked out Joggers.PNG">
+            <div class="product-details">
+                <h3>gray Denim</h3>
+                <p>Price: 900 LE</p>
+                <p>Brand: Deckeout</p>
+                <p>Size: small</p>
+                <a href="cart.html"><button>Add To Cart</button></a>
+                <button class="favorite-btn">Add to Favorites</button>
+            </div>
+        </div>
+
+        <div class="product" data-category="jackets" onclick="showModal('the north face.PNG', ['the north face.PNG', 'the north face.PNG', 'the north face.PNG'], 'blue Jacket', '1,250 LE', 'North Face','Medium/Large')">
+            <img src="the north face.png" >
+            <div class="product-details">
+                <h2>blue Jacket</h2>
+                <p>Price: 1,250 LE</p>
+                <p>Brand:North Face</p>
+                <p>Size: Medium/Large </p>
+                <a href="cart.html"><button>Add To Cart</button></a>
+                <button class="favorite-btn">Add to Favorites</button>
+            </div>
+        </div>
+    
+        <div class="product" data-category="jackets" onclick="showModal('ck vest.PNG', ['ck vest.PNG', 'ck vest.PNG'], 'Blue vest', '3,375 LE', 'calvin klein','XLarge')">
+            <img src="ck vest.png" >
+            <div class="product-details">
+                <h2>blue vest</h2>
+                <p>Price: 3,375 LE</p>
+                <p>Brand:calvin klein</p>
+                <p>Size: XLarge </p>
+                <a href="cart.html"><button>Add To Cart</button></a>
+                <a href="favorites.html"><button>Add To Favorites</button></a>
+            </div>
+        </div>
+        <div class="product" data-category="sportswear" onclick="showModal('Nike Joggers.PNG', ['Nike Joggers.PNG', 'jogg2.png'], '875 LE', 'Nike','Medium/Large')">
+            <img src="Nike Joggers.png" >
+            <div class="product-details">
+                <h2>nike Joggers</h2>
+                <p>Price: 875 LE</p>
+                <p>Brand:Nike</p>
+                <p>Size: Medium/Large </p>
+                <a href="cart.html"><button>Add To Cart</button></a>
+                <button class="favorite-btn">Add to Favorites</button>
+            </div>
+        </div>
+    
+        <div class="product" data-category="sportswear" onclick="showModal('adidas squadra.PNG', ['adidas squadra.PNG ', 'squad2.png'], 'red t.shirt', '581 LE', 'Adidas','Large')">
+            <img src="adidas squadra.png" >
+            <div class="product-details">
+                <h2>red t.shirt</h2>
+                <p>Price: 581 LE</p>
+                <p>Brand:Adidas</p>
+                <p>Size: Large </p>
+                <a href="cart.html"><button>Add To Cart</button></a>
+                <button class="favorite-btn">Add to Favorites</button>
+            </div>
+        </div>
+    
     </div>
+    
+    
 
     <div id="modal" class="modal" onclick="closeModal()">
         <div class="modal-content" onclick="event.stopPropagation()">
@@ -64,77 +162,5 @@
     </div>
 
     <script src="products.js"></script>
-    <script>
-        window.addEventListener('DOMContentLoaded', () => {
-            const urlParams = new URLSearchParams(window.location.search);
-            const category = urlParams.get('category');
-            if (category) {
-                // Based on the category, fetch and display products
-                switch (category) {
-                    case 'tops':
-                        showProducts([
-                            {
-                                image: 'wool vest.png',
-                                name: 'wool vest',
-                                price: '1250 LE',
-                                brand: 'chateau',
-                                size: 'large'
-                            },
-                            {
-                                image: 'tru shirt.PNG',
-                                name: 'tru shirt',
-                                price: '528 LE',
-                                brand: 'LcWakiki',
-                                size: 'large'
-                            },
-                            // Add more products here
-                        ]);
-                        break;
-                    case 'bottoms':
-                        showProducts([
-                            {
-                                image: 'Bershka checkered pants.PNG',
-                                name: 'checkered pants',
-                                price: '688 LE',
-                                brand: 'Bershka',
-                                size: '38 EUR'
-                            },
-                            {
-                                image: 'Decked out Joggers.PNG',
-                                name: 'gray Denim',
-                                price: '900 LE',
-                                brand: 'Deckeout',
-                                size: 'small'
-                            },
-                            // Add more products here
-                        ]);
-                        break;
-                    // Add cases for other categories
-                    default:
-                        console.error('Unknown category:', category);
-                }
-            }
-        });
-
-        function showProducts(products) {
-            const container = document.getElementById('products-container');
-            container.innerHTML = '';
-            products.forEach(product => {
-                container.innerHTML += `
-                    <div class="product" onclick="showModal('${product.image}', ['${product.image}'], '${product.name}', '${product.price}', '${product.brand}', '${product.size}')">
-                        <img src="${product.image}">
-                        <div class="product-details">
-                            <h3>${product.name}</h3>
-                            <p>Price: ${product.price}</p>
-                            <p>Brand: ${product.brand}</p>
-                            <p>Size: ${product.size}</p>
-                            <a href="cart.html"><button>Add To Cart</button></a>
-                            <button class="favorite-btn">Add to Favorites</button>
-                        </div>
-                    </div>
-                `;
-            });
-        }
-    </script>
 </body>
 </html>

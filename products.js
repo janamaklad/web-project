@@ -79,3 +79,46 @@ function buyNow(productName) {
     alert("You are about to buy: " + productName);
 
 }
+
+
+
+window.addEventListener('DOMContentLoaded', () => {
+    const urlParams = new URLSearchParams(window.location.search);
+    const category = urlParams.get('category');
+    if (category) {
+        filterProducts(category);
+    }
+});
+
+function filterProducts(category) {
+    const products = document.querySelectorAll('#products-container .product');
+    products.forEach(product => {
+        if (product.dataset.category === category) {
+            product.classList.remove('hidden');
+        } else {
+            product.classList.add('hidden');
+        }
+    });
+}
+// products.js
+
+// Function to filter and display products based on category
+function filterProductsByCategory(category) {
+    const products = document.querySelectorAll('#products-container .product');
+    products.forEach(product => {
+        if (product.dataset.category === category) {
+            product.classList.remove('hidden');
+        } else {
+            product.classList.add('hidden');
+        }
+    });
+}
+
+// DOMContentLoaded event listener to trigger filtering
+window.addEventListener('DOMContentLoaded', () => {
+    const urlParams = new URLSearchParams(window.location.search);
+    const category = urlParams.get('category');
+    if (category) {
+        filterProductsByCategory(category);
+    }
+});

@@ -306,4 +306,9 @@ button:hover {
         width: calc(50% - 20px); /* Adjust product width */
         margin: 20px 5px; /* Adjust product margin */
     }
+    
+
+    .hidden {
+        display: none;
+    }
 }
