@@ -99,7 +99,7 @@ body {
 .title {
     font-size: 1.5rem;
     margin-bottom: 20px;
-    margin-top: 50px;
+    margin-top: 40px;
 }
 
 .info-banner {
@@ -255,63 +255,5 @@ body {
 
     .order-summary {
         margin-top: 20px;
-    }
-}
-.recommended {
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
-}
-
-.recommended h2 {
-    font-size: 1.5rem;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.recommended-items {
-    display: flex;
-    justify-content: center; 
-    flex-wrap: wrap;
-    gap: 10px; 
-}
-
-.recommended-item {
-    flex: 1 1 calc(25% - 10px);
-    margin: 5px; 
-    text-align: center;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    max-width: 250px;
-}
-.recommended-item:hover {
-    transform: scale(1.05); 
-}
-
-.recommended-item img {
-    width: 100%;
-    height: auto;
-    max-height: 200px; 
-    object-fit: cover; 
-}
-
-.recommended-item p {
-    padding: 10px;
-    font-size: 1rem;
-}
-
-@media (max-width: 768px) {
-    .recommended-item {
-        flex: 1 1 calc(50% - 10px); 
-    }
-}
-
-@media (max-width: 480px) {
-    .recommended-item {
-        flex: 1 1 calc(100% - 10px); 
     }
 }
