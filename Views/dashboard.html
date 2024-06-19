@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard</title>
-    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="../Public/Css/dashboard.css">
 </head>
 <body>
     <h1>Admin Dashboard</h1>
@@ -18,21 +18,21 @@
                 <button class="manage-btn" onclick="toggleOptions('orders')">Manage Orders</button>
                 <button class="manage-btn" onclick="toggleOptions('sales')">View Sales</button>
                 <div class="bottom-element">
-                    <a href="Admin.html" class="backButton">Back</a>
+                    <a href="..Views/admin.html" class="backButton">Back</a>
                 </div> 
             </div>
             <div class="content" id="content">
                 <div id="products" class="tab">
                     <div class="options">
                         <h2>Manage Products</h2>
-                        <button class="option" onclick="window.location.href='manageProducts.html'">View & Manage</button>
+                        <button class="option" onclick="window.location.href='..Views/manageProducts.html'">View & Manage</button>
                     </div>
                 </div>
                 <div id="users" class="tab">
                     <div class="options">
                         <h2>Manage Users</h2>
-                        <button class="option" onclick="window.location.href='viewusers.html'">View</button>
-                        <button class="option" onclick="window.location.href='removeusers.html'">Remove</button>
+                        <button class="option" onclick="window.location.href='..Views/viewusers.html'">View</button>
+                        <button class="option" onclick="window.location.href='..Views/removeusers.html'">Remove</button>
                         <button class="option" onclick="window.location.href=''">Add</button>
                         <button class="option" onclick="window.location.href=''">Edit</button>                        
                     </div>
@@ -41,21 +41,21 @@
                 <div id="orders" class="tab">
                     <div class="options">
                         <h2>Manage Orders</h2>
-                        <button class="option" onclick="window.location.href='viewOrders.html'">View</button>
-                        <button class="option" onclick="window.location.href='addOrder.html'">Add</button>
-                        <button class="option" onclick="window.location.href='editorder.html'">Edit</button> 
-                        <button class="option" onclick="window.location.href='removeorder.html'">Remove</button> 
+                        <button class="option" onclick="window.location.href='..Views/viewOrders.html'">View</button>
+                        <button class="option" onclick="window.location.href='..Views/addOrder.html'">Add</button>
+                        <button class="option" onclick="window.location.href='..Views/editorder.html'">Edit</button> 
+                        <button class="option" onclick="window.location.href='..Views/removeorder.html'">Remove</button> 
                     </div>
                 </div>
                 <div id="sales" class="tab">
                     <div class="options">
                         <h2>View Sales</h2>
-                        <button class="option" onclick="window.location.href='AdminSales.html'">View Sales</button>
+                        <button class="option" onclick="window.location.href='..Views/AdminSales.html'">View Sales</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <script src="dashboard.js"></script>
+    <script src="../Public/Js/dashboard.js"></script>
 </body>
 </html>
