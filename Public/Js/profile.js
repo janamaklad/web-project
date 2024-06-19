@@ -67,7 +67,7 @@ document.getElementById("payment-methods").addEventListener("click", function() 
 
 //view details form
 document.getElementById("viewDetails").addEventListener("click", function() {
-    window.location.href = "..Views/details.html";
+    window.location.href = "details.html";
 });
 
 

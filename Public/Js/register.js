@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (isValid) {
           
             registrationForm.reset(); 
-            window.location.href="..Views/Thrifting.html";
+            window.location.href="thrifting.html";
         }
     });
 
