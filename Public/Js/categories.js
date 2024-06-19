@@ -33,24 +33,24 @@ document.addEventListener("DOMContentLoaded", function() {
         <div class="subcategory">  <a href="men.html"><img src="../Images/menbags2F.jpg" alt="bags"></a><h2>Bags</h2> </div>
         <div class="subcategory"> <a href="men.html"><img src="../Images/accessoriesmenFF.jpg" alt="accessories"> </a><h2>Accessories</h2> </div> </div> `
         ,
-        'girls': ` <div class="subcategories"> <div class="subcategory"><a href="girlproducts.html"><img src="../Images/girlstopsFF.jpg" alt="tops"></a><h2>Tops</h2> </div>
-        <div class="subcategory"><a href="girlproducts.html"><img src="../Images/girlsbottomsFF.jpg" alt="bottoms"></a><h2>Bottoms</h2></div>
-        <div class="subcategory"><a href="girlproducts.html"><img src="../Images/girlsdressesF.jpg" alt="dresses"></a><h2>Dresses</h2></div>
-        <div class="subcategory"><a href="girlproducts.html"><img src="../Images/girlsjacketsF.jpg" alt="jackets & coats"></a><h2>Jackets & Coats</h2></div>
-        <div class="subcategory"><a href="girlproducts.html"><img src="../Images/girlssportswearF.jpg" alt="sportswear"></a><h2>SportsWear</h2></div>
-        <div class="subcategory"><a href="girlproducts.html"><img src="../Images/girlscostumesF.jpg" alt="costumes"></a><h2>Costumes</h2></div>
-        <div class="subcategory"><a href="girlproducts.html"><img src="../Images/girlshsoesF (1).jpg" alt="shoes"></a><h2>Shoes</h2></div>
-        <div class="subcategory"><a href="girlproducts.html"><img src="../Images/girlsbagsF.jpg" alt="bags"></a><h2>Bags</h2></div>
-        <div class="subcategory"><a href="girlproducts.html"><img src="../Images/girlsaccessoriesF.jpg" alt="accessories"></a><h2>Accessories</h2></div> </div>`
+        'girls': ` <div class="subcategories"> <div class="subcategory"><a href="girls.html"><img src="../Images/girlstopsFF.jpg" alt="tops"></a><h2>Tops</h2> </div>
+        <div class="subcategory"><a href="girls.html"><img src="../Images/girlsbottomsFF.jpg" alt="bottoms"></a><h2>Bottoms</h2></div>
+        <div class="subcategory"><a href="girls.html"><img src="../Images/girlsdressesF.jpg" alt="dresses"></a><h2>Dresses</h2></div>
+        <div class="subcategory"><a href="girls.html"><img src="../Images/girlsjacketsF.jpg" alt="jackets & coats"></a><h2>Jackets & Coats</h2></div>
+        <div class="subcategory"><a href="girls.html"><img src="../Images/girlssportswearF.jpg" alt="sportswear"></a><h2>SportsWear</h2></div>
+        <div class="subcategory"><a href="girls.html"><img src="../Images/girlscostumesF.jpg" alt="costumes"></a><h2>Costumes</h2></div>
+        <div class="subcategory"><a href="girls.html"><img src="../Images/girlshsoesF (1).jpg" alt="shoes"></a><h2>Shoes</h2></div>
+        <div class="subcategory"><a href="girls.html"><img src="../Images/girlsbagsF.jpg" alt="bags"></a><h2>Bags</h2></div>
+        <div class="subcategory"><a href="girls.html"><img src="../Images/girlsaccessoriesF.jpg" alt="accessories"></a><h2>Accessories</h2></div> </div>`
         ,
-        'boys':`  <div class="subcategories">  <div class="subcategory"><a href="boysproducts.html"><img src="../Images/boystopsF.jpg" alt="tops"></a><h2>Tops</h2></div>
-        <div class="subcategory"><a href="boysproducts.html"><img src="../Images/boysbottomsF.jpg" alt="bottoms"></a><h2>Bottoms</h2></div>
-        <div class="subcategory"><a href="boysproducts.html"><img src="../Images/boysjacketsF.jpg" alt="jackets & coats"></a><h2>Jackets & Coats</h2></div>
-        <div class="subcategory"><a href="boysproducts.html"><img src="../Images/boyssportswearF.jpg" alt="sportswear"></a><h2>SportsWear</h2></div>
-        <div class="subcategory"><a href="boysproducts.html"><img src="../Images/boyscostumesF.jpg" alt="costumes"></a><h2>Costumes</h2></div>
-        <div class="subcategory"><a href="boysproducts.html"><img src="../Images/boysshoesF.jpg" alt="shoes"></a><h2>Shoes</h2></div>
-        <div class="subcategory"><a href="boysproducts.html"><img src="../Images/boysbagF.jpg" alt="bags"></a><h2>Bags</h2></div>
-        <div class="subcategory"><a href="boysproducts.html"><img src="../Images/boysaccessoriesF.jpg" alt="accessories"></a><h2>Accessories</h2></div> </div>`
+        'boys':`  <div class="subcategories">  <div class="subcategory"><a href="boys.html"><img src="../Images/boystopsF.jpg" alt="tops"></a><h2>Tops</h2></div>
+        <div class="subcategory"><a href="boys.html"><img src="../Images/boysbottomsF.jpg" alt="bottoms"></a><h2>Bottoms</h2></div>
+        <div class="subcategory"><a href="boys.html"><img src="../Images/boysjacketsF.jpg" alt="jackets & coats"></a><h2>Jackets & Coats</h2></div>
+        <div class="subcategory"><a href="boys.html"><img src="../Images/boyssportswearF.jpg" alt="sportswear"></a><h2>SportsWear</h2></div>
+        <div class="subcategory"><a href="boys.html"><img src="../Images/boyscostumesF.jpg" alt="costumes"></a><h2>Costumes</h2></div>
+        <div class="subcategory"><a href="boys.html"><img src="../Images/boysshoesF.jpg" alt="shoes"></a><h2>Shoes</h2></div>
+        <div class="subcategory"><a href="boys.html"><img src="../Images/boysbagF.jpg" alt="bags"></a><h2>Bags</h2></div>
+        <div class="subcategory"><a href="boys.html"><img src="../Images/boysaccessoriesF.jpg" alt="accessories"></a><h2>Accessories</h2></div> </div>`
 
         ,
         'baby': `   <div class="subcategories"> <div class="subcategory"><a href="baby products.html"><img src="../Images/babysleepsuitsF.jpg" alt="sleepsuits"></a><h2>Sleepsuits</h2></div> 
