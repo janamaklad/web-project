@@ -53,22 +53,22 @@ document.addEventListener("DOMContentLoaded", function() {
         <div class="subcategory"><a href="boys.html"><img src="../Images/boysaccessoriesF.jpg" alt="accessories"></a><h2>Accessories</h2></div> </div>`
 
         ,
-        'baby': `   <div class="subcategories"> <div class="subcategory"><a href="baby products.html"><img src="../Images/babysleepsuitsF.jpg" alt="sleepsuits"></a><h2>Sleepsuits</h2></div> 
-         <div class="subcategory"> <a href="baby products.html"><img src="../Images/babybodysuitsF.jpg" alt="bodysuits"></a><h2>Bodysuits</h2></div>
-        <div class="subcategory"><a href="baby products.html"><img src="../Images/babytopsF.jpg" alt="tops"></a><h2>Tops</h2></div>
-        <div class="subcategory"><a href="baby products.html"><img src="../Images/babybottomsF.jpg" alt="bottoms"></a><h2>Bottoms</h2></div>
-       <div class="subcategory"><a href="baby products.html"><img src="../Images/babyjacketsF.jpg" alt="jackets"></a><h2>Jackets</h2></div>
-        <div class="subcategory"><a href="baby products.html"><img src="../Images/babycostumesF.jpg" alt="costumes"></a><h2>Costumes</h2></div>
-        <div class="subcategory"> <a href="baby products.html"><img src="../Images/babyshoes2FF.jpg" alt="shoes"></a><h2>Shoes</h2></div>
-        <div class="subcategory"><a href="baby products.html"><img src="../Images/babyaccessoriesF.jpg" alt="accessories"></a><h2>Accessories</h2></div> </div> `
+        'baby': `   <div class="subcategories"> <div class="subcategory"><a href="baby.html"><img src="../Images/babysleepsuitsF.jpg" alt="sleepsuits"></a><h2>Sleepsuits</h2></div> 
+         <div class="subcategory"> <a href="baby.html"><img src="../Images/babybodysuitsF.jpg" alt="bodysuits"></a><h2>Bodysuits</h2></div>
+        <div class="subcategory"><a href="baby.html"><img src="../Images/babytopsF.jpg" alt="tops"></a><h2>Tops</h2></div>
+        <div class="subcategory"><a href="baby.html"><img src="../Images/babybottomsF.jpg" alt="bottoms"></a><h2>Bottoms</h2></div>
+       <div class="subcategory"><a href="baby.html"><img src="../Images/babyjacketsF.jpg" alt="jackets"></a><h2>Jackets</h2></div>
+        <div class="subcategory"><a href="baby.html"><img src="../Images/babycostumesF.jpg" alt="costumes"></a><h2>Costumes</h2></div>
+        <div class="subcategory"> <a href="baby.html"><img src="../Images/babyshoes2FF.jpg" alt="shoes"></a><h2>Shoes</h2></div>
+        <div class="subcategory"><a href="baby.html"><img src="../Images/babyaccessoriesF.jpg" alt="accessories"></a><h2>Accessories</h2></div> </div> `
 
         ,
-        'home': `  <div class="subcategories"> <div class="subcategory"><a href="home products.html"><img src="../Images/homefragranceF.jpg" alt="home fragrance"></a>Home Fragrance</h2> </div>
-        <div class="subcategory"><a href="home products.html"><img src="../Images/homefurnitureF.jpg" alt="Furniture"></a>Furniture</h2></div>
-        <div class="subcategory"><a href="home products.html"><img src="../Images/homediningF.jpg" alt="dining"></a>Dining</h2></div>
-        <div class="subcategory"><a href="home products.html"><img src="../Images/homekitchenF.jpg" alt="kitchen"></a>Kitchen</h2></div>
-        <div class="subcategory"><a href="home products.html"><img src="../Images/homebathF.jpg" alr="bathroom"></a>Bathroom</h2></div>
-        <div class="subcategory"><a href="home products.html"><img src="../Images/homelightingF.jpg" alt="decor & lighting"></a>Decor & Lighting</h2></div></div>`
+        'home': `  <div class="subcategories"> <div class="subcategory"><a href="home.html"><img src="../Images/homefragranceF.jpg" alt="home fragrance"></a>Home Fragrance</h2> </div>
+        <div class="subcategory"><a href="home.html"><img src="../Images/homefurnitureF.jpg" alt="Furniture"></a>Furniture</h2></div>
+        <div class="subcategory"><a href="home.html"><img src="../Images/homediningF.jpg" alt="dining"></a>Dining</h2></div>
+        <div class="subcategory"><a href="home.html"><img src="../Images/homekitchenF.jpg" alt="kitchen"></a>Kitchen</h2></div>
+        <div class="subcategory"><a href="home.html"><img src="../Images/homebathF.jpg" alr="bathroom"></a>Bathroom</h2></div>
+        <div class="subcategory"><a href="home.html"><img src="../Images/homelightingF.jpg" alt="decor & lighting"></a>Decor & Lighting</h2></div></div>`
   
      };
 
